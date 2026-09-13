@@ -1,0 +1,62 @@
+name: Weekly Trend Report
+
+on:
+  # GitHub Actions cron is always UTC. UK local time alternates between
+  # GMT (UTC+0) and BST (UTC+1), so two triggers are scheduled — one for
+  # each half of the year — and the job itself checks the actual UK wall
+  # clock and skips if it isn't 7am, so only one of the two ever does work.
+  schedule:
+    - cron: '0 6 * * 5'  # 7am BST (Apr-Oct, UTC+1)
+    - cron: '0 7 * * 5'  # 7am GMT (Nov-Mar, UTC+0)
+  workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check it's actually 7am UK time (guards against the DST double-trigger)
+        id: uk_time
+        run: |
+          UK_HOUR=$(TZ="Europe/London" date +%H)
+          echo "UK local hour is $UK_HOUR"
+          if [ "$UK_HOUR" != "07" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.uk_time.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.uk_time.outputs.skip != 'true'
+        run: pip install -r requirements.txt
+
+      - name: Run tracker
+        if: steps.uk_time.outputs.skip != 'true'
+        run: python run.py
+
+      - name: Archive dated outputs into reports/
+        if: steps.uk_time.outputs.skip != 'true'
+        run: |
+          mkdir -p reports
+          DATE=$(date +%Y-%m-%d)
+          cp report.xlsx "reports/report_${DATE}.xlsx"
+          cp report.md "reports/report_${DATE}.txt"
+
+      - name: Commit and push results
+        if: steps.uk_time.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/ history.csv report.md report.csv report.xlsx
+          git diff --cached --quiet || git commit -m "Weekly trend report $(date +%Y-%m-%d)"
+          git push
