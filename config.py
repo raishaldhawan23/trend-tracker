@@ -61,6 +61,7 @@ NEGATIVE_FILTERS = {
         "farmer", "agricultur", "bihar", "karnataka", "aadhaar",
         "bank account", "bank", "sbi", "pnb", "portal", "login",
         "status check", "check status", "link", "mp dbt", "mha dbt",
+        "biocare",
     ],
     "power bi": [
         "power bill", "power bike", "power big building", "power biomass",
