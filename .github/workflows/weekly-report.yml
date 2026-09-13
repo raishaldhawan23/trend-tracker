@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check it's actually 7am UK time (guards against the DST double-trigger)
+      - name: Check it's actually 7am UK time (only gates the scheduled cron trigger — see downstream `if:` conditions)
         id: uk_time
         run: |
           UK_HOUR=$(TZ="Europe/London" date +%H)
@@ -31,21 +31,21 @@ jobs:
           fi
 
       - name: Set up Python
-        if: steps.uk_time.outputs.skip != 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.uk_time.outputs.skip != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        if: steps.uk_time.outputs.skip != 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.uk_time.outputs.skip != 'true'
         run: pip install -r requirements.txt
 
       - name: Run tracker
-        if: steps.uk_time.outputs.skip != 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.uk_time.outputs.skip != 'true'
         run: python run.py
 
       - name: Archive dated outputs into reports/
-        if: steps.uk_time.outputs.skip != 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.uk_time.outputs.skip != 'true'
         run: |
           mkdir -p reports
           DATE=$(date +%Y-%m-%d)
@@ -53,7 +53,7 @@ jobs:
           cp report.md "reports/report_${DATE}.txt"
 
       - name: Commit and push results
-        if: steps.uk_time.outputs.skip != 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.uk_time.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
