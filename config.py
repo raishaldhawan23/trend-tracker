@@ -30,12 +30,15 @@ SUBREDDITS = [
 ]
 
 # Hacker News search terms (Algolia API) — good for catching tool launches / dev-facing buzz.
+# "LLM" and "AI agent" alone were too broad and pulled in generic AI stories with
+# no analytics angle — narrowed to phrases that keep results on-topic.
 HN_QUERIES = [
     "analytics engineering",
     "dbt",
     "data pipeline",
-    "AI agent",
-    "LLM",
+    "AI agent analytics",
+    "LLM data analysis",
+    "LLM analytics workflow",
     "data analyst",
 ]
 

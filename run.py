@@ -35,19 +35,35 @@ def _smart_title_case(phrase):
     )
 
 
-def generate_content_angle(title):
-    """Turns a raw topic string into an actual post/video angle. The patterns
-    below mirror the same prefixes suggest_signal.py already queries for
-    (vs / what is / how to / best / why), so a topic that surfaced via one of
-    those autosuggest prefixes gets rephrased the same way here."""
+def _extract_tool_name(title):
+    """For a GitHub repo hit like 'owner/repo', use just the repo name — reads
+    more naturally in a content angle than the full owner/repo string."""
+    return title.rsplit("/", 1)[-1] if "/" in title else title
+
+
+def generate_content_angle(title, sources=""):
+    """Turns a raw topic string into an actual post/video angle.
+
+    Checked in order:
+    1. Prefix/shape patterns (vs / what is / how to / best / why) — these
+       mirror the same prefixes suggest_signal.py already queries for, so a
+       topic that surfaced via one of those autosuggest prefixes gets
+       rephrased the same way here.
+    2. Source-specific angles for hits that don't match any of those
+       patterns: a GitHub repo gets a "first impressions" angle, an HN story
+       gets a "what this means for analytics people" angle.
+    3. A generic fallback template, used only as a last resort — most rows
+       should be caught by 1 or 2 above.
+    """
     t = title.strip()
     lower = t.lower()
     year = datetime.date.today().year
+    source_list = [s.strip() for s in sources.lower().split(",")] if sources else []
 
     m = re.match(r"^(.*?)\s+(?:vs\.?|versus)\s+(.*)$", lower)
     if m:
         a, b = m.group(1).strip(), m.group(2).strip()
-        return f"{_smart_title_case(a)} vs {_smart_title_case(b)}: which should you actually learn in {year}?"
+        return f"{_smart_title_case(a)} vs {_smart_title_case(b)}: which should you actually pick in {year}?"
 
     m = re.match(r"^what\s+is\s+(.*)$", lower)
     if m:
@@ -69,12 +85,20 @@ def generate_content_angle(title):
         topic = m.group(1).strip()
         return f"Why {topic} is happening right now — and what it means for you"
 
+    if "github" in source_list:
+        return f"I tried {_extract_tool_name(t)} so you don't have to — first impressions"
+
+    if "hn" in source_list:
+        return f"What {t} means for analytics people (a quick take)"
+
     return f'Why everyone\'s suddenly talking about "{t}" (and what it should mean for your {year} content plan)'
 
 
 def _top10_with_ideas(ranked_df):
     top10 = ranked_df.head(10).copy()
-    top10["content_angle"] = top10["example_title"].apply(generate_content_angle)
+    top10["content_angle"] = top10.apply(
+        lambda row: generate_content_angle(row["example_title"], row.get("sources", "")), axis=1
+    )
     return top10
 
 

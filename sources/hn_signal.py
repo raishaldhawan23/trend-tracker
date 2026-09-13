@@ -7,6 +7,19 @@ import requests
 
 BASE_URL = "https://hn.algolia.com/api/v1/search"
 
+# A query like "LLM" or "AI agent" still returns plenty of hits with no
+# analytics angle at all — this is a lightweight relevance floor: a hit's
+# title must contain at least one of these niche terms to survive.
+NICHE_TERMS = [
+    "data", "analytics", "dbt", "pipeline", "sql", "dashboard",
+    "bi", "warehouse", "etl", "llm", "ai agent",
+]
+
+
+def _is_relevant(title):
+    title_lower = title.lower()
+    return any(term in title_lower for term in NICHE_TERMS)
+
 
 def fetch_query(query, days_back=7):
     ts_cutoff = int(time.time()) - days_back * 86400
@@ -26,10 +39,13 @@ def fetch_query(query, days_back=7):
 
     hits = []
     for h in data.get("hits", []):
+        title = h.get("title", "")
+        if not _is_relevant(title):
+            continue
         hits.append({
             "source": "hn",
             "query": query,
-            "title": h.get("title", ""),
+            "title": title,
             "score": h.get("points", 0),
             "num_comments": h.get("num_comments", 0),
             "url": h.get("url") or f"https://news.ycombinator.com/item?id={h.get('objectID')}",
