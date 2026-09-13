@@ -10,15 +10,28 @@ BASE_URL = "https://hn.algolia.com/api/v1/search"
 # A query like "LLM" or "AI agent" still returns plenty of hits with no
 # analytics angle at all — this is a lightweight relevance floor: a hit's
 # title must contain at least one of these niche terms to survive.
+# "data" and "bi" are deliberately NOT in this list on their own: "data" is
+# common enough to let privacy/security stories through (a breach, TV data
+# collection) with no analytics angle at all, and "bi" is a common substring
+# inside unrelated words (e.g. "rabbit"). Handled separately below instead.
 NICHE_TERMS = [
-    "data", "analytics", "dbt", "pipeline", "sql", "dashboard",
-    "bi", "warehouse", "etl", "llm", "ai agent",
+    "analytics", "dbt", "pipeline", "sql", "dashboard",
+    "warehouse", "etl", "llm", "ai agent", "power bi", "business intelligence",
+]
+
+# "data" alone is too generic a signal — only counts if it co-occurs with one
+# of these, so "data pipeline monitoring" passes but a bare "customer data
+# breach" story doesn't.
+DATA_COOCCURRENCE_TERMS = [
+    "analytics", "pipeline", "dbt", "warehouse", "etl", "dashboard", "sql", "dataset",
 ]
 
 
 def _is_relevant(title):
     title_lower = title.lower()
-    return any(term in title_lower for term in NICHE_TERMS)
+    if any(term in title_lower for term in NICHE_TERMS):
+        return True
+    return "data" in title_lower and any(term in title_lower for term in DATA_COOCCURRENCE_TERMS)
 
 
 def fetch_query(query, days_back=7):
