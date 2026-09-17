@@ -1,429 +1,421 @@
 norm_title,composite_score,source_count,sources,example_title,example_url,status
-google data analytics apprenticeship,1.5,1,trends,google data analytics apprenticeship,https://trends.google.com/trends/explore?q=google+data+analytics+apprenticeship,RECURRING
-what is data pipeline,1.375,2,"suggest, trends",what is data pipeline,https://trends.google.com/trends/explore?q=what+is+data+pipeline,RECURRING
+what is data pipeline,2.96875,2,"suggest, trends",what is data pipeline,https://trends.google.com/trends/explore?q=what+is+data+pipeline,RECURRING
+analytics engineering with sql and dbt,2.1484375,2,"suggest, trends",analytics engineering with sql and dbt,https://trends.google.com/trends/explore?q=analytics+engineering+with+sql+and+dbt,NEW / SPIKE
+what is a data pipeline,2.090625,1,trends,what is a data pipeline,https://trends.google.com/trends/explore?q=what+is+a+data+pipeline,RECURRING
+data engineering,1.7734375000000002,2,"suggest, trends",data engineering,https://trends.google.com/trends/explore?q=data+engineering,RECURRING
+data analytics,1.7617187499999998,2,"suggest, trends",data analytics,https://trends.google.com/trends/explore?q=data+analytics,RECURRING
+what is data engineering,1.6328125,2,"suggest, trends",what is data engineering,https://trends.google.com/trends/explore?q=what+is+data+engineering,RECURRING
+dbt 20,1.5,1,trends,dbt 2.0,https://trends.google.com/trends/explore?q=dbt+2.0,NEW / SPIKE
+data engineering jobs,1.43359375,2,"suggest, trends",data engineering jobs,https://trends.google.com/trends/explore?q=data+engineering+jobs,RECURRING
+dbt mp,1.40625,1,trends,dbt mp,https://trends.google.com/trends/explore?q=dbt+mp,NEW / SPIKE
+power bi desktop,1.234375,2,"suggest, trends",power bi desktop,https://trends.google.com/trends/explore?q=power+bi+desktop,RECURRING
 show hn capsule singlefile web apps that save their data into sqlite,1.2,1,hn,Show HN: Capsule – Single-file web apps that save their data into SQLite,https://withcapsule.app/,NEW / SPIKE
-analytics engineering with sql and dbt,1.1125,2,"suggest, trends",analytics engineering with sql and dbt,https://trends.google.com/trends/explore?q=analytics+engineering+with+sql+and+dbt,NEW / SPIKE
-data engineering,0.9925,2,"suggest, trends",data engineering,https://trends.google.com/trends/explore?q=data+engineering,RECURRING
-data analytics,0.98875,2,"suggest, trends",data analytics,https://trends.google.com/trends/explore?q=data+analytics,RECURRING
-what is data engineering,0.9475,2,"suggest, trends",what is data engineering,https://trends.google.com/trends/explore?q=what+is+data+engineering,RECURRING
-data engineering jobs,0.88375,2,"suggest, trends",data engineering jobs,https://trends.google.com/trends/explore?q=data+engineering+jobs,RECURRING
-power bi desktop,0.8200000000000001,2,"suggest, trends",power bi desktop,https://trends.google.com/trends/explore?q=power+bi+desktop,RECURRING
+what is power bi,1.0703125,2,"suggest, trends",what is power bi,https://trends.google.com/trends/explore?q=what+is+power+bi,RECURRING
+power bi dashboard,1.05859375,2,"suggest, trends",power bi dashboard,https://trends.google.com/trends/explore?q=power+bi+dashboard,RECURRING
+what is dbt,1.046875,2,"suggest, trends",what is dbt,https://trends.google.com/trends/explore?q=what+is+dbt,RECURRING
+what is data analytics,0.9765625,2,"suggest, trends",what is data analytics,https://trends.google.com/trends/explore?q=what+is+data+analytics,RECURRING
+dbt skills,0.96484375,2,"suggest, trends",dbt skills,https://trends.google.com/trends/explore?q=dbt+skills,RECURRING
+data science,0.9375,1,trends,data science,https://trends.google.com/trends/explore?q=data+science,NEW / SPIKE
+data analytics engineering,0.9375,1,trends,data analytics engineering,https://trends.google.com/trends/explore?q=data+analytics+engineering,NEW / SPIKE
+data and analytics,0.9375,1,trends,data and analytics,https://trends.google.com/trends/explore?q=data+and+analytics,NEW / SPIKE
+power bi microsoft,0.9375,1,trends,power bi microsoft,https://trends.google.com/trends/explore?q=power+bi+microsoft,NEW / SPIKE
+data analytics jobs,0.8828125,2,"suggest, trends",data analytics jobs,https://trends.google.com/trends/explore?q=data+analytics+jobs,RECURRING
+dbt meaning,0.87109375,2,"suggest, trends",dbt meaning,https://trends.google.com/trends/explore?q=dbt+meaning,RECURRING
+dbt,0.859375,2,"suggest, trends",dbt,https://trends.google.com/trends/explore?q=dbt,RECURRING
 coreyhaines31marketingskills,0.8,1,github,coreyhaines31/marketingskills,https://github.com/coreyhaines31/marketingskills,RECURRING
-dbt data,0.77875,2,"suggest, trends",dbt data,https://trends.google.com/trends/explore?q=dbt+data,RECURRING
-what is power bi,0.7675,2,"suggest, trends",what is power bi,https://trends.google.com/trends/explore?q=what+is+power+bi,RECURRING
-power bi dashboard,0.7637499999999999,2,"suggest, trends",power bi dashboard,https://trends.google.com/trends/explore?q=power+bi+dashboard,RECURRING
-what is dbt,0.76,2,"suggest, trends",what is dbt,https://trends.google.com/trends/explore?q=what+is+dbt,RECURRING
-what is data analytics,0.7374999999999999,2,"suggest, trends",what is data analytics,https://trends.google.com/trends/explore?q=what+is+data+analytics,RECURRING
-power bi service,0.7374999999999999,2,"suggest, trends",power bi service,https://trends.google.com/trends/explore?q=power+bi+service,RECURRING
-dbt skills,0.7337499999999999,2,"suggest, trends",dbt skills,https://trends.google.com/trends/explore?q=dbt+skills,RECURRING
-datatalksclubdataengineeringzoomcamp,0.7192269769276277,1,github,DataTalksClub/data-engineering-zoomcamp,https://github.com/DataTalksClub/data-engineering-zoomcamp,RECURRING
-data analytics jobs,0.7075,2,"suggest, trends",data analytics jobs,https://trends.google.com/trends/explore?q=data+analytics+jobs,RECURRING
-dbt meaning,0.7037499999999999,2,"suggest, trends",dbt meaning,https://trends.google.com/trends/explore?q=dbt+meaning,RECURRING
-dbt,0.7000000000000001,2,"suggest, trends",dbt,https://trends.google.com/trends/explore?q=dbt,RECURRING
-what is a data pipeline,0.669,1,trends,what is a data pipeline,https://trends.google.com/trends/explore?q=what+is+a+data+pipeline,RECURRING
-data engineering courses,0.66625,2,"suggest, trends",data engineering courses,https://trends.google.com/trends/explore?q=data+engineering+courses,RECURRING
-data analytics tools,0.6625000000000001,2,"suggest, trends",data analytics tools,https://trends.google.com/trends/explore?q=data+analytics+tools,RECURRING
-data analytics courses,0.6587500000000001,2,"suggest, trends",data analytics courses,https://trends.google.com/trends/explore?q=data+analytics+courses,RECURRING
-data analytics certification,0.6475,2,"suggest, trends",data analytics certification,https://trends.google.com/trends/explore?q=data+analytics+certification,RECURRING
-data analytics masters,0.64375,2,"suggest, trends",data analytics masters,https://trends.google.com/trends/explore?q=data+analytics+masters,NEW / SPIKE
-data pipeline architecture,0.64375,2,"suggest, trends",data pipeline architecture,https://trends.google.com/trends/explore?q=data+pipeline+architecture,RECURRING
-data pipeline tools,0.64,2,"suggest, trends",data pipeline tools,https://trends.google.com/trends/explore?q=data+pipeline+tools,RECURRING
-data pipeline examples,0.6325000000000001,2,"suggest, trends",data pipeline examples,https://trends.google.com/trends/explore?q=data+pipeline+examples,RECURRING
-what is dbt in data engineering,0.62875,2,"suggest, trends",what is dbt in data engineering,https://trends.google.com/trends/explore?q=what+is+dbt+in+data+engineering,RECURRING
-langfuselangfuse,0.5477893906527312,1,github,langfuse/langfuse,https://github.com/langfuse/langfuse,RECURRING
-what is data analytics degree,0.5,1,suggest,what is data analytics degree,https://www.google.com/search?q=what+is+data+analytics+degree,NEW / SPIKE
-what is data analytics engineering,0.5,1,suggest,what is data analytics engineering,https://www.google.com/search?q=what+is+data+analytics+engineering,RECURRING
-what is data analytics and visualization,0.5,1,suggest,what is data analytics and visualization,https://www.google.com/search?q=what+is+data+analytics+and+visualization,NEW / SPIKE
-how to design data pipeline,0.5,1,suggest,how to design data pipeline,https://www.google.com/search?q=how+to+design+data+pipeline,RECURRING
-how to do data analytics,0.5,1,suggest,how to do data analytics,https://www.google.com/search?q=how+to+do+data+analytics,NEW / SPIKE
-how to get into data engineering,0.5,1,suggest,how to get into data engineering,https://www.google.com/search?q=how+to+get+into+data+engineering,NEW / SPIKE
-software vs data engineering,0.5,1,suggest,software vs data engineering,https://www.google.com/search?q=software+vs+data+engineering,NEW / SPIKE
-statistics vs data analytics,0.5,1,suggest,statistics vs data analytics,https://www.google.com/search?q=statistics+vs+data+analytics,NEW / SPIKE
-tableau vs power bi,0.5,1,suggest,tableau vs power bi,https://www.google.com/search?q=tableau+vs+power+bi,NEW / SPIKE
-exabeam ai agent analytics,0.5,1,suggest,exabeam ai agent analytics,https://www.google.com/search?q=exabeam+ai+agent+analytics,NEW / SPIKE
-excel vs power bi,0.5,1,suggest,excel vs power bi,https://www.google.com/search?q=excel+vs+power+bi,NEW / SPIKE
-fabric vs power bi,0.5,1,suggest,fabric vs power bi,https://www.google.com/search?q=fabric+vs+power+bi,NEW / SPIKE
-glue vs data pipeline,0.5,1,suggest,glue vs data pipeline,https://www.google.com/search?q=glue+vs+data+pipeline,NEW / SPIKE
-grafana vs power bi,0.5,1,suggest,grafana vs power bi,https://www.google.com/search?q=grafana+vs+power+bi,NEW / SPIKE
-top data pipeline solutions,0.5,1,suggest,top data pipeline solutions,https://www.google.com/search?q=top+data+pipeline+solutions,NEW / SPIKE
-how to power bi youtube,0.5,1,suggest,how to power bi youtube,https://www.google.com/search?q=how+to+power+bi+youtube,NEW / SPIKE
-how to learn analytics engineering,0.5,1,suggest,how to learn analytics engineering,https://www.google.com/search?q=how+to+learn+analytics+engineering,NEW / SPIKE
-database vs data pipeline,0.5,1,suggest,database vs data pipeline,https://www.google.com/search?q=database+vs+data+pipeline,NEW / SPIKE
-dataflow vs data pipeline,0.5,1,suggest,dataflow vs data pipeline,https://www.google.com/search?q=dataflow+vs+data+pipeline,NEW / SPIKE
-dataflow vs data pipeline fabric,0.5,1,suggest,dataflow vs data pipeline fabric,https://www.google.com/search?q=dataflow+vs+data+pipeline+fabric,NEW / SPIKE
-dataops vs data engineering,0.5,1,suggest,dataops vs data engineering,https://www.google.com/search?q=dataops+vs+data+engineering,NEW / SPIKE
-what is data analytics in accounting,0.5,1,suggest,what is data analytics in accounting,https://www.google.com/search?q=what+is+data+analytics+in+accounting,NEW / SPIKE
-what is data analytics in healthcare,0.5,1,suggest,what is data analytics in healthcare,https://www.google.com/search?q=what+is+data+analytics+in+healthcare,NEW / SPIKE
-what is data analytics in simple words,0.5,1,suggest,what is data analytics in simple words,https://www.google.com/search?q=what+is+data+analytics+in+simple+words,NEW / SPIKE
-what is data analytics job,0.5,1,suggest,what is data analytics job,https://www.google.com/search?q=what+is+data+analytics+job,NEW / SPIKE
-what is data analytics salary,0.5,1,suggest,what is data analytics salary,https://www.google.com/search?q=what+is+data+analytics+salary,NEW / SPIKE
-what is data analytics used for,0.5,1,suggest,what is data analytics used for,https://www.google.com/search?q=what+is+data+analytics+used+for,NEW / SPIKE
-what is data analytics vs data science,0.5,1,suggest,what is data analytics vs data science,https://www.google.com/search?q=what+is+data+analytics+vs+data+science,NEW / SPIKE
-what is data engineering all about,0.5,1,suggest,what is data engineering all about,https://www.google.com/search?q=what+is+data+engineering+all+about,NEW / SPIKE
-what is data engineering and analytics,0.5,1,suggest,what is data engineering and analytics,https://www.google.com/search?q=what+is+data+engineering+and+analytics,NEW / SPIKE
-what is data engineering and data science,0.5,1,suggest,what is data engineering and data science,https://www.google.com/search?q=what+is+data+engineering+and+data+science,NEW / SPIKE
-how to power bi dashboard,0.5,1,suggest,how to power bi dashboard,https://www.google.com/search?q=how+to+power+bi+dashboard,NEW / SPIKE
-what is data engineering in simple words,0.5,1,suggest,what is data engineering in simple words,https://www.google.com/search?q=what+is+data+engineering+in+simple+words,NEW / SPIKE
-dbt vs act,0.5,1,suggest,dbt vs act,https://www.google.com/search?q=dbt+vs+act,NEW / SPIKE
-dbt vs airflow,0.5,1,suggest,dbt vs airflow,https://www.google.com/search?q=dbt+vs+airflow,NEW / SPIKE
-use of ai in analytics,0.5,1,suggest,use of ai in analytics,https://www.google.com/search?q=use+of+ai+in+analytics,NEW / SPIKE
-visual studio data pipeline,0.5,1,suggest,visual studio data pipeline,https://www.google.com/search?q=visual+studio+data+pipeline,NEW / SPIKE
+data engineering courses,0.75390625,2,"suggest, trends",data engineering courses,https://trends.google.com/trends/explore?q=data+engineering+courses,RECURRING
+data analytics courses,0.73046875,2,"suggest, trends",data analytics courses,https://trends.google.com/trends/explore?q=data+analytics+courses,RECURRING
+datatalksclubdataengineeringzoomcamp,0.7192127940683481,1,github,DataTalksClub/data-engineering-zoomcamp,https://github.com/DataTalksClub/data-engineering-zoomcamp,RECURRING
+data analytics degree,0.6953125,2,"suggest, trends",data analytics degree,https://trends.google.com/trends/explore?q=data+analytics+degree,RECURRING
+data analytics certification,0.6953125,2,"suggest, trends",data analytics certification,https://trends.google.com/trends/explore?q=data+analytics+certification,RECURRING
+data pipeline architecture,0.68359375,2,"suggest, trends",data pipeline architecture,https://trends.google.com/trends/explore?q=data+pipeline+architecture,RECURRING
+data pipeline tools,0.671875,2,"suggest, trends",data pipeline tools,https://trends.google.com/trends/explore?q=data+pipeline+tools,RECURRING
+data pipeline meaning,0.671875,2,"suggest, trends",data pipeline meaning,https://trends.google.com/trends/explore?q=data+pipeline+meaning,RECURRING
+data engineering zoomcamp,0.6484375,2,"suggest, trends",data engineering zoomcamp,https://trends.google.com/trends/explore?q=data+engineering+zoomcamp,RECURRING
+what is dbt in data engineering,0.63671875,2,"suggest, trends",what is dbt in data engineering,https://trends.google.com/trends/explore?q=what+is+dbt+in+data+engineering,RECURRING
+langfuselangfuse,0.5477785884719292,1,github,langfuse/langfuse,https://github.com/langfuse/langfuse,RECURRING
+engineering data management,0.54375,1,trends,engineering data management,https://trends.google.com/trends/explore?q=engineering+data+management,NEW / SPIKE
+data engineering services,0.534375,1,trends,data engineering services,https://trends.google.com/trends/explore?q=data+engineering+services,NEW / SPIKE
 vs data analytics,0.5,1,suggest,vs data analytics,https://www.google.com/search?q=vs+data+analytics,NEW / SPIKE
 vs dbt,0.5,1,suggest,vs dbt,https://www.google.com/search?q=vs+dbt,NEW / SPIKE
 vs power bi,0.5,1,suggest,vs power bi,https://www.google.com/search?q=vs+power+bi,NEW / SPIKE
 what is ai in analytics,0.5,1,suggest,what is ai in analytics,https://www.google.com/search?q=what+is+ai+in+analytics,NEW / SPIKE
-what is analytics engineering,0.5,1,suggest,what is analytics engineering,https://www.google.com/search?q=what+is+analytics+engineering,NEW / SPIKE
-what is analytics engineering dbt,0.5,1,suggest,what is analytics engineering dbt,https://www.google.com/search?q=what+is+analytics+engineering+dbt,NEW / SPIKE
-what is analytics engineering reddit,0.5,1,suggest,what is analytics engineering reddit,https://www.google.com/search?q=what+is+analytics+engineering+reddit,NEW / SPIKE
-etl vs data engineering,0.5,1,suggest,etl vs data engineering,https://www.google.com/search?q=etl+vs+data+engineering,NEW / SPIKE
-etl vs data pipeline,0.5,1,suggest,etl vs data pipeline,https://www.google.com/search?q=etl+vs+data+pipeline,NEW / SPIKE
-what is data engineering course,0.5,1,suggest,what is data engineering course,https://www.google.com/search?q=what+is+data+engineering+course,NEW / SPIKE
-what is power bi used for,0.5,1,suggest,what is power bi used for,https://www.google.com/search?q=what+is+power+bi+used+for,NEW / SPIKE
-what is power bi stand for,0.5,1,suggest,what is power bi stand for,https://www.google.com/search?q=what+is+power+bi+stand+for,NEW / SPIKE
-what is power bi software,0.5,1,suggest,what is power bi software,https://www.google.com/search?q=what+is+power+bi+software,NEW / SPIKE
-best analytics engineering books,0.5,1,suggest,best analytics engineering books,https://www.google.com/search?q=best+analytics+engineering+books,NEW / SPIKE
-best ai agent analytics tools,0.5,1,suggest,best ai agent analytics tools,https://www.google.com/search?q=best+ai+agent+analytics+tools,NEW / SPIKE
-backend vs data engineering,0.5,1,suggest,backend vs data engineering,https://www.google.com/search?q=backend+vs+data+engineering,NEW / SPIKE
-api vs data pipeline,0.5,1,suggest,api vs data pipeline,https://www.google.com/search?q=api+vs+data+pipeline,NEW / SPIKE
+dbt vs snowflake,0.5,1,suggest,dbt vs snowflake,https://www.google.com/search?q=dbt+vs+snowflake,NEW / SPIKE
+why dbt app is not working,0.5,1,suggest,why dbt app is not working,https://www.google.com/search?q=why+dbt+app+is+not+working,NEW / SPIKE
 and data analytics,0.5,1,suggest,and data analytics,https://www.google.com/search?q=and+data+analytics,NEW / SPIKE
-how to big data analytics,0.5,1,suggest,how to big data analytics,https://www.google.com/search?q=how+to+big+data+analytics,NEW / SPIKE
-analytics engineering with sql and dbt pdf,0.5,1,suggest,analytics engineering with sql and dbt pdf,https://www.google.com/search?q=analytics+engineering+with+sql+and+dbt+pdf,NEW / SPIKE
-or power bi symbol,0.5,1,suggest,or power bi symbol,https://www.google.com/search?q=or+power+bi+symbol,NEW / SPIKE
-or power bi measure,0.5,1,suggest,or power bi measure,https://www.google.com/search?q=or+power+bi+measure,NEW / SPIKE
-workflow vs data pipeline,0.5,1,suggest,workflow vs data pipeline,https://www.google.com/search?q=workflow+vs+data+pipeline,NEW / SPIKE
-llm analytics posthog,0.5,1,suggest,llm analytics posthog,https://www.google.com/search?q=llm+analytics+posthog,NEW / SPIKE
-llm analytics platform,0.5,1,suggest,llm analytics platform,https://www.google.com/search?q=llm+analytics+platform,NEW / SPIKE
-llm analytics meaning,0.5,1,suggest,llm analytics meaning,https://www.google.com/search?q=llm+analytics+meaning,NEW / SPIKE
-llm analytics leaderboard,0.5,1,suggest,llm analytics leaderboard,https://www.google.com/search?q=llm+analytics+leaderboard,NEW / SPIKE
+what is analytics engineering,0.5,1,suggest,what is analytics engineering,https://www.google.com/search?q=what+is+analytics+engineering,NEW / SPIKE
 analytics vs data engineering,0.5,1,suggest,analytics vs data engineering,https://www.google.com/search?q=analytics+vs+data+engineering,NEW / SPIKE
-why data pipeline,0.5,1,suggest,why data pipeline,https://www.google.com/search?q=why+data+pipeline,NEW / SPIKE
-why data engineering reddit,0.5,1,suggest,why data engineering reddit,https://www.google.com/search?q=why+data+engineering+reddit,NEW / SPIKE
-why data engineering is important,0.5,1,suggest,why data engineering is important,https://www.google.com/search?q=why+data+engineering+is+important,NEW / SPIKE
+analytics engineering with sql and dbt pdf,0.5,1,suggest,analytics engineering with sql and dbt pdf,https://www.google.com/search?q=analytics+engineering+with+sql+and+dbt+pdf,NEW / SPIKE
+analytics engineering vs data science,0.5,1,suggest,analytics engineering vs data science,https://www.google.com/search?q=analytics+engineering+vs+data+science,NEW / SPIKE
+analytics engineering vs data engineering,0.5,1,suggest,analytics engineering vs data engineering,https://www.google.com/search?q=analytics+engineering+vs+data+engineering,NEW / SPIKE
 analytics engineering salary,0.5,1,suggest,analytics engineering salary,https://www.google.com/search?q=analytics+engineering+salary,NEW / SPIKE
+what is analytics engineering reddit,0.5,1,suggest,what is analytics engineering reddit,https://www.google.com/search?q=what+is+analytics+engineering+reddit,NEW / SPIKE
+best data analytics tools,0.5,1,suggest,best data analytics tools,https://www.google.com/search?q=best+data+analytics+tools,NEW / SPIKE
+dbt vs sqlmesh,0.5,1,suggest,dbt vs sqlmesh,https://www.google.com/search?q=dbt+vs+sqlmesh,NEW / SPIKE
+analytics engineering course,0.5,1,suggest,analytics engineering course,https://www.google.com/search?q=analytics+engineering+course,NEW / SPIKE
 analytics engineering roundup,0.5,1,suggest,analytics engineering roundup,https://www.google.com/search?q=analytics+engineering+roundup,NEW / SPIKE
+analytics engineering jobs,0.5,1,suggest,analytics engineering jobs,https://www.google.com/search?q=analytics+engineering+jobs,NEW / SPIKE
 analytics engineering podcast,0.5,1,suggest,analytics engineering podcast,https://www.google.com/search?q=analytics+engineering+podcast,NEW / SPIKE
 analytics engineering manager,0.5,1,suggest,analytics engineering manager,https://www.google.com/search?q=analytics+engineering+manager,NEW / SPIKE
-analytics engineering jobs,0.5,1,suggest,analytics engineering jobs,https://www.google.com/search?q=analytics+engineering+jobs,NEW / SPIKE
-why data analytics,0.5,1,suggest,why data analytics,https://www.google.com/search?q=why+data+analytics,NEW / SPIKE
-analytics engineering best practices,0.5,1,suggest,analytics engineering best practices,https://www.google.com/search?q=analytics+engineering+best+practices,NEW / SPIKE
-analytics engineering,0.5,1,suggest,analytics engineering,https://www.google.com/search?q=analytics+engineering,NEW / SPIKE
-ai vs data engineering,0.5,1,suggest,ai vs data engineering,https://www.google.com/search?q=ai+vs+data+engineering,NEW / SPIKE
-ai vs data analytics,0.5,1,suggest,ai vs data analytics,https://www.google.com/search?q=ai+vs+data+analytics,NEW / SPIKE
-ai in analytics course,0.5,1,suggest,ai in analytics course,https://www.google.com/search?q=ai+in+analytics+course,NEW / SPIKE
-why dbt is used,0.5,1,suggest,why dbt is used,https://www.google.com/search?q=why+dbt+is+used,NEW / SPIKE
-why dbt is used in data engineering,0.5,1,suggest,why dbt is used in data engineering,https://www.google.com/search?q=why+dbt+is+used+in+data+engineering,NEW / SPIKE
-why data analytics as a career,0.5,1,suggest,why data analytics as a career,https://www.google.com/search?q=why+data+analytics+as+a+career,NEW / SPIKE
-analytics engineering course,0.5,1,suggest,analytics engineering course,https://www.google.com/search?q=analytics+engineering+course,NEW / SPIKE
+what is analytics engineering dbt,0.5,1,suggest,what is analytics engineering dbt,https://www.google.com/search?q=what+is+analytics+engineering+dbt,NEW / SPIKE
+dbt distress tolerance skills,0.5,1,suggest,dbt distress tolerance skills,https://www.google.com/search?q=dbt+distress+tolerance+skills,NEW / SPIKE
+etl vs data engineering,0.5,1,suggest,etl vs data engineering,https://www.google.com/search?q=etl+vs+data+engineering,NEW / SPIKE
+devops vs data engineering,0.5,1,suggest,devops vs data engineering,https://www.google.com/search?q=devops+vs+data+engineering,NEW / SPIKE
+what is data engineering course,0.5,1,suggest,what is data engineering course,https://www.google.com/search?q=what+is+data+engineering+course,NEW / SPIKE
+what is data engineering and data science,0.5,1,suggest,what is data engineering and data science,https://www.google.com/search?q=what+is+data+engineering+and+data+science,NEW / SPIKE
+dbt vs act,0.5,1,suggest,dbt vs act,https://www.google.com/search?q=dbt+vs+act,NEW / SPIKE
+what is data engineering and analytics,0.5,1,suggest,what is data engineering and analytics,https://www.google.com/search?q=what+is+data+engineering+and+analytics,NEW / SPIKE
+what is data engineering all about,0.5,1,suggest,what is data engineering all about,https://www.google.com/search?q=what+is+data+engineering+all+about,NEW / SPIKE
+what is data analytics vs data science,0.5,1,suggest,what is data analytics vs data science,https://www.google.com/search?q=what+is+data+analytics+vs+data+science,NEW / SPIKE
+dbt vs airflow,0.5,1,suggest,dbt vs airflow,https://www.google.com/search?q=dbt+vs+airflow,NEW / SPIKE
+what is data analytics used for,0.5,1,suggest,what is data analytics used for,https://www.google.com/search?q=what+is+data+analytics+used+for,NEW / SPIKE
+what is data analytics salary,0.5,1,suggest,what is data analytics salary,https://www.google.com/search?q=what+is+data+analytics+salary,NEW / SPIKE
+what is data analytics job,0.5,1,suggest,what is data analytics job,https://www.google.com/search?q=what+is+data+analytics+job,NEW / SPIKE
+exabeam ai agent analytics,0.5,1,suggest,exabeam ai agent analytics,https://www.google.com/search?q=exabeam+ai+agent+analytics,NEW / SPIKE
+what is data analytics in healthcare,0.5,1,suggest,what is data analytics in healthcare,https://www.google.com/search?q=what+is+data+analytics+in+healthcare,NEW / SPIKE
+what is data analytics in accounting,0.5,1,suggest,what is data analytics in accounting,https://www.google.com/search?q=what+is+data+analytics+in+accounting,NEW / SPIKE
+what is data analytics engineering,0.5,1,suggest,what is data analytics engineering,https://www.google.com/search?q=what+is+data+analytics+engineering,RECURRING
+what is data analytics degree,0.5,1,suggest,what is data analytics degree,https://www.google.com/search?q=what+is+data+analytics+degree,NEW / SPIKE
+what is data analytics and visualization,0.5,1,suggest,what is data analytics and visualization,https://www.google.com/search?q=what+is+data+analytics+and+visualization,NEW / SPIKE
+dbt vs code extension,0.5,1,suggest,dbt vs code extension,https://www.google.com/search?q=dbt+vs+code+extension,NEW / SPIKE
+grafana vs power bi,0.5,1,suggest,grafana vs power bi,https://www.google.com/search?q=grafana+vs+power+bi,NEW / SPIKE
+dbt vs databricks,0.5,1,suggest,dbt vs databricks,https://www.google.com/search?q=dbt+vs+databricks,NEW / SPIKE
+glue vs data pipeline,0.5,1,suggest,glue vs data pipeline,https://www.google.com/search?q=glue+vs+data+pipeline,NEW / SPIKE
+fabric vs power bi,0.5,1,suggest,fabric vs power bi,https://www.google.com/search?q=fabric+vs+power+bi,NEW / SPIKE
+excel vs power bi,0.5,1,suggest,excel vs power bi,https://www.google.com/search?q=excel+vs+power+bi,NEW / SPIKE
+etl vs data pipeline,0.5,1,suggest,etl vs data pipeline,https://www.google.com/search?q=etl+vs+data+pipeline,NEW / SPIKE
+ai agent analytics dashboard servicenow,0.5,1,suggest,ai agent analytics dashboard servicenow,https://www.google.com/search?q=ai+agent+analytics+dashboard+servicenow,NEW / SPIKE
+ai agent analytics dashboard,0.5,1,suggest,ai agent analytics dashboard,https://www.google.com/search?q=ai+agent+analytics+dashboard,NEW / SPIKE
+what is data analytics in simple words,0.5,1,suggest,what is data analytics in simple words,https://www.google.com/search?q=what+is+data+analytics+in+simple+words,NEW / SPIKE
+power bi logo,0.5,1,suggest,power bi logo,https://www.google.com/search?q=power+bi+logo,NEW / SPIKE
+power bi report builder,0.5,1,suggest,power bi report builder,https://www.google.com/search?q=power+bi+report+builder,NEW / SPIKE
 power bi training,0.5,1,suggest,power bi training,https://www.google.com/search?q=power+bi+training,NEW / SPIKE
-looker vs power bi,0.5,1,suggest,looker vs power bi,https://www.google.com/search?q=looker+vs+power+bi,NEW / SPIKE
-llm analytics vidhya,0.5,1,suggest,llm analytics vidhya,https://www.google.com/search?q=llm+analytics+vidhya,NEW / SPIKE
-llm analytics tools,0.5,1,suggest,llm analytics tools,https://www.google.com/search?q=llm+analytics+tools,NEW / SPIKE
-how to delete data analytics from iphone,0.5,1,suggest,how to delete data analytics from iphone,https://www.google.com/search?q=how+to+delete+data+analytics+from+iphone,NEW / SPIKE
-how to dbt,0.5,1,suggest,how to dbt,https://www.google.com/search?q=how+to+dbt,NEW / SPIKE
-how to data pipeline,0.5,1,suggest,how to data pipeline,https://www.google.com/search?q=how+to+data+pipeline,NEW / SPIKE
-how to data engineering,0.5,1,suggest,how to data engineering,https://www.google.com/search?q=how+to+data+engineering,NEW / SPIKE
-llm analytics dashboard,0.5,1,suggest,llm analytics dashboard,https://www.google.com/search?q=llm+analytics+dashboard,NEW / SPIKE
-how to data analytics,0.5,1,suggest,how to data analytics,https://www.google.com/search?q=how+to+data+analytics,NEW / SPIKE
-how to create data pipeline in sql,0.5,1,suggest,how to create data pipeline in sql,https://www.google.com/search?q=how+to+create+data+pipeline+in+sql,NEW / SPIKE
-how to create data pipeline in snowflake,0.5,1,suggest,how to create data pipeline in snowflake,https://www.google.com/search?q=how+to+create+data+pipeline+in+snowflake,NEW / SPIKE
-how to create data pipeline in python,0.5,1,suggest,how to create data pipeline in python,https://www.google.com/search?q=how+to+create+data+pipeline+in+python,NEW / SPIKE
-how to create data pipeline in databricks,0.5,1,suggest,how to create data pipeline in databricks,https://www.google.com/search?q=how+to+create+data+pipeline+in+databricks,NEW / SPIKE
-integration vs data pipeline,0.5,1,suggest,integration vs data pipeline,https://www.google.com/search?q=integration+vs+data+pipeline,NEW / SPIKE
-how to study data analytics,0.5,1,suggest,how to study data analytics,https://www.google.com/search?q=how+to+study+data+analytics,NEW / SPIKE
-how to start data engineering,0.5,1,suggest,how to start data engineering,https://www.google.com/search?q=how+to+start+data+engineering,NEW / SPIKE
-how to data analytics work,0.5,1,suggest,how to data analytics work,https://www.google.com/search?q=how+to+data+analytics+work,NEW / SPIKE
-llm analytics comparison,0.5,1,suggest,llm analytics comparison,https://www.google.com/search?q=llm+analytics+comparison,NEW / SPIKE
-llm analytics benchmark,0.5,1,suggest,llm analytics benchmark,https://www.google.com/search?q=llm+analytics+benchmark,NEW / SPIKE
+software vs data engineering,0.5,1,suggest,software vs data engineering,https://www.google.com/search?q=software+vs+data+engineering,NEW / SPIKE
+statistics vs data analytics,0.5,1,suggest,statistics vs data analytics,https://www.google.com/search?q=statistics+vs+data+analytics,NEW / SPIKE
+tableau vs power bi,0.5,1,suggest,tableau vs power bi,https://www.google.com/search?q=tableau+vs+power+bi,NEW / SPIKE
+mlops vs data engineering,0.5,1,suggest,mlops vs data engineering,https://www.google.com/search?q=mlops+vs+data+engineering,NEW / SPIKE
+or power bi,0.5,1,suggest,or power bi,https://www.google.com/search?q=or+power+bi,NEW / SPIKE
+dbt vs spark,0.5,1,suggest,dbt vs spark,https://www.google.com/search?q=dbt+vs+spark,NEW / SPIKE
+or power bi measure,0.5,1,suggest,or power bi measure,https://www.google.com/search?q=or+power+bi+measure,NEW / SPIKE
+why dbt,0.5,1,suggest,why dbt,https://www.google.com/search?q=why+dbt,NEW / SPIKE
 llm analytics,0.5,1,suggest,llm analytics,https://www.google.com/search?q=llm+analytics,NEW / SPIKE
+llm analytics benchmark,0.5,1,suggest,llm analytics benchmark,https://www.google.com/search?q=llm+analytics+benchmark,NEW / SPIKE
+llm analytics comparison,0.5,1,suggest,llm analytics comparison,https://www.google.com/search?q=llm+analytics+comparison,NEW / SPIKE
+llm analytics dashboard,0.5,1,suggest,llm analytics dashboard,https://www.google.com/search?q=llm+analytics+dashboard,NEW / SPIKE
+llm analytics leaderboard,0.5,1,suggest,llm analytics leaderboard,https://www.google.com/search?q=llm+analytics+leaderboard,NEW / SPIKE
+llm analytics meaning,0.5,1,suggest,llm analytics meaning,https://www.google.com/search?q=llm+analytics+meaning,NEW / SPIKE
+or power bi dax,0.5,1,suggest,or power bi dax,https://www.google.com/search?q=or+power+bi+dax,NEW / SPIKE
+ai vs data engineering,0.5,1,suggest,ai vs data engineering,https://www.google.com/search?q=ai+vs+data+engineering,NEW / SPIKE
+why power bi,0.5,1,suggest,why power bi,https://www.google.com/search?q=why+power+bi,NEW / SPIKE
+what is power bi used for,0.5,1,suggest,what is power bi used for,https://www.google.com/search?q=what+is+power+bi+used+for,NEW / SPIKE
+why data analytics,0.5,1,suggest,why data analytics,https://www.google.com/search?q=why+data+analytics,NEW / SPIKE
+why data analytics as a career,0.5,1,suggest,why data analytics as a career,https://www.google.com/search?q=why+data+analytics+as+a+career,NEW / SPIKE
+why data analytics course,0.5,1,suggest,why data analytics course,https://www.google.com/search?q=why+data+analytics+course,NEW / SPIKE
+why data analytics is a good career,0.5,1,suggest,why data analytics is a good career,https://www.google.com/search?q=why+data+analytics+is+a+good+career,NEW / SPIKE
+why data analytics is important,0.5,1,suggest,why data analytics is important,https://www.google.com/search?q=why+data+analytics+is+important,NEW / SPIKE
 power bi login,0.5,1,suggest,power bi login,https://www.google.com/search?q=power+bi+login,NEW / SPIKE
+why data analytics is the future of everything,0.5,1,suggest,why data analytics is the future of everything,https://www.google.com/search?q=why+data+analytics+is+the+future+of+everything,NEW / SPIKE
+why data analytics is used,0.5,1,suggest,why data analytics is used,https://www.google.com/search?q=why+data+analytics+is+used,NEW / SPIKE
+why data analytics reddit,0.5,1,suggest,why data analytics reddit,https://www.google.com/search?q=why+data+analytics+reddit,NEW / SPIKE
+why data engineering,0.5,1,suggest,why data engineering,https://www.google.com/search?q=why+data+engineering,NEW / SPIKE
+why data engineering interview questions,0.5,1,suggest,why data engineering interview questions,https://www.google.com/search?q=why+data+engineering+interview+questions,NEW / SPIKE
+why data engineering reddit,0.5,1,suggest,why data engineering reddit,https://www.google.com/search?q=why+data+engineering+reddit,NEW / SPIKE
+analytics engineering best practices,0.5,1,suggest,analytics engineering best practices,https://www.google.com/search?q=analytics+engineering+best+practices,NEW / SPIKE
 power bi download,0.5,1,suggest,power bi download,https://www.google.com/search?q=power+bi+download,NEW / SPIKE
-power bi desktop download,0.5,1,suggest,power bi desktop download,https://www.google.com/search?q=power+bi+desktop+download,NEW / SPIKE
-power bi certification,0.5,1,suggest,power bi certification,https://www.google.com/search?q=power+bi+certification,NEW / SPIKE
-power bi,0.5,1,suggest,power bi,https://www.google.com/search?q=power+bi,NEW / SPIKE
-power bi vs tableau,0.5,1,suggest,power bi vs tableau,https://www.google.com/search?q=power+bi+vs+tableau,NEW / SPIKE
-how to power bi,0.5,1,suggest,how to power bi,https://www.google.com/search?q=how+to+power+bi,NEW / SPIKE
-how to optimize data pipeline,0.5,1,suggest,how to optimize data pipeline,https://www.google.com/search?q=how+to+optimize+data+pipeline,NEW / SPIKE
-how to master data engineering,0.5,1,suggest,how to master data engineering,https://www.google.com/search?q=how+to+master+data+engineering,NEW / SPIKE
-how to master data analytics,0.5,1,suggest,how to master data analytics,https://www.google.com/search?q=how+to+master+data+analytics,NEW / SPIKE
-how to learn python for data engineering,0.5,1,suggest,how to learn python for data engineering,https://www.google.com/search?q=how+to+learn+python+for+data+engineering,NEW / SPIKE
-how to learn data engineering,0.5,1,suggest,how to learn data engineering,https://www.google.com/search?q=how+to+learn+data+engineering,NEW / SPIKE
-how to learn data analytics for free,0.5,1,suggest,how to learn data analytics for free,https://www.google.com/search?q=how+to+learn+data+analytics+for+free,NEW / SPIKE
+why data analytics is the future,0.5,1,suggest,why data analytics is the future,https://www.google.com/search?q=why+data+analytics+is+the+future,NEW / SPIKE
+how to big data analytics,0.5,1,suggest,how to big data analytics,https://www.google.com/search?q=how+to+big+data+analytics,NEW / SPIKE
+how to create data pipeline in databricks,0.5,1,suggest,how to create data pipeline in databricks,https://www.google.com/search?q=how+to+create+data+pipeline+in+databricks,NEW / SPIKE
+how to create data pipeline in python,0.5,1,suggest,how to create data pipeline in python,https://www.google.com/search?q=how+to+create+data+pipeline+in+python,NEW / SPIKE
+how to create data pipeline in snowflake,0.5,1,suggest,how to create data pipeline in snowflake,https://www.google.com/search?q=how+to+create+data+pipeline+in+snowflake,NEW / SPIKE
+how to create data pipeline in sql,0.5,1,suggest,how to create data pipeline in sql,https://www.google.com/search?q=how+to+create+data+pipeline+in+sql,NEW / SPIKE
+how to data analytics,0.5,1,suggest,how to data analytics,https://www.google.com/search?q=how+to+data+analytics,NEW / SPIKE
+how to data analytics work,0.5,1,suggest,how to data analytics work,https://www.google.com/search?q=how+to+data+analytics+work,NEW / SPIKE
+how to data engineering,0.5,1,suggest,how to data engineering,https://www.google.com/search?q=how+to+data+engineering,NEW / SPIKE
+llm analytics platform,0.5,1,suggest,llm analytics platform,https://www.google.com/search?q=llm+analytics+platform,NEW / SPIKE
+how to dbt,0.5,1,suggest,how to dbt,https://www.google.com/search?q=how+to+dbt,NEW / SPIKE
+how to delete data analytics from iphone,0.5,1,suggest,how to delete data analytics from iphone,https://www.google.com/search?q=how+to+delete+data+analytics+from+iphone,NEW / SPIKE
+how to design data pipeline,0.5,1,suggest,how to design data pipeline,https://www.google.com/search?q=how+to+design+data+pipeline,RECURRING
+how to do data analytics,0.5,1,suggest,how to do data analytics,https://www.google.com/search?q=how+to+do+data+analytics,NEW / SPIKE
+how to get into data engineering,0.5,1,suggest,how to get into data engineering,https://www.google.com/search?q=how+to+get+into+data+engineering,NEW / SPIKE
+top data pipeline solutions,0.5,1,suggest,top data pipeline solutions,https://www.google.com/search?q=top+data+pipeline+solutions,NEW / SPIKE
+use of ai in analytics,0.5,1,suggest,use of ai in analytics,https://www.google.com/search?q=use+of+ai+in+analytics,NEW / SPIKE
+visual studio data pipeline,0.5,1,suggest,visual studio data pipeline,https://www.google.com/search?q=visual+studio+data+pipeline,NEW / SPIKE
+how to data pipeline,0.5,1,suggest,how to data pipeline,https://www.google.com/search?q=how+to+data+pipeline,NEW / SPIKE
+llm analytics posthog,0.5,1,suggest,llm analytics posthog,https://www.google.com/search?q=llm+analytics+posthog,NEW / SPIKE
+llm analytics tools,0.5,1,suggest,llm analytics tools,https://www.google.com/search?q=llm+analytics+tools,NEW / SPIKE
+llm analytics vidhya,0.5,1,suggest,llm analytics vidhya,https://www.google.com/search?q=llm+analytics+vidhya,NEW / SPIKE
+looker vs power bi,0.5,1,suggest,looker vs power bi,https://www.google.com/search?q=looker+vs+power+bi,NEW / SPIKE
+how to learn analytics engineering,0.5,1,suggest,how to learn analytics engineering,https://www.google.com/search?q=how+to+learn+analytics+engineering,NEW / SPIKE
 how to learn data analytics,0.5,1,suggest,how to learn data analytics,https://www.google.com/search?q=how+to+learn+data+analytics,NEW / SPIKE
+how to learn data analytics for free,0.5,1,suggest,how to learn data analytics for free,https://www.google.com/search?q=how+to+learn+data+analytics+for+free,NEW / SPIKE
+how to learn data engineering,0.5,1,suggest,how to learn data engineering,https://www.google.com/search?q=how+to+learn+data+engineering,NEW / SPIKE
+integration vs data pipeline,0.5,1,suggest,integration vs data pipeline,https://www.google.com/search?q=integration+vs+data+pipeline,NEW / SPIKE
+how to master data analytics,0.5,1,suggest,how to master data analytics,https://www.google.com/search?q=how+to+master+data+analytics,NEW / SPIKE
+how to master data engineering,0.5,1,suggest,how to master data engineering,https://www.google.com/search?q=how+to+master+data+engineering,NEW / SPIKE
+how to optimize data pipeline,0.5,1,suggest,how to optimize data pipeline,https://www.google.com/search?q=how+to+optimize+data+pipeline,NEW / SPIKE
+how to power bi,0.5,1,suggest,how to power bi,https://www.google.com/search?q=how+to+power+bi,NEW / SPIKE
 how to power bi bas,0.5,1,suggest,how to power bi bas,https://www.google.com/search?q=how+to+power+bi+bas,NEW / SPIKE
-best data analytics courses reddit,0.5,1,suggest,best data analytics courses reddit,https://www.google.com/search?q=best+data+analytics+courses+reddit,NEW / SPIKE
-best data analytics masters programs,0.5,1,suggest,best data analytics masters programs,https://www.google.com/search?q=best+data+analytics+masters+programs,NEW / SPIKE
-best data analytics programs,0.5,1,suggest,best data analytics programs,https://www.google.com/search?q=best+data+analytics+programs,NEW / SPIKE
-best data analytics software,0.5,1,suggest,best data analytics software,https://www.google.com/search?q=best+data+analytics+software,NEW / SPIKE
-best data analytics tools,0.5,1,suggest,best data analytics tools,https://www.google.com/search?q=best+data+analytics+tools,NEW / SPIKE
-best data engineering blogs,0.5,1,suggest,best data engineering blogs,https://www.google.com/search?q=best+data+engineering+blogs,NEW / SPIKE
-best data engineering books,0.5,1,suggest,best data engineering books,https://www.google.com/search?q=best+data+engineering+books,NEW / SPIKE
-best data engineering bootcamp,0.5,1,suggest,best data engineering bootcamp,https://www.google.com/search?q=best+data+engineering+bootcamp,NEW / SPIKE
-best data engineering certifications,0.5,1,suggest,best data engineering certifications,https://www.google.com/search?q=best+data+engineering+certifications,NEW / SPIKE
-best data engineering certifications 2026,0.5,1,suggest,best data engineering certifications 2026,https://www.google.com/search?q=best+data+engineering+certifications+2026,NEW / SPIKE
-analytics engineering vs data engineering,0.5,1,suggest,analytics engineering vs data engineering,https://www.google.com/search?q=analytics+engineering+vs+data+engineering,NEW / SPIKE
-analytics engineering vs data science,0.5,1,suggest,analytics engineering vs data science,https://www.google.com/search?q=analytics+engineering+vs+data+science,NEW / SPIKE
-best data engineering projects,0.5,1,suggest,best data engineering projects,https://www.google.com/search?q=best+data+engineering+projects,NEW / SPIKE
-best data engineering projects for resume,0.5,1,suggest,best data engineering projects for resume,https://www.google.com/search?q=best+data+engineering+projects+for+resume,NEW / SPIKE
-best data pipeline,0.5,1,suggest,best data pipeline,https://www.google.com/search?q=best+data+pipeline,NEW / SPIKE
-what is data pipeline architecture,0.5,1,suggest,what is data pipeline architecture,https://www.google.com/search?q=what+is+data+pipeline+architecture,NEW / SPIKE
-best dbt training for therapists,0.5,1,suggest,best dbt training for therapists,https://www.google.com/search?q=best+dbt+training+for+therapists,NEW / SPIKE
-best dbt therapist near me,0.5,1,suggest,best dbt therapist near me,https://www.google.com/search?q=best+dbt+therapist+near+me,NEW / SPIKE
-best dbt skills,0.5,1,suggest,best dbt skills,https://www.google.com/search?q=best+dbt+skills,NEW / SPIKE
-best dbt podcast,0.5,1,suggest,best dbt podcast,https://www.google.com/search?q=best+dbt+podcast,NEW / SPIKE
+how to power bi dashboard,0.5,1,suggest,how to power bi dashboard,https://www.google.com/search?q=how+to+power+bi+dashboard,NEW / SPIKE
+how to power bi youtube,0.5,1,suggest,how to power bi youtube,https://www.google.com/search?q=how+to+power+bi+youtube,NEW / SPIKE
+how to start data engineering,0.5,1,suggest,how to start data engineering,https://www.google.com/search?q=how+to+start+data+engineering,NEW / SPIKE
+how to study data analytics,0.5,1,suggest,how to study data analytics,https://www.google.com/search?q=how+to+study+data+analytics,NEW / SPIKE
+how to learn python for data engineering,0.5,1,suggest,how to learn python for data engineering,https://www.google.com/search?q=how+to+learn+python+for+data+engineering,NEW / SPIKE
+best data analytics courses,0.5,1,suggest,best data analytics courses,https://www.google.com/search?q=best+data+analytics+courses,NEW / SPIKE
+best data analytics certification reddit,0.5,1,suggest,best data analytics certification reddit,https://www.google.com/search?q=best+data+analytics+certification+reddit,NEW / SPIKE
+best data analytics certification,0.5,1,suggest,best data analytics certification,https://www.google.com/search?q=best+data+analytics+certification,NEW / SPIKE
 best data analytics bootcamp,0.5,1,suggest,best data analytics bootcamp,https://www.google.com/search?q=best+data+analytics+bootcamp,NEW / SPIKE
 best data analytics books,0.5,1,suggest,best data analytics books,https://www.google.com/search?q=best+data+analytics+books,NEW / SPIKE
 best analytics engineering course,0.5,1,suggest,best analytics engineering course,https://www.google.com/search?q=best+analytics+engineering+course,NEW / SPIKE
-best data pipeline architecture,0.5,1,suggest,best data pipeline architecture,https://www.google.com/search?q=best+data+pipeline+architecture,NEW / SPIKE
-best dbt books,0.5,1,suggest,best dbt books,https://www.google.com/search?q=best+dbt+books,NEW / SPIKE
-best dbt apps,0.5,1,suggest,best dbt apps,https://www.google.com/search?q=best+dbt+apps,NEW / SPIKE
-best data pipeline tools,0.5,1,suggest,best data pipeline tools,https://www.google.com/search?q=best+data+pipeline+tools,NEW / SPIKE
-best data pipeline software for integration platforms,0.5,1,suggest,best data pipeline software for integration platforms,https://www.google.com/search?q=best+data+pipeline+software+for+integration+platforms,NEW / SPIKE
+best analytics engineering books,0.5,1,suggest,best analytics engineering books,https://www.google.com/search?q=best+analytics+engineering+books,NEW / SPIKE
+best ai agent analytics tools,0.5,1,suggest,best ai agent analytics tools,https://www.google.com/search?q=best+ai+agent+analytics+tools,NEW / SPIKE
+backend vs data engineering,0.5,1,suggest,backend vs data engineering,https://www.google.com/search?q=backend+vs+data+engineering,NEW / SPIKE
 best data pipeline orchestration tools,0.5,1,suggest,best data pipeline orchestration tools,https://www.google.com/search?q=best+data+pipeline+orchestration+tools,NEW / SPIKE
 best data pipeline framework,0.5,1,suggest,best data pipeline framework,https://www.google.com/search?q=best+data+pipeline+framework,NEW / SPIKE
 best data pipeline for small business,0.5,1,suggest,best data pipeline for small business,https://www.google.com/search?q=best+data+pipeline+for+small+business,NEW / SPIKE
 best data pipeline development services,0.5,1,suggest,best data pipeline development services,https://www.google.com/search?q=best+data+pipeline+development+services,NEW / SPIKE
-best dbt books for therapists,0.5,1,suggest,best dbt books for therapists,https://www.google.com/search?q=best+dbt+books+for+therapists,NEW / SPIKE
-why data analytics is used,0.5,1,suggest,why data analytics is used,https://www.google.com/search?q=why+data+analytics+is+used,NEW / SPIKE
-why data analytics is the future of everything,0.5,1,suggest,why data analytics is the future of everything,https://www.google.com/search?q=why+data+analytics+is+the+future+of+everything,NEW / SPIKE
-why power bi,0.5,1,suggest,why power bi,https://www.google.com/search?q=why+power+bi,NEW / SPIKE
-or power bi dax,0.5,1,suggest,or power bi dax,https://www.google.com/search?q=or+power+bi+dax,NEW / SPIKE
-why dbt,0.5,1,suggest,why dbt,https://www.google.com/search?q=why+dbt,NEW / SPIKE
-why data analytics is the future,0.5,1,suggest,why data analytics is the future,https://www.google.com/search?q=why+data+analytics+is+the+future,NEW / SPIKE
-why data analytics course,0.5,1,suggest,why data analytics course,https://www.google.com/search?q=why+data+analytics+course,NEW / SPIKE
-best data analytics courses,0.5,1,suggest,best data analytics courses,https://www.google.com/search?q=best+data+analytics+courses,NEW / SPIKE
-or power bi,0.5,1,suggest,or power bi,https://www.google.com/search?q=or+power+bi,NEW / SPIKE
-mlops vs data engineering,0.5,1,suggest,mlops vs data engineering,https://www.google.com/search?q=mlops+vs+data+engineering,NEW / SPIKE
-why power bi over excel,0.5,1,suggest,why power bi over excel,https://www.google.com/search?q=why+power+bi+over+excel,NEW / SPIKE
-why power bi is used,0.5,1,suggest,why power bi is used,https://www.google.com/search?q=why+power+bi+is+used,NEW / SPIKE
-why power bi is not available for mac,0.5,1,suggest,why power bi is not available for mac,https://www.google.com/search?q=why+power+bi+is+not+available+for+mac,NEW / SPIKE
-why power bi is important,0.5,1,suggest,why power bi is important,https://www.google.com/search?q=why+power+bi+is+important,NEW / SPIKE
-why power bi is better than tableau,0.5,1,suggest,why power bi is better than tableau,https://www.google.com/search?q=why+power+bi+is+better+than+tableau,NEW / SPIKE
-why power bi is better than excel,0.5,1,suggest,why power bi is better than excel,https://www.google.com/search?q=why+power+bi+is+better+than+excel,NEW / SPIKE
-ai in analytics,0.5,1,suggest,ai in analytics,https://www.google.com/search?q=ai+in+analytics,NEW / SPIKE
-best data analytics certification reddit,0.5,1,suggest,best data analytics certification reddit,https://www.google.com/search?q=best+data+analytics+certification+reddit,NEW / SPIKE
-best data analytics certification,0.5,1,suggest,best data analytics certification,https://www.google.com/search?q=best+data+analytics+certification,NEW / SPIKE
-why data analytics is important,0.5,1,suggest,why data analytics is important,https://www.google.com/search?q=why+data+analytics+is+important,NEW / SPIKE
-why data analytics is a good career,0.5,1,suggest,why data analytics is a good career,https://www.google.com/search?q=why+data+analytics+is+a+good+career,NEW / SPIKE
-why dbt app is not working,0.5,1,suggest,why dbt app is not working,https://www.google.com/search?q=why+dbt+app+is+not+working,NEW / SPIKE
-accounting vs data analytics,0.5,1,suggest,accounting vs data analytics,https://www.google.com/search?q=accounting+vs+data+analytics,NEW / SPIKE
-why power bi over tableau,0.5,1,suggest,why power bi over tableau,https://www.google.com/search?q=why+power+bi+over+tableau,NEW / SPIKE
-why data analytics reddit,0.5,1,suggest,why data analytics reddit,https://www.google.com/search?q=why+data+analytics+reddit,NEW / SPIKE
-ai agent analytics dashboard,0.5,1,suggest,ai agent analytics dashboard,https://www.google.com/search?q=ai+agent+analytics+dashboard,NEW / SPIKE
-ai agent analytics dashboard servicenow,0.5,1,suggest,ai agent analytics dashboard servicenow,https://www.google.com/search?q=ai+agent+analytics+dashboard+servicenow,NEW / SPIKE
-ai agent analytics platform,0.5,1,suggest,ai agent analytics platform,https://www.google.com/search?q=ai+agent+analytics+platform,NEW / SPIKE
-ai agent analytics servicenow,0.5,1,suggest,ai agent analytics servicenow,https://www.google.com/search?q=ai+agent+analytics+servicenow,NEW / SPIKE
-ai agent analytics vidhya,0.5,1,suggest,ai agent analytics vidhya,https://www.google.com/search?q=ai+agent+analytics+vidhya,NEW / SPIKE
-why data engineering is hard,0.5,1,suggest,why data engineering is hard,https://www.google.com/search?q=why+data+engineering+is+hard,NEW / SPIKE
-why data engineering interview questions,0.5,1,suggest,why data engineering interview questions,https://www.google.com/search?q=why+data+engineering+interview+questions,NEW / SPIKE
-why data engineering,0.5,1,suggest,why data engineering,https://www.google.com/search?q=why+data+engineering,NEW / SPIKE
-ai agent analytics,0.5,1,suggest,ai agent analytics,https://www.google.com/search?q=ai+agent+analytics,NEW / SPIKE
-what is data pipeline in ai,0.5,1,suggest,what is data pipeline in ai,https://www.google.com/search?q=what+is+data+pipeline+in+ai,NEW / SPIKE
-what is data pipeline in data analytics,0.5,1,suggest,what is data pipeline in data analytics,https://www.google.com/search?q=what+is+data+pipeline+in+data+analytics,NEW / SPIKE
-what is data pipeline in data engineering,0.5,1,suggest,what is data pipeline in data engineering,https://www.google.com/search?q=what+is+data+pipeline+in+data+engineering,NEW / SPIKE
-what is data pipeline in etl,0.5,1,suggest,what is data pipeline in etl,https://www.google.com/search?q=what+is+data+pipeline+in+etl,NEW / SPIKE
-what is data pipeline in machine learning,0.5,1,suggest,what is data pipeline in machine learning,https://www.google.com/search?q=what+is+data+pipeline+in+machine+learning,NEW / SPIKE
-what is data pipeline in python,0.5,1,suggest,what is data pipeline in python,https://www.google.com/search?q=what+is+data+pipeline+in+python,NEW / SPIKE
-what is data pipeline in sql,0.5,1,suggest,what is data pipeline in sql,https://www.google.com/search?q=what+is+data+pipeline+in+sql,NEW / SPIKE
-what is data pipeline management,0.5,1,suggest,what is data pipeline management,https://www.google.com/search?q=what+is+data+pipeline+management,NEW / SPIKE
-data engineering academy,0.5,1,suggest,data engineering academy,https://www.google.com/search?q=data+engineering+academy,NEW / SPIKE
-data engineering certification,0.5,1,suggest,data engineering certification,https://www.google.com/search?q=data+engineering+certification,NEW / SPIKE
-data engineering internship,0.5,1,suggest,data engineering internship,https://www.google.com/search?q=data+engineering+internship,NEW / SPIKE
-data engineering interview questions,0.5,1,suggest,data engineering interview questions,https://www.google.com/search?q=data+engineering+interview+questions,NEW / SPIKE
-data engineering vs analytics engineering,0.5,1,suggest,data engineering vs analytics engineering,https://www.google.com/search?q=data+engineering+vs+analytics+engineering,NEW / SPIKE
-data engineering vs data science,0.5,1,suggest,data engineering vs data science,https://www.google.com/search?q=data+engineering+vs+data+science,NEW / SPIKE
-data pipeline,0.5,1,suggest,data pipeline,https://www.google.com/search?q=data+pipeline,NEW / SPIKE
-best power bi books,0.5,1,suggest,best power bi books,https://www.google.com/search?q=best+power+bi+books,NEW / SPIKE
-data pipeline station,0.5,1,suggest,data pipeline station,https://www.google.com/search?q=data+pipeline+station,NEW / SPIKE
-devops vs data engineering,0.5,1,suggest,devops vs data engineering,https://www.google.com/search?q=devops+vs+data+engineering,NEW / SPIKE
-dbt vs sqlmesh,0.5,1,suggest,dbt vs sqlmesh,https://www.google.com/search?q=dbt+vs+sqlmesh,NEW / SPIKE
-dbt vs spark,0.5,1,suggest,dbt vs spark,https://www.google.com/search?q=dbt+vs+spark,NEW / SPIKE
-dbt vs snowflake,0.5,1,suggest,dbt vs snowflake,https://www.google.com/search?q=dbt+vs+snowflake,NEW / SPIKE
-dbt vs databricks,0.5,1,suggest,dbt vs databricks,https://www.google.com/search?q=dbt+vs+databricks,NEW / SPIKE
-dbt vs code extension,0.5,1,suggest,dbt vs code extension,https://www.google.com/search?q=dbt+vs+code+extension,NEW / SPIKE
-data pipeline diagram,0.5,1,suggest,data pipeline diagram,https://www.google.com/search?q=data+pipeline+diagram,NEW / SPIKE
-what is data engineering vs data science,0.5,1,suggest,what is data engineering vs data science,https://www.google.com/search?q=what+is+data+engineering+vs+data+science,NEW / SPIKE
-what is data engineering skills,0.5,1,suggest,what is data engineering skills,https://www.google.com/search?q=what+is+data+engineering+skills,NEW / SPIKE
-what is data engineering salary,0.5,1,suggest,what is data engineering salary,https://www.google.com/search?q=what+is+data+engineering+salary,NEW / SPIKE
-what is data engineering role,0.5,1,suggest,what is data engineering role,https://www.google.com/search?q=what+is+data+engineering+role,NEW / SPIKE
-what is data engineering reddit,0.5,1,suggest,what is data engineering reddit,https://www.google.com/search?q=what+is+data+engineering+reddit,NEW / SPIKE
-data pipeline orchestration,0.5,1,suggest,data pipeline orchestration,https://www.google.com/search?q=data+pipeline+orchestration,NEW / SPIKE
-data pipeline icon,0.5,1,suggest,data pipeline icon,https://www.google.com/search?q=data+pipeline+icon,NEW / SPIKE
-data pipeline engineer,0.5,1,suggest,data pipeline engineer,https://www.google.com/search?q=data+pipeline+engineer,NEW / SPIKE
-why power bi gateway went offline,0.5,1,suggest,why power bi gateway went offline,https://www.google.com/search?q=why+power+bi+gateway+went+offline,NEW / SPIKE
-what is power bi desktop,0.5,1,suggest,what is power bi desktop,https://www.google.com/search?q=what+is+power+bi+desktop,NEW / SPIKE
-what is power bi dashboard,0.5,1,suggest,what is power bi dashboard,https://www.google.com/search?q=what+is+power+bi+dashboard,NEW / SPIKE
-what is power bi and how does it work,0.5,1,suggest,what is power bi and how does it work,https://www.google.com/search?q=what+is+power+bi+and+how+does+it+work,NEW / SPIKE
-what is llm analytics,0.5,1,suggest,what is llm analytics,https://www.google.com/search?q=what+is+llm+analytics,NEW / SPIKE
-what is dbt used for,0.5,1,suggest,what is dbt used for,https://www.google.com/search?q=what+is+dbt+used+for,NEW / SPIKE
-what is dbt treatment,0.5,1,suggest,what is dbt treatment,https://www.google.com/search?q=what+is+dbt+treatment,NEW / SPIKE
+best data pipeline architecture,0.5,1,suggest,best data pipeline architecture,https://www.google.com/search?q=best+data+pipeline+architecture,NEW / SPIKE
+best data pipeline,0.5,1,suggest,best data pipeline,https://www.google.com/search?q=best+data+pipeline,NEW / SPIKE
+why dbt is used in data engineering,0.5,1,suggest,why dbt is used in data engineering,https://www.google.com/search?q=why+dbt+is+used+in+data+engineering,NEW / SPIKE
+best data engineering projects,0.5,1,suggest,best data engineering projects,https://www.google.com/search?q=best+data+engineering+projects,NEW / SPIKE
 best data engineering podcasts,0.5,1,suggest,best data engineering podcasts,https://www.google.com/search?q=best+data+engineering+podcasts,NEW / SPIKE
-what is data pipeline development,0.5,1,suggest,what is data pipeline development,https://www.google.com/search?q=what+is+data+pipeline+development,NEW / SPIKE
+best data engineering courses,0.5,1,suggest,best data engineering courses,https://www.google.com/search?q=best+data+engineering+courses,NEW / SPIKE
 best data engineering course reddit,0.5,1,suggest,best data engineering course reddit,https://www.google.com/search?q=best+data+engineering+course+reddit,NEW / SPIKE
-best power bi visuals,0.5,1,suggest,best power bi visuals,https://www.google.com/search?q=best+power+bi+visuals,NEW / SPIKE
+best data engineering certifications 2026,0.5,1,suggest,best data engineering certifications 2026,https://www.google.com/search?q=best+data+engineering+certifications+2026,NEW / SPIKE
+best data engineering certifications,0.5,1,suggest,best data engineering certifications,https://www.google.com/search?q=best+data+engineering+certifications,NEW / SPIKE
+best data engineering bootcamp,0.5,1,suggest,best data engineering bootcamp,https://www.google.com/search?q=best+data+engineering+bootcamp,NEW / SPIKE
+best data engineering books,0.5,1,suggest,best data engineering books,https://www.google.com/search?q=best+data+engineering+books,NEW / SPIKE
+best data engineering blogs,0.5,1,suggest,best data engineering blogs,https://www.google.com/search?q=best+data+engineering+blogs,NEW / SPIKE
 best power bi tutorial on youtube,0.5,1,suggest,best power bi tutorial on youtube,https://www.google.com/search?q=best+power+bi+tutorial+on+youtube,NEW / SPIKE
 best power bi training,0.5,1,suggest,best power bi training,https://www.google.com/search?q=best+power+bi+training,NEW / SPIKE
 best power bi dashboards,0.5,1,suggest,best power bi dashboards,https://www.google.com/search?q=best+power+bi+dashboards,NEW / SPIKE
 best power bi courses,0.5,1,suggest,best power bi courses,https://www.google.com/search?q=best+power+bi+courses,NEW / SPIKE
 best power bi course for beginners,0.5,1,suggest,best power bi course for beginners,https://www.google.com/search?q=best+power+bi+course+for+beginners,NEW / SPIKE
 best power bi certification,0.5,1,suggest,best power bi certification,https://www.google.com/search?q=best+power+bi+certification,NEW / SPIKE
-best data engineering courses,0.5,1,suggest,best data engineering courses,https://www.google.com/search?q=best+data+engineering+courses,NEW / SPIKE
-what is dbt labs,0.5,1,suggest,what is dbt labs,https://www.google.com/search?q=what+is+dbt+labs,NEW / SPIKE
-what is dbt data,0.5,1,suggest,what is dbt data,https://www.google.com/search?q=what+is+dbt+data,NEW / SPIKE
-what is data pipeline testing,0.5,1,suggest,what is data pipeline testing,https://www.google.com/search?q=what+is+data+pipeline+testing,NEW / SPIKE
-what is data pipeline orchestration,0.5,1,suggest,what is data pipeline orchestration,https://www.google.com/search?q=what+is+data+pipeline+orchestration,NEW / SPIKE
+best data engineering projects for resume,0.5,1,suggest,best data engineering projects for resume,https://www.google.com/search?q=best+data+engineering+projects+for+resume,NEW / SPIKE
+why power bi over excel,0.5,1,suggest,why power bi over excel,https://www.google.com/search?q=why+power+bi+over+excel,NEW / SPIKE
+api vs data pipeline,0.5,1,suggest,api vs data pipeline,https://www.google.com/search?q=api+vs+data+pipeline,NEW / SPIKE
+power bi desktop download,0.5,1,suggest,power bi desktop download,https://www.google.com/search?q=power+bi+desktop+download,NEW / SPIKE
+ai vs data analytics,0.5,1,suggest,ai vs data analytics,https://www.google.com/search?q=ai+vs+data+analytics,NEW / SPIKE
+workflow vs data pipeline,0.5,1,suggest,workflow vs data pipeline,https://www.google.com/search?q=workflow+vs+data+pipeline,NEW / SPIKE
+accounting vs data analytics,0.5,1,suggest,accounting vs data analytics,https://www.google.com/search?q=accounting+vs+data+analytics,NEW / SPIKE
+why data engineering is important,0.5,1,suggest,why data engineering is important,https://www.google.com/search?q=why+data+engineering+is+important,NEW / SPIKE
+ai agent analytics,0.5,1,suggest,ai agent analytics,https://www.google.com/search?q=ai+agent+analytics,NEW / SPIKE
+analytics engineering,0.5,1,suggest,analytics engineering,https://www.google.com/search?q=analytics+engineering,NEW / SPIKE
+ai in analytics course,0.5,1,suggest,ai in analytics course,https://www.google.com/search?q=ai+in+analytics+course,NEW / SPIKE
+ai in analytics,0.5,1,suggest,ai in analytics,https://www.google.com/search?q=ai+in+analytics,NEW / SPIKE
+ai agent analytics vidhya,0.5,1,suggest,ai agent analytics vidhya,https://www.google.com/search?q=ai+agent+analytics+vidhya,NEW / SPIKE
+ai agent analytics servicenow,0.5,1,suggest,ai agent analytics servicenow,https://www.google.com/search?q=ai+agent+analytics+servicenow,NEW / SPIKE
+ai agent analytics platform,0.5,1,suggest,ai agent analytics platform,https://www.google.com/search?q=ai+agent+analytics+platform,NEW / SPIKE
+what is power bi stand for,0.5,1,suggest,what is power bi stand for,https://www.google.com/search?q=what+is+power+bi+stand+for,NEW / SPIKE
+best data analytics courses reddit,0.5,1,suggest,best data analytics courses reddit,https://www.google.com/search?q=best+data+analytics+courses+reddit,NEW / SPIKE
+best data analytics masters programs,0.5,1,suggest,best data analytics masters programs,https://www.google.com/search?q=best+data+analytics+masters+programs,NEW / SPIKE
+best data analytics programs,0.5,1,suggest,best data analytics programs,https://www.google.com/search?q=best+data+analytics+programs,NEW / SPIKE
+best data analytics software,0.5,1,suggest,best data analytics software,https://www.google.com/search?q=best+data+analytics+software,NEW / SPIKE
+why power bi gateway went offline,0.5,1,suggest,why power bi gateway went offline,https://www.google.com/search?q=why+power+bi+gateway+went+offline,NEW / SPIKE
+why power bi is better than excel,0.5,1,suggest,why power bi is better than excel,https://www.google.com/search?q=why+power+bi+is+better+than+excel,NEW / SPIKE
+why power bi is better than tableau,0.5,1,suggest,why power bi is better than tableau,https://www.google.com/search?q=why+power+bi+is+better+than+tableau,NEW / SPIKE
+why power bi is important,0.5,1,suggest,why power bi is important,https://www.google.com/search?q=why+power+bi+is+important,NEW / SPIKE
+what is power bi software,0.5,1,suggest,what is power bi software,https://www.google.com/search?q=what+is+power+bi+software,NEW / SPIKE
+why power bi is used,0.5,1,suggest,why power bi is used,https://www.google.com/search?q=why+power+bi+is+used,NEW / SPIKE
+why data pipeline,0.5,1,suggest,why data pipeline,https://www.google.com/search?q=why+data+pipeline,NEW / SPIKE
+why power bi over tableau,0.5,1,suggest,why power bi over tableau,https://www.google.com/search?q=why+power+bi+over+tableau,NEW / SPIKE
+or power bi symbol,0.5,1,suggest,or power bi symbol,https://www.google.com/search?q=or+power+bi+symbol,NEW / SPIKE
+power bi,0.5,1,suggest,power bi,https://www.google.com/search?q=power+bi,NEW / SPIKE
+power bi certification,0.5,1,suggest,power bi certification,https://www.google.com/search?q=power+bi+certification,NEW / SPIKE
+why dbt is used,0.5,1,suggest,why dbt is used,https://www.google.com/search?q=why+dbt+is+used,NEW / SPIKE
+why data engineering is hard,0.5,1,suggest,why data engineering is hard,https://www.google.com/search?q=why+data+engineering+is+hard,NEW / SPIKE
+why power bi is not available for mac,0.5,1,suggest,why power bi is not available for mac,https://www.google.com/search?q=why+power+bi+is+not+available+for+mac,NEW / SPIKE
+data engineering certification,0.5,1,suggest,data engineering certification,https://www.google.com/search?q=data+engineering+certification,NEW / SPIKE
+data engineering bootcamp,0.5,1,suggest,data engineering bootcamp,https://www.google.com/search?q=data+engineering+bootcamp,NEW / SPIKE
+data engineering academy,0.5,1,suggest,data engineering academy,https://www.google.com/search?q=data+engineering+academy,NEW / SPIKE
 data analytics salary,0.5,1,suggest,data analytics salary,https://www.google.com/search?q=data+analytics+salary,NEW / SPIKE
-data analytics professional certificate,0.5,1,suggest,data analytics professional certificate,https://www.google.com/search?q=data+analytics+professional+certificate,NEW / SPIKE
-data analytics jobs entry level,0.5,1,suggest,data analytics jobs entry level,https://www.google.com/search?q=data+analytics+jobs+entry+level,NEW / SPIKE
-what is power bi pro,0.5,1,suggest,what is power bi pro,https://www.google.com/search?q=what+is+power+bi+pro,NEW / SPIKE
+data pipeline orchestration,0.5,1,suggest,data pipeline orchestration,https://www.google.com/search?q=data+pipeline+orchestration,NEW / SPIKE
+data pipeline icon,0.5,1,suggest,data pipeline icon,https://www.google.com/search?q=data+pipeline+icon,NEW / SPIKE
+data pipeline engineer,0.5,1,suggest,data pipeline engineer,https://www.google.com/search?q=data+pipeline+engineer,NEW / SPIKE
+data pipeline diagram,0.5,1,suggest,data pipeline diagram,https://www.google.com/search?q=data+pipeline+diagram,NEW / SPIKE
+data engineering vs analytics engineering,0.5,1,suggest,data engineering vs analytics engineering,https://www.google.com/search?q=data+engineering+vs+analytics+engineering,NEW / SPIKE
 data engineering salary,0.5,1,suggest,data engineering salary,https://www.google.com/search?q=data+engineering+salary,NEW / SPIKE
-data engineering reddit,0.5,1,suggest,data engineering reddit,https://www.google.com/search?q=data+engineering+reddit,NEW / SPIKE
-cybersecurity vs data engineering,0.5,1,suggest,cybersecurity vs data engineering,https://www.google.com/search?q=cybersecurity+vs+data+engineering,NEW / SPIKE
-cybersecurity vs data analytics,0.5,1,suggest,cybersecurity vs data analytics,https://www.google.com/search?q=cybersecurity+vs+data+analytics,NEW / SPIKE
+what is data pipeline in sql,0.5,1,suggest,what is data pipeline in sql,https://www.google.com/search?q=what+is+data+pipeline+in+sql,NEW / SPIKE
+what is data pipeline in python,0.5,1,suggest,what is data pipeline in python,https://www.google.com/search?q=what+is+data+pipeline+in+python,NEW / SPIKE
+what is data pipeline in machine learning,0.5,1,suggest,what is data pipeline in machine learning,https://www.google.com/search?q=what+is+data+pipeline+in+machine+learning,NEW / SPIKE
+what is data pipeline in etl,0.5,1,suggest,what is data pipeline in etl,https://www.google.com/search?q=what+is+data+pipeline+in+etl,NEW / SPIKE
+what is data pipeline in data engineering,0.5,1,suggest,what is data pipeline in data engineering,https://www.google.com/search?q=what+is+data+pipeline+in+data+engineering,NEW / SPIKE
+best power bi books,0.5,1,suggest,best power bi books,https://www.google.com/search?q=best+power+bi+books,NEW / SPIKE
+what is data pipeline in ai,0.5,1,suggest,what is data pipeline in ai,https://www.google.com/search?q=what+is+data+pipeline+in+ai,NEW / SPIKE
+what is data pipeline development,0.5,1,suggest,what is data pipeline development,https://www.google.com/search?q=what+is+data+pipeline+development,NEW / SPIKE
+what is data pipeline architecture,0.5,1,suggest,what is data pipeline architecture,https://www.google.com/search?q=what+is+data+pipeline+architecture,NEW / SPIKE
+what is data engineering vs data science,0.5,1,suggest,what is data engineering vs data science,https://www.google.com/search?q=what+is+data+engineering+vs+data+science,NEW / SPIKE
+what is data engineering skills,0.5,1,suggest,what is data engineering skills,https://www.google.com/search?q=what+is+data+engineering+skills,NEW / SPIKE
+what is data engineering salary,0.5,1,suggest,what is data engineering salary,https://www.google.com/search?q=what+is+data+engineering+salary,NEW / SPIKE
+what is data engineering role,0.5,1,suggest,what is data engineering role,https://www.google.com/search?q=what+is+data+engineering+role,NEW / SPIKE
+what is data engineering reddit,0.5,1,suggest,what is data engineering reddit,https://www.google.com/search?q=what+is+data+engineering+reddit,NEW / SPIKE
+what is data engineering in simple words,0.5,1,suggest,what is data engineering in simple words,https://www.google.com/search?q=what+is+data+engineering+in+simple+words,NEW / SPIKE
+dbt center chicago,0.5,1,suggest,dbt center chicago,https://www.google.com/search?q=dbt+center+chicago,NEW / SPIKE
+dataops vs data engineering,0.5,1,suggest,dataops vs data engineering,https://www.google.com/search?q=dataops+vs+data+engineering,NEW / SPIKE
+dataflow vs data pipeline fabric,0.5,1,suggest,dataflow vs data pipeline fabric,https://www.google.com/search?q=dataflow+vs+data+pipeline+fabric,NEW / SPIKE
+dataflow vs data pipeline,0.5,1,suggest,dataflow vs data pipeline,https://www.google.com/search?q=dataflow+vs+data+pipeline,NEW / SPIKE
+database vs data pipeline,0.5,1,suggest,database vs data pipeline,https://www.google.com/search?q=database+vs+data+pipeline,NEW / SPIKE
+data pipeline station,0.5,1,suggest,data pipeline station,https://www.google.com/search?q=data+pipeline+station,NEW / SPIKE
+what is data pipeline in data analytics,0.5,1,suggest,what is data pipeline in data analytics,https://www.google.com/search?q=what+is+data+pipeline+in+data+analytics,NEW / SPIKE
+best dbt training for therapists,0.5,1,suggest,best dbt training for therapists,https://www.google.com/search?q=best+dbt+training+for+therapists,NEW / SPIKE
+best dbt therapist near me,0.5,1,suggest,best dbt therapist near me,https://www.google.com/search?q=best+dbt+therapist+near+me,NEW / SPIKE
+best dbt skills,0.5,1,suggest,best dbt skills,https://www.google.com/search?q=best+dbt+skills,NEW / SPIKE
+best dbt podcast,0.5,1,suggest,best dbt podcast,https://www.google.com/search?q=best+dbt+podcast,NEW / SPIKE
+best dbt books for therapists,0.5,1,suggest,best dbt books for therapists,https://www.google.com/search?q=best+dbt+books+for+therapists,NEW / SPIKE
+best dbt books,0.5,1,suggest,best dbt books,https://www.google.com/search?q=best+dbt+books,NEW / SPIKE
+best dbt apps,0.5,1,suggest,best dbt apps,https://www.google.com/search?q=best+dbt+apps,NEW / SPIKE
+best data pipeline tools,0.5,1,suggest,best data pipeline tools,https://www.google.com/search?q=best+data+pipeline+tools,NEW / SPIKE
+best data pipeline software for integration platforms,0.5,1,suggest,best data pipeline software for integration platforms,https://www.google.com/search?q=best+data+pipeline+software+for+integration+platforms,NEW / SPIKE
 cloud vs data engineering,0.5,1,suggest,cloud vs data engineering,https://www.google.com/search?q=cloud+vs+data+engineering,NEW / SPIKE
 business vs data analytics,0.5,1,suggest,business vs data analytics,https://www.google.com/search?q=business+vs+data+analytics,NEW / SPIKE
+best power bi visuals,0.5,1,suggest,best power bi visuals,https://www.google.com/search?q=best+power+bi+visuals,NEW / SPIKE
 what is power bi service,0.5,1,suggest,what is power bi service,https://www.google.com/search?q=what+is+power+bi+service,NEW / SPIKE
 what is power bi report builder,0.5,1,suggest,what is power bi report builder,https://www.google.com/search?q=what+is+power+bi+report+builder,NEW / SPIKE
-data analytics internships,0.5,1,suggest,data analytics internships,https://www.google.com/search?q=data+analytics+internships,NEW / SPIKE
-banglarbhumi,0.44999999999999996,1,trends,banglarbhumi,https://trends.google.com/trends/explore?q=banglarbhumi,NEW / SPIKE
-fathom analytics,0.39,1,trends,fathom analytics,https://trends.google.com/trends/explore?q=fathom+analytics,NEW / SPIKE
-heap analytics,0.36,1,trends,heap analytics,https://trends.google.com/trends/explore?q=heap+analytics,NEW / SPIKE
-airbytehqairbyte,0.34814435022677975,1,github,airbytehq/airbyte,https://github.com/airbytehq/airbyte,NEW / SPIKE
-social registry wb gov in,0.33,1,trends,social registry wb gov in,https://trends.google.com/trends/explore?q=social+registry+wb+gov+in,NEW / SPIKE
-infiniteparameter llms generating and adapting weights from live data,0.31039999999999995,1,hn,Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data,https://arxiv.org/abs/2609.18842,NEW / SPIKE
-social securitywbgovin,0.30000000000000004,1,trends,social security.wb.gov.in,https://trends.google.com/trends/explore?q=social+security.wb.gov.in,NEW / SPIKE
-power bi microsoft,0.30000000000000004,1,trends,power bi microsoft,https://trends.google.com/trends/explore?q=power+bi+microsoft,NEW / SPIKE
-data science,0.30000000000000004,1,trends,data science,https://trends.google.com/trends/explore?q=data+science,NEW / SPIKE
-data analytics engineering,0.30000000000000004,1,trends,data analytics engineering,https://trends.google.com/trends/explore?q=data+analytics+engineering,NEW / SPIKE
-data and analytics,0.30000000000000004,1,trends,data and analytics,https://trends.google.com/trends/explore?q=data+and+analytics,NEW / SPIKE
-mageaimageai,0.277909682508381,1,github,mage-ai/mage-ai,https://github.com/mage-ai/mage-ai,NEW / SPIKE
-dbtlabsdbt,0.21832380201143758,1,github,dbt-labs/dbt,https://github.com/dbt-labs/dbt,NEW / SPIKE
-power bi que es y para que sirve,0.18,1,trends,power bi que es y para que sirve,https://trends.google.com/trends/explore?q=power+bi+que+es+y+para+que+sirve,NEW / SPIKE
-engineering data management,0.17400000000000002,1,trends,engineering data management,https://trends.google.com/trends/explore?q=engineering+data+management,NEW / SPIKE
-data engineering services,0.171,1,trends,data engineering services,https://trends.google.com/trends/explore?q=data+engineering+services,NEW / SPIKE
-google analytics,0.17099999999999999,1,trends,google analytics,https://trends.google.com/trends/explore?q=google+analytics,NEW / SPIKE
-ai data analytics,0.15000000000000002,1,trends,ai data analytics,https://trends.google.com/trends/explore?q=ai+data+analytics,NEW / SPIKE
-power bi report,0.138,1,trends,power bi report,https://trends.google.com/trends/explore?q=power+bi+report,NEW / SPIKE
-data engineering platform,0.126,1,trends,data engineering platform,https://trends.google.com/trends/explore?q=data+engineering+platform,NEW / SPIKE
-evidentlyaievidently,0.12475645829225004,1,github,evidentlyai/evidently,https://github.com/evidentlyai/evidently,NEW / SPIKE
-dbt check,0.123,1,trends,dbt check,https://trends.google.com/trends/explore?q=dbt+check,NEW / SPIKE
-power bi course free with certificate,0.12,1,trends,power bi course free with certificate,https://trends.google.com/trends/explore?q=power+bi+course+free+with+certificate,NEW / SPIKE
-dbt pdf,0.11699999999999999,1,trends,dbt pdf,https://trends.google.com/trends/explore?q=dbt+pdf,NEW / SPIKE
-excel,0.11699999999999999,1,trends,excel,https://trends.google.com/trends/explore?q=excel,NEW / SPIKE
-business data analytics,0.11699999999999999,1,trends,business data analytics,https://trends.google.com/trends/explore?q=business+data+analytics,NEW / SPIKE
-download power bi,0.11699999999999999,1,trends,download power bi,https://trends.google.com/trends/explore?q=download+power+bi,NEW / SPIKE
-data analyst,0.11100000000000002,1,trends,data analyst,https://trends.google.com/trends/explore?q=data+analyst,NEW / SPIKE
-dashboard,0.11099999999999999,1,trends,dashboard,https://trends.google.com/trends/explore?q=dashboard,NEW / SPIKE
-dbt status,0.11099999999999999,1,trends,dbt status,https://trends.google.com/trends/explore?q=dbt+status,NEW / SPIKE
-evidencedevevidence,0.10932754880694143,1,github,evidence-dev/evidence,https://github.com/evidence-dev/evidence,NEW / SPIKE
+what is power bi pro,0.5,1,suggest,what is power bi pro,https://www.google.com/search?q=what+is+power+bi+pro,NEW / SPIKE
+data engineering for dummies,0.5,1,suggest,data engineering for dummies,https://www.google.com/search?q=data+engineering+for+dummies,NEW / SPIKE
+data engineering jobs chicago,0.5,1,suggest,data engineering jobs chicago,https://www.google.com/search?q=data+engineering+jobs+chicago,NEW / SPIKE
+cybersecurity vs data analytics,0.5,1,suggest,cybersecurity vs data analytics,https://www.google.com/search?q=cybersecurity+vs+data+analytics,NEW / SPIKE
+cybersecurity vs data engineering,0.5,1,suggest,cybersecurity vs data engineering,https://www.google.com/search?q=cybersecurity+vs+data+engineering,NEW / SPIKE
+data analytics entry level jobs,0.5,1,suggest,data analytics entry level jobs,https://www.google.com/search?q=data+analytics+entry+level+jobs,NEW / SPIKE
+data analytics internship,0.5,1,suggest,data analytics internship,https://www.google.com/search?q=data+analytics+internship,NEW / SPIKE
+data analytics jobs remote,0.5,1,suggest,data analytics jobs remote,https://www.google.com/search?q=data+analytics+jobs+remote,NEW / SPIKE
+data analytics meaning,0.5,1,suggest,data analytics meaning,https://www.google.com/search?q=data+analytics+meaning,NEW / SPIKE
+what is power bi desktop,0.5,1,suggest,what is power bi desktop,https://www.google.com/search?q=what+is+power+bi+desktop,NEW / SPIKE
+what is data pipeline orchestration,0.5,1,suggest,what is data pipeline orchestration,https://www.google.com/search?q=what+is+data+pipeline+orchestration,NEW / SPIKE
+what is data pipeline testing,0.5,1,suggest,what is data pipeline testing,https://www.google.com/search?q=what+is+data+pipeline+testing,NEW / SPIKE
+what is dbt data,0.5,1,suggest,what is dbt data,https://www.google.com/search?q=what+is+dbt+data,NEW / SPIKE
+what is dbt treatment,0.5,1,suggest,what is dbt treatment,https://www.google.com/search?q=what+is+dbt+treatment,NEW / SPIKE
+what is dbt used for,0.5,1,suggest,what is dbt used for,https://www.google.com/search?q=what+is+dbt+used+for,NEW / SPIKE
+what is llm analytics,0.5,1,suggest,what is llm analytics,https://www.google.com/search?q=what+is+llm+analytics,NEW / SPIKE
+what is power bi and how does it work,0.5,1,suggest,what is power bi and how does it work,https://www.google.com/search?q=what+is+power+bi+and+how+does+it+work,NEW / SPIKE
+what is power bi dashboard,0.5,1,suggest,what is power bi dashboard,https://www.google.com/search?q=what+is+power+bi+dashboard,NEW / SPIKE
+what is data pipeline management,0.5,1,suggest,what is data pipeline management,https://www.google.com/search?q=what+is+data+pipeline+management,NEW / SPIKE
+ai data analytics,0.46875,1,trends,ai data analytics,https://trends.google.com/trends/explore?q=ai+data+analytics,NEW / SPIKE
+power bi report,0.43124999999999997,1,trends,power bi report,https://trends.google.com/trends/explore?q=power+bi+report,NEW / SPIKE
+data engineering platform,0.39375000000000004,1,trends,data engineering platform,https://trends.google.com/trends/explore?q=data+engineering+platform,NEW / SPIKE
+dbt data,0.38437499999999997,1,trends,dbt data,https://trends.google.com/trends/explore?q=dbt+data,RECURRING
+dbt check,0.38437499999999997,1,trends,dbt check,https://trends.google.com/trends/explore?q=dbt+check,NEW / SPIKE
+power bi course free with certificate,0.375,1,trends,power bi course free with certificate,https://trends.google.com/trends/explore?q=power+bi+course+free+with+certificate,NEW / SPIKE
+download power bi,0.365625,1,trends,download power bi,https://trends.google.com/trends/explore?q=download+power+bi,NEW / SPIKE
+excel,0.365625,1,trends,excel,https://trends.google.com/trends/explore?q=excel,NEW / SPIKE
+business data analytics,0.365625,1,trends,business data analytics,https://trends.google.com/trends/explore?q=business+data+analytics,NEW / SPIKE
+airbytehqairbyte,0.3481374849638146,1,github,airbytehq/airbyte,https://github.com/airbytehq/airbyte,NEW / SPIKE
+social engineering,0.34687500000000004,1,trends,social engineering,https://trends.google.com/trends/explore?q=social+engineering,NEW / SPIKE
+dbt status,0.34687500000000004,1,trends,dbt status,https://trends.google.com/trends/explore?q=dbt+status,NEW / SPIKE
+dashboard,0.34687500000000004,1,trends,dashboard,https://trends.google.com/trends/explore?q=dashboard,NEW / SPIKE
+google analytics,0.3375,1,trends,google analytics,https://trends.google.com/trends/explore?q=google+analytics,NEW / SPIKE
+google data analytics,0.3375,1,trends,google data analytics,https://trends.google.com/trends/explore?q=google+data+analytics,NEW / SPIKE
+data engineer,0.3375,1,trends,data engineer,https://trends.google.com/trends/explore?q=data+engineer,NEW / SPIKE
+infiniteparameter llms generating and adapting weights from live data,0.31359999999999993,1,hn,Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data,https://arxiv.org/abs/2609.18842,NEW / SPIKE
+power bi free,0.30000000000000004,1,trends,power bi free,https://trends.google.com/trends/explore?q=power+bi+free,NEW / SPIKE
+data engineering and analytics,0.30000000000000004,1,trends,data engineering and analytics,https://trends.google.com/trends/explore?q=data+engineering+and+analytics,NEW / SPIKE
+power bi ai,0.30000000000000004,1,trends,power bi ai,https://trends.google.com/trends/explore?q=power+bi+ai,NEW / SPIKE
+sql,0.290625,1,trends,sql,https://trends.google.com/trends/explore?q=sql,NEW / SPIKE
+business analytics,0.28125,1,trends,business analytics,https://trends.google.com/trends/explore?q=business+analytics,NEW / SPIKE
+power bi service,0.28125,1,trends,power bi service,https://trends.google.com/trends/explore?q=power+bi+service,RECURRING
+mageaimageai,0.27790420224408907,1,github,mage-ai/mage-ai,https://github.com/mage-ai/mage-ai,NEW / SPIKE
+big data analytics,0.234375,1,trends,big data analytics,https://trends.google.com/trends/explore?q=big+data+analytics,NEW / SPIKE
+power bi pro,0.22499999999999998,1,trends,power bi pro,https://trends.google.com/trends/explore?q=power+bi+pro,NEW / SPIKE
+power bi dax,0.22499999999999998,1,trends,power bi dax,https://trends.google.com/trends/explore?q=power+bi+dax,NEW / SPIKE
+dax,0.22499999999999998,1,trends,dax,https://trends.google.com/trends/explore?q=dax,NEW / SPIKE
+dbtlabsdbt,0.21831949675612786,1,github,dbt-labs/dbt,https://github.com/dbt-labs/dbt,NEW / SPIKE
+data engineering solutions,0.21562499999999998,1,trends,data engineering solutions,https://trends.google.com/trends/explore?q=data+engineering+solutions,NEW / SPIKE
+data analyst,0.21562499999999998,1,trends,data analyst,https://trends.google.com/trends/explore?q=data+analyst,NEW / SPIKE
+data engineering course,0.21562499999999998,1,trends,data engineering course,https://trends.google.com/trends/explore?q=data+engineering+course,NEW / SPIKE
+learn power bi,0.20625000000000002,1,trends,learn power bi,https://trends.google.com/trends/explore?q=learn+power+bi,NEW / SPIKE
+power bi app,0.19687500000000002,1,trends,power bi app,https://trends.google.com/trends/explore?q=power+bi+app,NEW / SPIKE
+power query,0.19687500000000002,1,trends,power query,https://trends.google.com/trends/explore?q=power+query,NEW / SPIKE
+power bi online,0.19687500000000002,1,trends,power bi online,https://trends.google.com/trends/explore?q=power+bi+online,NEW / SPIKE
+power bi jobs,0.1875,1,trends,power bi jobs,https://trends.google.com/trends/explore?q=power+bi+jobs,NEW / SPIKE
+snowflake dbt,0.17812499999999998,1,trends,snowflake dbt,https://trends.google.com/trends/explore?q=snowflake+dbt,NEW / SPIKE
+data engineering tools,0.16875,1,trends,data engineering tools,https://trends.google.com/trends/explore?q=data+engineering+tools,NEW / SPIKE
+microsoft learn,0.159375,1,trends,microsoft learn,https://trends.google.com/trends/explore?q=microsoft+learn,NEW / SPIKE
+microsoft learn power bi,0.159375,1,trends,microsoft learn power bi,https://trends.google.com/trends/explore?q=microsoft+learn+power+bi,NEW / SPIKE
+data analytics course,0.15000000000000002,1,trends,data analytics course,https://trends.google.com/trends/explore?q=data+analytics+course,NEW / SPIKE
+tableau,0.15000000000000002,1,trends,tableau,https://trends.google.com/trends/explore?q=tableau,NEW / SPIKE
+power bi course,0.140625,1,trends,power bi course,https://trends.google.com/trends/explore?q=power+bi+course,NEW / SPIKE
+data analytics software,0.140625,1,trends,data analytics software,https://trends.google.com/trends/explore?q=data+analytics+software,NEW / SPIKE
+dbt training,0.13124999999999998,1,trends,dbt training,https://trends.google.com/trends/explore?q=dbt+training,NEW / SPIKE
+power bi gateway,0.13124999999999998,1,trends,power bi gateway,https://trends.google.com/trends/explore?q=power+bi+gateway,NEW / SPIKE
+evidentlyaievidently,0.12475399814635878,1,github,evidentlyai/evidently,https://github.com/evidentlyai/evidently,NEW / SPIKE
+evidencedevevidence,0.10932539291278028,1,github,evidence-dev/evidence,https://github.com/evidence-dev/evidence,NEW / SPIKE
 opensourced jev architecture last year with modelpaper and dataset,0.10880000000000001,1,hn,"Open-sourced jev architecture last year with model,paper and dataset",https://news.ycombinator.com/item?id=49736660,NEW / SPIKE
-clearmlclearml,0.10820745415105502,1,github,clearml/clearml,https://github.com/clearml/clearml,NEW / SPIKE
-data engineer,0.10799999999999998,1,trends,data engineer,https://trends.google.com/trends/explore?q=data+engineer,NEW / SPIKE
-google data analytics,0.10799999999999998,1,trends,google data analytics,https://trends.google.com/trends/explore?q=google+data+analytics,NEW / SPIKE
-lightdashlightdash,0.09661210806547033,1,github,lightdash/lightdash,https://github.com/lightdash/lightdash,NEW / SPIKE
-power bi ai,0.096,1,trends,power bi ai,https://trends.google.com/trends/explore?q=power+bi+ai,NEW / SPIKE
-sql,0.093,1,trends,sql,https://trends.google.com/trends/explore?q=sql,NEW / SPIKE
-business analytics,0.09,1,trends,business analytics,https://trends.google.com/trends/explore?q=business+analytics,NEW / SPIKE
-langwatchlangwatch,0.07566160520607376,1,github,langwatch/langwatch,https://github.com/langwatch/langwatch,NEW / SPIKE
-big data analytics,0.07500000000000001,1,trends,big data analytics,https://trends.google.com/trends/explore?q=big+data+analytics,NEW / SPIKE
-dax,0.07200000000000001,1,trends,dax,https://trends.google.com/trends/explore?q=dax,NEW / SPIKE
-power bi dax,0.07200000000000001,1,trends,power bi dax,https://trends.google.com/trends/explore?q=power+bi+dax,NEW / SPIKE
-power bi pro,0.07200000000000001,1,trends,power bi pro,https://trends.google.com/trends/explore?q=power+bi+pro,NEW / SPIKE
-data engineering solutions,0.069,1,trends,data engineering solutions,https://trends.google.com/trends/explore?q=data+engineering+solutions,NEW / SPIKE
-data engineering course,0.069,1,trends,data engineering course,https://trends.google.com/trends/explore?q=data+engineering+course,NEW / SPIKE
-learn power bi,0.066,1,trends,learn power bi,https://trends.google.com/trends/explore?q=learn+power+bi,NEW / SPIKE
-power query,0.063,1,trends,power query,https://trends.google.com/trends/explore?q=power+query,NEW / SPIKE
-power bi online,0.063,1,trends,power bi online,https://trends.google.com/trends/explore?q=power+bi+online,NEW / SPIKE
-power bi app,0.063,1,trends,power bi app,https://trends.google.com/trends/explore?q=power+bi+app,NEW / SPIKE
-xodbtpl,0.06121080654703215,1,github,xo/dbtpl,https://github.com/xo/dbtpl,NEW / SPIKE
-power bi jobs,0.06,1,trends,power bi jobs,https://trends.google.com/trends/explore?q=power+bi+jobs,NEW / SPIKE
-snowflake dbt,0.056999999999999995,1,trends,snowflake dbt,https://trends.google.com/trends/explore?q=snowflake+dbt,NEW / SPIKE
-data engineering tools,0.05399999999999999,1,trends,data engineering tools,https://trends.google.com/trends/explore?q=data+engineering+tools,NEW / SPIKE
-argillaiodistilabel,0.05330704003155197,1,github,argilla-io/distilabel,https://github.com/argilla-io/distilabel,NEW / SPIKE
-sqlmeshsqlmesh,0.05168211398146322,1,github,SQLMesh/sqlmesh,https://github.com/SQLMesh/sqlmesh,NEW / SPIKE
-microsoft learn,0.051000000000000004,1,trends,microsoft learn,https://trends.google.com/trends/explore?q=microsoft+learn,NEW / SPIKE
-data analytics services,0.051000000000000004,1,trends,data analytics services,https://trends.google.com/trends/explore?q=data+analytics+services,NEW / SPIKE
-microsoft learn power bi,0.051000000000000004,1,trends,microsoft learn power bi,https://trends.google.com/trends/explore?q=microsoft+learn+power+bi,NEW / SPIKE
-spiceaispiceai,0.048400709919148105,1,github,spiceai/spiceai,https://github.com/spiceai/spiceai,NEW / SPIKE
-data analytics platform,0.048,1,trends,data analytics platform,https://trends.google.com/trends/explore?q=data+analytics+platform,NEW / SPIKE
-tableau,0.048,1,trends,tableau,https://trends.google.com/trends/explore?q=tableau,NEW / SPIKE
-data analytics course,0.048,1,trends,data analytics course,https://trends.google.com/trends/explore?q=data+analytics+course,NEW / SPIKE
-power bi course,0.045,1,trends,power bi course,https://trends.google.com/trends/explore?q=power+bi+course,NEW / SPIKE
-data analytics software,0.045,1,trends,data analytics software,https://trends.google.com/trends/explore?q=data+analytics+software,NEW / SPIKE
-dbt training,0.042,1,trends,dbt training,https://trends.google.com/trends/explore?q=dbt+training,NEW / SPIKE
-power bi gateway,0.042,1,trends,power bi gateway,https://trends.google.com/trends/explore?q=power+bi+gateway,NEW / SPIKE
-python,0.042,1,trends,python,https://trends.google.com/trends/explore?q=python,NEW / SPIKE
-slothflowlabsduckle,0.040765135081837905,1,github,slothflowlabs/duckle,https://github.com/slothflowlabs/duckle,NEW / SPIKE
-study engineering,0.039,1,trends,study engineering,https://trends.google.com/trends/explore?q=study+engineering,NEW / SPIKE
-sodadatasodacore,0.03803589035693158,1,github,sodadata/soda-core,https://github.com/sodadata/soda-core,NEW / SPIKE
-elementarydataelementary,0.03778347465983041,1,github,elementary-data/elementary,https://github.com/elementary-data/elementary,NEW / SPIKE
-biomedical engineering,0.033,1,trends,biomedical engineering,https://trends.google.com/trends/explore?q=biomedical+engineering,NEW / SPIKE
-data engineering consulting,0.03,1,trends,data engineering consulting,https://trends.google.com/trends/explore?q=data+engineering+consulting,NEW / SPIKE
-prompt engineering,0.03,1,trends,prompt engineering,https://trends.google.com/trends/explore?q=prompt+engineering,NEW / SPIKE
-engineering analytics systems,0.03,1,trends,engineering analytics systems,https://trends.google.com/trends/explore?q=engineering+analytics+systems,NEW / SPIKE
-dbt labs,0.03,1,trends,dbt labs,https://trends.google.com/trends/explore?q=dbt+labs,NEW / SPIKE
-nvidiaaiblueprintsvideosearchandsummarization,0.029232892920528497,1,github,NVIDIA-AI-Blueprints/video-search-and-summarization,https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization,NEW / SPIKE
-dbtlabsdbtutils,0.028191678169986197,1,github,dbt-labs/dbt-utils,https://github.com/dbt-labs/dbt-utils,NEW / SPIKE
-analytics engineer,0.026999999999999996,1,trends,analytics engineer,https://trends.google.com/trends/explore?q=analytics+engineer,NEW / SPIKE
-healthcare data analytics,0.026999999999999996,1,trends,healthcare data analytics,https://trends.google.com/trends/explore?q=healthcare+data+analytics,NEW / SPIKE
-hiflylabsawesomedbt,0.026976927627686848,1,github,Hiflylabs/awesome-dbt,https://github.com/Hiflylabs/awesome-dbt,NEW / SPIKE
-multiwovenmultiwoven,0.02615657661210807,1,github,Multiwoven/multiwoven,https://github.com/Multiwoven/multiwoven,NEW / SPIKE
-kaelioktx,0.024910274107671073,1,github,Kaelio/ktx,https://github.com/Kaelio/ktx,NEW / SPIKE
-data engineering vs data analytics,0.024,1,trends,data engineering vs data analytics,https://trends.google.com/trends/explore?q=data+engineering+vs+data+analytics,NEW / SPIKE
-data analytics solutions,0.024,1,trends,data analytics solutions,https://trends.google.com/trends/explore?q=data+analytics+solutions,NEW / SPIKE
-what is social engineering,0.024,1,trends,what is social engineering,https://trends.google.com/trends/explore?q=what+is+social+engineering,NEW / SPIKE
-duckdbdbtduckdb,0.021108262670084796,1,github,duckdb/dbt-duckdb,https://github.com/duckdb/dbt-duckdb,NEW / SPIKE
-machine learning data analytics,0.021,1,trends,machine learning data analytics,https://trends.google.com/trends/explore?q=machine+learning+data+analytics,NEW / SPIKE
-astronomerastronomercosmos,0.019704200354959577,1,github,astronomer/astronomer-cosmos,https://github.com/astronomer/astronomer-cosmos,NEW / SPIKE
-data pipeline development,0.018000000000000002,1,trends,data pipeline development,https://trends.google.com/trends/explore?q=data+pipeline+development,NEW / SPIKE
-dbt data engineering,0.018000000000000002,1,trends,dbt data engineering,https://trends.google.com/trends/explore?q=dbt+data+engineering,NEW / SPIKE
-google data analytics certificate,0.018000000000000002,1,trends,google data analytics certificate,https://trends.google.com/trends/explore?q=google+data+analytics+certificate,NEW / SPIKE
-data analytics degree,0.018000000000000002,1,trends,data analytics degree,https://trends.google.com/trends/explore?q=data+analytics+degree,NEW / SPIKE
-data pipeline software,0.015,1,trends,data pipeline software,https://trends.google.com/trends/explore?q=data+pipeline+software,NEW / SPIKE
-data analytics consulting,0.015,1,trends,data analytics consulting,https://trends.google.com/trends/explore?q=data+analytics+consulting,NEW / SPIKE
-coursera,0.012,1,trends,coursera,https://trends.google.com/trends/explore?q=coursera,NEW / SPIKE
-google data analytics professional certificate,0.012,1,trends,google data analytics professional certificate,https://trends.google.com/trends/explore?q=google+data+analytics+professional+certificate,NEW / SPIKE
-data pipeline meaning,0.012,1,trends,data pipeline meaning,https://trends.google.com/trends/explore?q=data+pipeline+meaning,NEW / SPIKE
-aws data pipeline,0.012,1,trends,aws data pipeline,https://trends.google.com/trends/explore?q=aws+data+pipeline,NEW / SPIKE
-mikehasaagentacct,0.011390258331690002,1,github,mikehasa/agentacct,https://github.com/mikehasa/agentacct,NEW / SPIKE
-zhongyu09openchatbi,0.009954644054427135,1,github,zhongyu09/openchatbi,https://github.com/zhongyu09/openchatbi,NEW / SPIKE
-timecopilottimecopilot,0.00940248471701834,1,github,TimeCopilot/timecopilot,https://github.com/TimeCopilot/timecopilot,NEW / SPIKE
-data pipeline monitoring,0.009000000000000001,1,trends,data pipeline monitoring,https://trends.google.com/trends/explore?q=data+pipeline+monitoring,NEW / SPIKE
-evelyyyyynnnnn50aiengineeringtoolkit,0.007256951291658451,1,github,evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,https://github.com/evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,NEW / SPIKE
+clearmlclearml,0.10820532034469839,1,github,clearml/clearml,https://github.com/clearml/clearml,NEW / SPIKE
+lightdashlightdash,0.09661020291455504,1,github,lightdash/lightdash,https://github.com/lightdash/lightdash,NEW / SPIKE
+data analytics tools,0.09375,1,trends,data analytics tools,https://trends.google.com/trends/explore?q=data+analytics+tools,RECURRING
+prompt engineering,0.09375,1,trends,prompt engineering,https://trends.google.com/trends/explore?q=prompt+engineering,NEW / SPIKE
+dbt labs,0.09375,1,trends,dbt labs,https://trends.google.com/trends/explore?q=dbt+labs,NEW / SPIKE
+data engineering consulting,0.09375,1,trends,data engineering consulting,https://trends.google.com/trends/explore?q=data+engineering+consulting,NEW / SPIKE
+langwatchlangwatch,0.07566011319043206,1,github,langwatch/langwatch,https://github.com/langwatch/langwatch,NEW / SPIKE
+data engineering vs data analytics,0.07500000000000001,1,trends,data engineering vs data analytics,https://trends.google.com/trends/explore?q=data+engineering+vs+data+analytics,NEW / SPIKE
+xodbtpl,0.06120959949517856,1,github,xo/dbtpl,https://github.com/xo/dbtpl,NEW / SPIKE
+google data analytics certificate,0.056249999999999994,1,trends,google data analytics certificate,https://trends.google.com/trends/explore?q=google+data+analytics+certificate,NEW / SPIKE
+dbt data engineering,0.056249999999999994,1,trends,dbt data engineering,https://trends.google.com/trends/explore?q=dbt+data+engineering,NEW / SPIKE
+argillaiodistilabel,0.05330598883871349,1,github,argilla-io/distilabel,https://github.com/argilla-io/distilabel,NEW / SPIKE
+sqlmeshsqlmesh,0.051681094831496126,1,github,SQLMesh/sqlmesh,https://github.com/SQLMesh/sqlmesh,NEW / SPIKE
+spiceaispiceai,0.04839975547711542,1,github,spiceai/spiceai,https://github.com/spiceai/spiceai,NEW / SPIKE
+data pipeline software,0.046875,1,trends,data pipeline software,https://trends.google.com/trends/explore?q=data+pipeline+software,NEW / SPIKE
+data analytics masters,0.046875,1,trends,data analytics masters,https://trends.google.com/trends/explore?q=data+analytics+masters,NEW / SPIKE
+slothflowlabsduckle,0.04076433121019109,1,github,slothflowlabs/duckle,https://github.com/slothflowlabs/duckle,NEW / SPIKE
+sodadatasodacore,0.03803514030486482,1,github,sodadata/soda-core,https://github.com/sodadata/soda-core,NEW / SPIKE
+elementarydataelementary,0.037782729585297076,1,github,elementary-data/elementary,https://github.com/elementary-data/elementary,NEW / SPIKE
+data science pipeline,0.037500000000000006,1,trends,data science pipeline,https://trends.google.com/trends/explore?q=data+science+pipeline,NEW / SPIKE
+data pipeline platform,0.037500000000000006,1,trends,data pipeline platform,https://trends.google.com/trends/explore?q=data+pipeline+platform,NEW / SPIKE
+coursera,0.037500000000000006,1,trends,coursera,https://trends.google.com/trends/explore?q=coursera,NEW / SPIKE
+aws data pipeline,0.037500000000000006,1,trends,aws data pipeline,https://trends.google.com/trends/explore?q=aws+data+pipeline,NEW / SPIKE
+google data analytics professional certificate,0.037500000000000006,1,trends,google data analytics professional certificate,https://trends.google.com/trends/explore?q=google+data+analytics+professional+certificate,NEW / SPIKE
+nvidiaaiblueprintsvideosearchandsummarization,0.029232316459939657,1,github,NVIDIA-AI-Blueprints/video-search-and-summarization,https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization,NEW / SPIKE
+dbtlabsdbtutils,0.028191122241722707,1,github,dbt-labs/dbt-utils,https://github.com/dbt-labs/dbt-utils,NEW / SPIKE
+coursera google data analytics,0.028124999999999997,1,trends,coursera google data analytics,https://trends.google.com/trends/explore?q=coursera+google+data+analytics,NEW / SPIKE
+masters in data analytics,0.028124999999999997,1,trends,masters in data analytics,https://trends.google.com/trends/explore?q=masters+in+data+analytics,NEW / SPIKE
+data pipeline monitoring,0.028124999999999997,1,trends,data pipeline monitoring,https://trends.google.com/trends/explore?q=data+pipeline+monitoring,NEW / SPIKE
+hiflylabsawesomedbt,0.026976395653802922,1,github,Hiflylabs/awesome-dbt,https://github.com/Hiflylabs/awesome-dbt,NEW / SPIKE
+multiwovenmultiwoven,0.026156060815207743,1,github,Multiwoven/multiwoven,https://github.com/Multiwoven/multiwoven,NEW / SPIKE
+kaelioktx,0.024909782887341997,1,github,Kaelio/ktx,https://github.com/Kaelio/ktx,NEW / SPIKE
+duckdbdbtduckdb,0.021107846423852814,1,github,duckdb/dbt-duckdb,https://github.com/duckdb/dbt-duckdb,NEW / SPIKE
+astronomerastronomercosmos,0.019703811796257225,1,github,astronomer/astronomer-cosmos,https://github.com/astronomer/astronomer-cosmos,NEW / SPIKE
+what is big data analytics,0.018750000000000003,1,trends,what is big data analytics,https://trends.google.com/trends/explore?q=what+is+big+data+analytics,NEW / SPIKE
+etl pipeline,0.018750000000000003,1,trends,etl pipeline,https://trends.google.com/trends/explore?q=etl+pipeline,NEW / SPIKE
+google data analytics certification,0.018750000000000003,1,trends,google data analytics certification,https://trends.google.com/trends/explore?q=google+data+analytics+certification,NEW / SPIKE
+data pipeline examples,0.018750000000000003,1,trends,data pipeline examples,https://trends.google.com/trends/explore?q=data+pipeline+examples,RECURRING
+big data pipeline,0.018750000000000003,1,trends,big data pipeline,https://trends.google.com/trends/explore?q=big+data+pipeline,NEW / SPIKE
+mikehasaagentacct,0.011390033720494568,1,github,mikehasa/agentacct,https://github.com/mikehasa/agentacct,NEW / SPIKE
+zhongyu09openchatbi,0.009954447752953009,1,github,zhongyu09/openchatbi,https://github.com/zhongyu09/openchatbi,NEW / SPIKE
+timecopilottimecopilot,0.009402299303898562,1,github,TimeCopilot/timecopilot,https://github.com/TimeCopilot/timecopilot,NEW / SPIKE
+big data analytics tools,0.009375000000000001,1,trends,big data analytics tools,https://trends.google.com/trends/explore?q=big+data+analytics+tools,NEW / SPIKE
+masters in data analytics online,0.009375000000000001,1,trends,masters in data analytics online,https://trends.google.com/trends/explore?q=masters+in+data+analytics+online,NEW / SPIKE
+evelyyyyynnnnn50aiengineeringtoolkit,0.007256808187572717,1,github,evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,https://github.com/evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,NEW / SPIKE
 show hn crypto portfolio risk and scenario analysis with ai agents on top,0.0063999999999999994,1,hn,Show HN: Crypto portfolio risk and scenario analysis with AI agents on top,https://sentralis.io/,NEW / SPIKE
 show hn plainoldanalytics analytics middlware for go,0.0063999999999999994,1,hn,Show HN: Plainoldanalytics: Analytics Middlware for Go,https://github.com/poundifdef/plainoldanalytics,NEW / SPIKE
-data engineering zoomcamp,0.006,1,trends,data engineering zoomcamp,https://trends.google.com/trends/explore?q=data+engineering+zoomcamp,NEW / SPIKE
-big data pipeline,0.006,1,trends,big data pipeline,https://trends.google.com/trends/explore?q=big+data+pipeline,NEW / SPIKE
-etl data pipeline,0.006,1,trends,etl data pipeline,https://trends.google.com/trends/explore?q=etl+data+pipeline,NEW / SPIKE
-data pipeline solutions,0.006,1,trends,data pipeline solutions,https://trends.google.com/trends/explore?q=data+pipeline+solutions,NEW / SPIKE
-upginiupgini,0.00539538552553737,1,github,upgini/upgini,https://github.com/upgini/upgini,NEW / SPIKE
+upginiupgini,0.005395279130760585,1,github,upgini/upgini,https://github.com/upgini/upgini,NEW / SPIKE
 we benchmark analytics agents this explains how,0.0031999999999999997,1,hn,"We Benchmark Analytics Agents, this explains how",https://benchouse.ai/blog/how-we-benchmark-analytics-agents,NEW / SPIKE
-anguskitanguskit,0.003186748175902189,1,github,AngusKit/AngusKit,https://github.com/AngusKit/AngusKit,NEW / SPIKE
-cesarjoquinmarketingskills,0.002745020705975153,1,github,Cesarjoquin/Marketing-Skills,https://github.com/Cesarjoquin/Marketing-Skills,NEW / SPIKE
-colossuslabopenarg_backend,0.0020351015578781305,1,github,colossus-lab/openarg_backend,https://github.com/colossus-lab/openarg_backend,NEW / SPIKE
-hoangsonwwendtoenddatapipeline,0.001956221652534017,1,github,hoangsonww/End-to-End-Data-Pipeline,https://github.com/hoangsonww/End-to-End-Data-Pipeline,NEW / SPIKE
-chrisinho8dachdatajobmarket,0.0017038059554328536,1,github,Chrisinho8/DACH-data-job-market,https://github.com/Chrisinho8/DACH-data-job-market,NEW / SPIKE
-mujtba4fattritioninsightsengineering,0.0016091500690199171,1,github,MUJTBA4F/attrition-insights-engineering,https://github.com/MUJTBA4F/attrition-insights-engineering,NEW / SPIKE
-docwiredocwire,0.0015302701636758036,1,github,docwire/docwire,https://github.com/docwire/docwire,NEW / SPIKE
-shaf2665hermesrouter,0.0014829422204693356,1,github,Shaf2665/Hermes-router,https://github.com/Shaf2665/Hermes-router,NEW / SPIKE
-marieaimarieai,0.0012778544665746402,1,github,marieai/marie-ai,https://github.com/marieai/marie-ai,NEW / SPIKE
-ellie886datalume,0.0012778544665746402,1,github,ellie886/Datalume,https://github.com/ellie886/Datalume,NEW / SPIKE
-esipfedgeoweaver,0.0012620784855058177,1,github,ESIPFed/Geoweaver,https://github.com/ESIPFed/Geoweaver,NEW / SPIKE
-servicenowsygra,0.0011989745612305267,1,github,ServiceNow/SyGra,https://github.com/ServiceNow/SyGra,NEW / SPIKE
-decisionboxiodecisionboxplatform,0.0011989745612305267,1,github,decisionbox-io/decisionbox-platform,https://github.com/decisionbox-io/decisionbox-platform,NEW / SPIKE
-socialmediaskillsskills,0.0011674225990928812,1,github,social-media-skills/skills,https://github.com/social-media-skills/skills,NEW / SPIKE
-agentscopeaiqwenpawdata,0.001009662788404654,1,github,agentscope-ai/QwenPaw-Data,https://github.com/agentscope-ai/QwenPaw-Data,NEW / SPIKE
-centerforthreatinformeddefensesummitingthepyramid,0.0007887990534411358,1,github,center-for-threat-informed-defense/summiting-the-pyramid,https://github.com/center-for-threat-informed-defense/summiting-the-pyramid,NEW / SPIKE
-priyanshubytecodercontextrot,0.0005994872806152633,1,github,Priyanshu-byte-coder/contextrot,https://github.com/Priyanshu-byte-coder/contextrot,NEW / SPIKE
-victorkiprutoropreal_time_transaction_streamingmpesa,0.0004890554131335043,1,github,Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,https://github.com/Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,NEW / SPIKE
-pellalabspellametric,0.0004732794320646815,1,github,pella-labs/pellametric,https://github.com/pella-labs/pellametric,NEW / SPIKE
-amirhosseinhonardoustcoffeeshopprofitpredictor,0.0003943995267205679,1,github,AmirhosseinHonardoust/Coffee-Shop-Profit-Predictor,https://github.com/AmirhosseinHonardoust/Coffee-Shop-Profit-Predictor,NEW / SPIKE
-dreameroldreamerol,0.0003470715835140998,1,github,Dreamerol/Dreamerol,https://github.com/Dreamerol/Dreamerol,NEW / SPIKE
-nirholasbnbchainmcp,0.00028396765923880893,1,github,nirholas/bnbchain-mcp,https://github.com/nirholas/bnbchain-mcp,NEW / SPIKE
-victorkiprutoropmedallionlakehouseplatform,0.0001893117728258726,1,github,Victor-Kipruto-Rop/medallion-lakehouse-platform,https://github.com/Victor-Kipruto-Rop/medallion-lakehouse-platform,NEW / SPIKE
-exmergodex,0.00014198382961940446,1,github,exmergo/dex,https://github.com/exmergo/dex,NEW / SPIKE
-analyticsdurgeshsnowflake_dbt_project,0.00012620784855058175,1,github,analyticsdurgesh/Snowflake_DBT_Project,https://github.com/analyticsdurgesh/Snowflake_DBT_Project,NEW / SPIKE
-dreamerolallstats,3.155196213764544e-05,1,github,Dreamerol/ALLSTATS,https://github.com/Dreamerol/ALLSTATS,NEW / SPIKE
-errajeshcspixelds4earth,1.577598106882272e-05,1,github,errajeshcs-pixel/DS4Earth,https://github.com/errajeshcs-pixel/DS4Earth,NEW / SPIKE
-ameythakuroptimizingstocktradingstrategywithkmeansclustering,0.0,1,github,Amey-Thakur/OPTIMIZING-STOCK-TRADING-STRATEGY-WITH-K-MEANS-CLUSTERING,https://github.com/Amey-Thakur/OPTIMIZING-STOCK-TRADING-STRATEGY-WITH-K-MEANS-CLUSTERING,NEW / SPIKE
-speclockdiff a framework for agentic dbt development,0.0,1,hn,Spec-Lock-Diff: a framework for agentic dbt development,https://github.com/miloskimatheus/spec-lock-diff/,NEW / SPIKE
+anguskitanguskit,0.0031866853345428013,1,github,AngusKit/AngusKit,https://github.com/AngusKit/AngusKit,NEW / SPIKE
+cesarjoquinmarketingskills,0.002744966575299245,1,github,Cesarjoquin/Marketing-Skills,https://github.com/Cesarjoquin/Marketing-Skills,NEW / SPIKE
+colossuslabopenarg_backend,0.0020350614265149574,1,github,colossus-lab/openarg_backend,https://github.com/colossus-lab/openarg_backend,NEW / SPIKE
+hoangsonwwendtoenddatapipeline,0.001956183076650037,1,github,hoangsonww/End-to-End-Data-Pipeline,https://github.com/hoangsonww/End-to-End-Data-Pipeline,NEW / SPIKE
+chrisinho8dachdatajobmarket,0.0017037723570822898,1,github,Chrisinho8/DACH-data-job-market,https://github.com/Chrisinho8/DACH-data-job-market,NEW / SPIKE
+mujtba4fattritioninsightsengineering,0.0016091183372443849,1,github,MUJTBA4F/attrition-insights-engineering,https://github.com/MUJTBA4F/attrition-insights-engineering,NEW / SPIKE
+docwiredocwire,0.001530239987379464,1,github,docwire/docwire,https://github.com/docwire/docwire,NEW / SPIKE
+shaf2665hermesrouter,0.0014829129774605117,1,github,Shaf2665/Hermes-router,https://github.com/Shaf2665/Hermes-router,NEW / SPIKE
+marieaimarieai,0.0012778292678117175,1,github,marieai/marie-ai,https://github.com/marieai/marie-ai,NEW / SPIKE
+ellie886datalume,0.0012778292678117175,1,github,ellie886/Datalume,https://github.com/ellie886/Datalume,NEW / SPIKE
+esipfedgeoweaver,0.0012620535978387333,1,github,ESIPFed/Geoweaver,https://github.com/ESIPFed/Geoweaver,NEW / SPIKE
+decisionboxiodecisionboxplatform,0.0011989509179467965,1,github,decisionbox-io/decisionbox-platform,https://github.com/decisionbox-io/decisionbox-platform,NEW / SPIKE
+servicenowsygra,0.0011989509179467965,1,github,ServiceNow/SyGra,https://github.com/ServiceNow/SyGra,NEW / SPIKE
+socialmediaskillsskills,0.0011673995780008281,1,github,social-media-skills/skills,https://github.com/social-media-skills/skills,NEW / SPIKE
+agentscopeaiqwenpawdata,0.0010096428782709866,1,github,agentscope-ai/QwenPaw-Data,https://github.com/agentscope-ai/QwenPaw-Data,NEW / SPIKE
+centerforthreatinformeddefensesummitingthepyramid,0.0007887834986492082,1,github,center-for-threat-informed-defense/summiting-the-pyramid,https://github.com/center-for-threat-informed-defense/summiting-the-pyramid,NEW / SPIKE
+priyanshubytecodercontextrot,0.0005994754589733983,1,github,Priyanshu-byte-coder/contextrot,https://github.com/Priyanshu-byte-coder/contextrot,NEW / SPIKE
+victorkiprutoropreal_time_transaction_streamingmpesa,0.0004890457691625092,1,github,Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,https://github.com/Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,NEW / SPIKE
+pellalabspellametric,0.00047327009918952495,1,github,pella-labs/pellametric,https://github.com/pella-labs/pellametric,NEW / SPIKE
+amirhosseinhonardoustcoffeeshopprofitpredictor,0.0003943917493246041,1,github,AmirhosseinHonardoust/Coffee-Shop-Profit-Predictor,https://github.com/AmirhosseinHonardoust/Coffee-Shop-Profit-Predictor,NEW / SPIKE
+dreameroldreamerol,0.0003470647394056517,1,github,Dreamerol/Dreamerol,https://github.com/Dreamerol/Dreamerol,NEW / SPIKE
+nirholasbnbchainmcp,0.000283962059513715,1,github,nirholas/bnbchain-mcp,https://github.com/nirholas/bnbchain-mcp,NEW / SPIKE
+victorkiprutoropmedallionlakehouseplatform,0.00018930803967580998,1,github,Victor-Kipruto-Rop/medallion-lakehouse-platform,https://github.com/Victor-Kipruto-Rop/medallion-lakehouse-platform,NEW / SPIKE
+exmergodex,0.0001419810297568575,1,github,exmergo/dex,https://github.com/exmergo/dex,NEW / SPIKE
+analyticsdurgeshsnowflake_dbt_project,0.00012620535978387332,1,github,analyticsdurgesh/Snowflake_DBT_Project,https://github.com/analyticsdurgesh/Snowflake_DBT_Project,NEW / SPIKE
+dreamerolallstats,3.155133994596833e-05,1,github,Dreamerol/ALLSTATS,https://github.com/Dreamerol/ALLSTATS,NEW / SPIKE
+errajeshcspixelds4earth,1.5775669972984165e-05,1,github,errajeshcs-pixel/DS4Earth,https://github.com/errajeshcs-pixel/DS4Earth,NEW / SPIKE
 show hn etlfunnel selfhosted codefirst data pipelines v111,0.0,1,hn,"Show HN: ETLFunnel – self-hosted, code-first data pipelines (v1.1.1)",https://etlfunnel.com,NEW / SPIKE
+speclockdiff a framework for agentic dbt development,0.0,1,hn,Spec-Lock-Diff: a framework for agentic dbt development,https://github.com/miloskimatheus/spec-lock-diff/,NEW / SPIKE
+ameythakuroptimizingstocktradingstrategywithkmeansclustering,0.0,1,github,Amey-Thakur/OPTIMIZING-STOCK-TRADING-STRATEGY-WITH-K-MEANS-CLUSTERING,https://github.com/Amey-Thakur/OPTIMIZING-STOCK-TRADING-STRATEGY-WITH-K-MEANS-CLUSTERING,NEW / SPIKE
