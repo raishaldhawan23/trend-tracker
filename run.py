@@ -45,6 +45,23 @@ def _extract_tool_name(title):
     return title.rsplit("/", 1)[-1] if "/" in title else title
 
 
+def _youtube_search_query(title, sources=""):
+    """Cleans a raw topic string into a usable YouTube search query. Searching
+    the literal 'owner/repo' GitHub string, or an HN headline's 'Show HN:'
+    prefix, returns noisy/irrelevant matches — this strips that framing down
+    to the actual subject."""
+    source_list = [s.strip() for s in sources.lower().split(",")] if sources else []
+    t = title.strip()
+
+    if "github" in source_list:
+        return _extract_tool_name(t)
+
+    if t.lower().startswith("show hn:"):
+        t = t[len("show hn:"):].strip()
+
+    return t
+
+
 def generate_content_angle(title, sources=""):
     """Turns a raw topic string into an actual post/video angle.
 
@@ -344,16 +361,23 @@ def main():
 
     ranked = update_history_and_classify(ranked)
 
-    top10_topics = ranked.head(10)["example_title"].tolist()
+    top10_rows = ranked.head(10)
+    # Map each Top 10 topic to a cleaned-up search query (e.g. a GitHub
+    # 'owner/repo' hit searches on just the repo name, not the literal path).
+    queries = {
+        row["example_title"]: _youtube_search_query(row["example_title"], row.get("sources", ""))
+        for _, row in top10_rows.iterrows()
+    }
     if youtube_signal.is_configured():
         print("\nChecking YouTube competition for the Top 10 topics...")
-        youtube_results = youtube_signal.collect_for_topics(top10_topics)
+        youtube_by_query = youtube_signal.collect_for_topics(list(queries.values()))
+        youtube_results = {topic: youtube_by_query.get(query) for topic, query in queries.items()}
     else:
         print(
             "\nYOUTUBE_API_KEY not set — skipping the YouTube competitive check "
             "(Content Ideas will fall back to the pattern-based angle instead)."
         )
-        youtube_results = {t: None for t in top10_topics}
+        youtube_results = {topic: None for topic in queries}
 
     ranked.to_csv("report.csv", index=False)
     write_markdown_report(ranked, youtube_results=youtube_results)
