@@ -16,7 +16,11 @@ import pandas as pd
 
 import config
 from aggregate import build_ranked_table, update_history_and_classify
-from sources import reddit_signal, hn_signal, github_signal, trends_signal, suggest_signal
+from sources import reddit_signal, hn_signal, github_signal, trends_signal, suggest_signal, youtube_signal
+
+# Competitive-check thresholds (see classify_competition below).
+YOUTUBE_VIEW_THRESHOLD = 10_000
+YOUTUBE_RECENT_DAYS = 365
 
 # Casing overrides for terms that don't follow plain title-case in this niche
 # (e.g. "power bi".title() -> "Power Bi", not "Power BI").
@@ -94,11 +98,128 @@ def generate_content_angle(title, sources=""):
     return f'Why everyone\'s suddenly talking about "{t}" (and what it should mean for your {year} content plan)'
 
 
-def _top10_with_ideas(ranked_df):
+def _format_views(n):
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f}".rstrip("0").rstrip(".") + "M views"
+    if n >= 1_000:
+        return f"{n / 1_000:.1f}".rstrip("0").rstrip(".") + "k views"
+    return f"{n} views"
+
+
+def _days_since(published_at_iso):
+    published = datetime.datetime.fromisoformat(published_at_iso.replace("Z", "+00:00"))
+    now = datetime.datetime.now(datetime.timezone.utc)
+    return (now - published).days
+
+
+def _format_age(published_at_iso):
+    days = _days_since(published_at_iso)
+    if days < 60:
+        return "1 day ago" if days <= 1 else f"{days} days ago"
+    months = days // 30
+    if months < 24:
+        return f"{months} months ago"
+    years = days // 365
+    return f"{years} year ago" if years == 1 else f"{years} years ago"
+
+
+def classify_competition(videos):
+    """videos: None (YOUTUBE_API_KEY not set, or the API call failed), []
+    (checked, found nothing relevant), or a list of video dicts from
+    youtube_signal.top_videos_for_topic(). Returns (tier, top_video) where
+    top_video is the highest-view_count video, or None.
+
+    Tiers:
+      UNKNOWN       — no competitive data available at all
+      WHITESPACE    — 0-1 relevant videos
+      OPPORTUNITY   — 2+ videos, but none over YOUTUBE_VIEW_THRESHOLD views
+      PROVEN DEMAND — a video over the threshold, published within the last year
+      REVISIT       — a video over the threshold, published over a year ago
+    """
+    if videos is None:
+        return "UNKNOWN", None
+    if len(videos) <= 1:
+        return "WHITESPACE", (videos[0] if videos else None)
+
+    top_video = max(videos, key=lambda v: v["view_count"])
+    if top_video["view_count"] <= YOUTUBE_VIEW_THRESHOLD:
+        return "OPPORTUNITY", top_video
+    if _days_since(top_video["published_at"]) <= YOUTUBE_RECENT_DAYS:
+        return "PROVEN DEMAND", top_video
+    return "REVISIT", top_video
+
+
+def build_content_idea(topic, sources, tier, top_video):
+    """Plain-language Content Idea entry: the competitive tier, the actual
+    top competing video (title + view count) when one exists, and a
+    suggested differentiation angle."""
+    if tier == "UNKNOWN":
+        # No YOUTUBE_API_KEY configured (or the API call failed) — fall back
+        # to the old pattern-based angle rather than block the report on it.
+        return generate_content_angle(topic, sources) + " [competitive check unavailable — set YOUTUBE_API_KEY]"
+
+    if tier == "WHITESPACE":
+        if top_video:
+            return (
+                f'WHITESPACE — only one relevant video exists ("{top_video["title"]}", '
+                f'{_format_views(top_video["view_count"])}). Your angle: claim the space — '
+                f'straightforward, solid coverage of "{topic}" has almost no competition right now.'
+            )
+        return (
+            f'WHITESPACE — no real YouTube coverage of "{topic}" yet. Your angle: be first — '
+            "a clear explainer or tutorial claims this space before anyone else covers it."
+        )
+
+    if tier == "OPPORTUNITY":
+        return (
+            f'OPPORTUNITY — a few videos exist but none has broken through (best is '
+            f'"{top_video["title"]}" at {_format_views(top_video["view_count"])}). Your angle: '
+            "the existing coverage isn't landing — try a sharper hook, a real example, or a "
+            "format nobody else has used on this topic."
+        )
+
+    if tier == "PROVEN DEMAND":
+        return (
+            f'PROVEN DEMAND — "{top_video["title"]}" has {_format_views(top_video["view_count"])} '
+            f'from {_format_age(top_video["published_at"])}. There\'s a proven audience for this. '
+            "Your angle: don't repeat it — bring something only you have (a real client story, "
+            "a contrarian take, your own data) instead of another generic walkthrough."
+        )
+
+    if tier == "REVISIT":
+        return (
+            f'REVISIT — "{top_video["title"]}" has {_format_views(top_video["view_count"])}, but it\'s '
+            f'from {_format_age(top_video["published_at"])} — likely stale or off people\'s radar by now. '
+            "Your angle: cover what's changed since then, or redo it for today's tools and best practices."
+        )
+
+    return generate_content_angle(topic, sources)  # unreachable, but never crash the report over it
+
+
+def _top10_with_ideas(ranked_df, youtube_results=None):
+    """youtube_results: {topic: videos_or_None} from youtube_signal, already
+    limited to this ranked_df's Top 10 topics. Pass None (or omit) to fall
+    back to the old pattern-based angle for every row, e.g. when the caller
+    hasn't run the competitive check at all."""
     top10 = ranked_df.head(10).copy()
-    top10["content_angle"] = top10.apply(
-        lambda row: generate_content_angle(row["example_title"], row.get("sources", "")), axis=1
-    )
+    youtube_results = youtube_results or {}
+
+    tiers, angles, video_titles, video_views, video_urls = [], [], [], [], []
+    for _, row in top10.iterrows():
+        topic = row["example_title"]
+        videos = youtube_results.get(topic)
+        tier, top_video = classify_competition(videos)
+        angles.append(build_content_idea(topic, row.get("sources", ""), tier, top_video))
+        tiers.append(tier)
+        video_titles.append(top_video["title"] if top_video else "")
+        video_views.append(top_video["view_count"] if top_video else None)
+        video_urls.append(top_video["url"] if top_video else "")
+
+    top10["competition_tier"] = tiers
+    top10["content_angle"] = angles
+    top10["top_video_title"] = video_titles
+    top10["top_video_views"] = video_views
+    top10["top_video_url"] = video_urls
     return top10
 
 
@@ -129,7 +250,7 @@ def collect_all(skip_trends=False, skip_github=False):
     return all_hits
 
 
-def write_markdown_report(ranked_df, path="report.md"):
+def write_markdown_report(ranked_df, path="report.md", youtube_results=None):
     today = datetime.date.today().isoformat()
     lines = [f"# Niche Topic Report — {today}\n"]
 
@@ -144,7 +265,7 @@ def write_markdown_report(ranked_df, path="report.md"):
         "`NEW / SPIKE` = first appearance — jump on it fast if you want the timing edge.\n"
     )
 
-    top10 = _top10_with_ideas(ranked_df)
+    top10 = _top10_with_ideas(ranked_df, youtube_results=youtube_results)
 
     lines.append("## Top 10 This Week\n")
     for i, row in top10.iterrows():
@@ -176,18 +297,24 @@ def write_markdown_report(ranked_df, path="report.md"):
     print(f"\nWrote {path}")
 
 
-def write_excel_report(ranked_df, path="report.xlsx"):
+def write_excel_report(ranked_df, path="report.xlsx", youtube_results=None):
     """Writes the same Top 10 / Content Ideas / Full Table structure as
     report.md, but as separate sheets in an .xlsx workbook."""
-    top10 = _top10_with_ideas(ranked_df)
+    top10 = _top10_with_ideas(ranked_df, youtube_results=youtube_results)
 
     top10_sheet = top10[["example_title", "status", "composite_score", "sources", "example_url"]].copy()
     top10_sheet.insert(0, "rank", range(1, len(top10_sheet) + 1))
     top10_sheet.columns = ["Rank", "Topic", "Status", "Score", "Sources", "Link"]
 
-    ideas_sheet = top10[["content_angle", "example_title", "status", "composite_score", "example_url"]].copy()
+    ideas_sheet = top10[[
+        "competition_tier", "content_angle", "example_title",
+        "top_video_title", "top_video_views", "status", "composite_score", "example_url",
+    ]].copy()
     ideas_sheet.insert(0, "rank", range(1, len(ideas_sheet) + 1))
-    ideas_sheet.columns = ["Rank", "Content Angle", "Based On Topic", "Status", "Score", "Link"]
+    ideas_sheet.columns = [
+        "Rank", "Competition Tier", "Content Angle", "Based On Topic",
+        "Top Competing Video", "Video Views", "Status", "Score", "Link",
+    ]
 
     full_sheet = ranked_df[["example_title", "status", "composite_score", "sources", "example_url"]].copy()
     full_sheet.insert(0, "rank", range(1, len(full_sheet) + 1))
@@ -216,9 +343,21 @@ def main():
         return
 
     ranked = update_history_and_classify(ranked)
+
+    top10_topics = ranked.head(10)["example_title"].tolist()
+    if youtube_signal.is_configured():
+        print("\nChecking YouTube competition for the Top 10 topics...")
+        youtube_results = youtube_signal.collect_for_topics(top10_topics)
+    else:
+        print(
+            "\nYOUTUBE_API_KEY not set — skipping the YouTube competitive check "
+            "(Content Ideas will fall back to the pattern-based angle instead)."
+        )
+        youtube_results = {t: None for t in top10_topics}
+
     ranked.to_csv("report.csv", index=False)
-    write_markdown_report(ranked)
-    write_excel_report(ranked)
+    write_markdown_report(ranked, youtube_results=youtube_results)
+    write_excel_report(ranked, youtube_results=youtube_results)
 
     print(
         "\nDone. Open report.md for the ranked list, report.xlsx for a "
