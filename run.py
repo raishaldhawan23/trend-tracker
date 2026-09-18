@@ -15,7 +15,7 @@ import re
 import pandas as pd
 
 import config
-from aggregate import build_ranked_table, update_history_and_classify
+from aggregate import build_ranked_table, update_history_and_classify, build_evergreen_question_bank
 from sources import reddit_signal, hn_signal, github_signal, trends_signal, suggest_signal, youtube_signal
 
 # Competitive-check thresholds (see classify_competition below).
@@ -49,15 +49,20 @@ def _youtube_search_query(title, sources=""):
     """Cleans a raw topic string into a usable YouTube search query. Searching
     the literal 'owner/repo' GitHub string, or an HN headline's 'Show HN:'
     prefix, returns noisy/irrelevant matches — this strips that framing down
-    to the actual subject."""
+    to the actual subject. Also disambiguates overloaded terms: "pipeline" on
+    its own matches as much CI/CD-pipeline content as data-pipeline content,
+    so it gets "data engineering" appended to bias results toward the right
+    sense of the word."""
     source_list = [s.strip() for s in sources.lower().split(",")] if sources else []
     t = title.strip()
 
     if "github" in source_list:
-        return _extract_tool_name(t)
-
-    if t.lower().startswith("show hn:"):
+        t = _extract_tool_name(t)
+    elif t.lower().startswith("show hn:"):
         t = t[len("show hn:"):].strip()
+
+    if "pipeline" in t.lower():
+        t = f"{t} data engineering"
 
     return t
 
@@ -267,7 +272,7 @@ def collect_all(skip_trends=False, skip_github=False):
     return all_hits
 
 
-def write_markdown_report(ranked_df, path="report.md", youtube_results=None):
+def write_markdown_report(ranked_df, path="report.md", youtube_results=None, evergreen_questions=None):
     today = datetime.date.today().isoformat()
     lines = [f"# Niche Topic Report — {today}\n"]
 
@@ -309,12 +314,25 @@ def write_markdown_report(ranked_df, path="report.md", youtube_results=None):
             f"{row['composite_score']:.2f} | {row['sources']} | {link} |"
         )
 
+    evergreen_questions = evergreen_questions or []
+    lines.append(f"\n## Evergreen Question Bank ({len(evergreen_questions)} questions)\n")
+    lines.append(
+        "Google autocomplete data — no weekly time signal, so it doesn't compete "
+        "in the ranking above, but it's a reliable list of the questions people "
+        "always ask. Good for always-relevant, not necessarily timely, content.\n"
+    )
+    if evergreen_questions:
+        for q in evergreen_questions:
+            lines.append(f"- {q}")
+    else:
+        lines.append("_(none collected this run)_")
+
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     print(f"\nWrote {path}")
 
 
-def write_excel_report(ranked_df, path="report.xlsx", youtube_results=None):
+def write_excel_report(ranked_df, path="report.xlsx", youtube_results=None, evergreen_questions=None):
     """Writes the same Top 10 / Content Ideas / Full Table structure as
     report.md, but as separate sheets in an .xlsx workbook."""
     top10 = _top10_with_ideas(ranked_df, youtube_results=youtube_results)
@@ -337,10 +355,13 @@ def write_excel_report(ranked_df, path="report.xlsx", youtube_results=None):
     full_sheet.insert(0, "rank", range(1, len(full_sheet) + 1))
     full_sheet.columns = ["Rank", "Topic", "Status", "Score", "Sources", "Link"]
 
+    evergreen_sheet = pd.DataFrame({"Question": evergreen_questions or []})
+
     with pd.ExcelWriter(path, engine="openpyxl") as writer:
         top10_sheet.to_excel(writer, sheet_name="Top 10 This Week", index=False)
         ideas_sheet.to_excel(writer, sheet_name="Content Ideas", index=False)
         full_sheet.to_excel(writer, sheet_name="Full Ranked List", index=False)
+        evergreen_sheet.to_excel(writer, sheet_name="Evergreen Questions", index=False)
     print(f"Wrote {path}")
 
 
@@ -355,6 +376,7 @@ def main():
 
     print(f"\nCollected {len(all_hits)} raw items. Ranking and classifying...")
     ranked = build_ranked_table(all_hits)
+    evergreen_questions = build_evergreen_question_bank(all_hits)
     if ranked.empty:
         print("No data collected — check network/API errors above.")
         return
@@ -380,8 +402,8 @@ def main():
         youtube_results = {topic: None for topic in queries}
 
     ranked.to_csv("report.csv", index=False)
-    write_markdown_report(ranked, youtube_results=youtube_results)
-    write_excel_report(ranked, youtube_results=youtube_results)
+    write_markdown_report(ranked, youtube_results=youtube_results, evergreen_questions=evergreen_questions)
+    write_excel_report(ranked, youtube_results=youtube_results, evergreen_questions=evergreen_questions)
 
     print(
         "\nDone. Open report.md for the ranked list, report.xlsx for a "

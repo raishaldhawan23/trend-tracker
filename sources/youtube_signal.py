@@ -13,11 +13,24 @@ function here degrades to returning None so callers can distinguish "not
 configured" from "checked, found nothing".
 """
 import os
+import re
 import time
 import requests
 
+import config
+from aggregate import _passes_negative_filters
+
 SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 VIDEOS_URL = "https://www.googleapis.com/youtube/v3/videos"
+
+# Generic connector words ignored by the relevance check below — a video
+# title has to share at least one word with the search topic that ISN'T one
+# of these, or it doesn't count as genuine competition.
+_FILLER_WORDS = {
+    "a", "an", "the", "is", "are", "was", "were", "what", "how", "to", "for",
+    "of", "in", "on", "and", "or", "with", "vs", "versus", "your", "you",
+    "this", "that", "it", "its", "from", "best", "why",
+}
 
 
 def _get_api_key():
@@ -26,6 +39,32 @@ def _get_api_key():
 
 def is_configured():
     return bool(_get_api_key())
+
+
+def _matching_negative_filter_seed(topic):
+    """Which config.NEGATIVE_FILTERS key (if any) the search topic is about,
+    so the same hijacked-keyword protection Trends/Suggest already get
+    (aggregate._passes_negative_filters) can be reused for YouTube results —
+    e.g. a "dbt" search shouldn't count an Indian government Direct Benefit
+    Transfer scheme video as competition."""
+    topic_lower = topic.lower()
+    for seed in config.NEGATIVE_FILTERS:
+        if seed in topic_lower:
+            return seed
+    return ""
+
+
+def _shares_meaningful_word(topic, video_title):
+    """A lightweight relevance floor: the video title must share at least one
+    non-filler word with the searched topic, so a video that YouTube's own
+    fuzzy search matched but that isn't actually about the topic (e.g. an
+    unrelated video sharing no real subject words) doesn't count as
+    competition."""
+    topic_words = {w for w in re.findall(r"[a-z0-9]+", topic.lower()) if w not in _FILLER_WORDS and len(w) > 2}
+    if not topic_words:
+        return True  # nothing meaningful to compare against — don't filter blindly
+    title_words = {w for w in re.findall(r"[a-z0-9]+", video_title.lower())}
+    return bool(topic_words & title_words)
 
 
 def top_videos_for_topic(topic, max_results=3):
@@ -72,6 +111,16 @@ def top_videos_for_topic(topic, max_results=3):
                 "published_at": item["snippet"]["publishedAt"],  # ISO 8601, e.g. 2025-01-15T12:00:00Z
                 "url": f"https://www.youtube.com/watch?v={item['id']}",
             })
+
+        # Relevance floor: drop videos that share no meaningful word with the
+        # topic (catches a totally unrelated fuzzy-search match).
+        videos = [v for v in videos if _shares_meaningful_word(topic, v["title"])]
+
+        # Same hijacked-keyword protection Trends/Suggest already get.
+        matched_seed = _matching_negative_filter_seed(topic)
+        if matched_seed:
+            videos = [v for v in videos if _passes_negative_filters({"seed": matched_seed, "title": v["title"]})]
+
         return videos
     except Exception as e:
         print(f"  [youtube] failed for '{topic}': {e}")

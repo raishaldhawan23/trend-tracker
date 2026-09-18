@@ -13,7 +13,10 @@ import time
 from pytrends.request import TrendReq
 
 
-def fetch_related_queries(seed_keywords, geo="", timeframe="today 3-m"):
+def fetch_related_queries(seed_keywords, geo="", timeframe="now 7-d"):
+    # "now 7-d" (not the old "today 3-m") so a "rising" query actually means
+    # rising over the last week, not the last quarter — otherwise a weekly
+    # report ends up re-surfacing the same quarter-long trend every time.
     pytrends = TrendReq(hl="en-US", tz=0)
     results = []
 
@@ -61,5 +64,5 @@ def fetch_related_queries(seed_keywords, geo="", timeframe="today 3-m"):
     return results
 
 
-def collect(seed_keywords, geo="", timeframe="today 3-m"):
+def collect(seed_keywords, geo="", timeframe="now 7-d"):
     return fetch_related_queries(seed_keywords, geo=geo, timeframe=timeframe)

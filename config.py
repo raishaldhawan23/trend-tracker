@@ -76,9 +76,15 @@ HISTORY_PATH = "history.csv"
 LOOKBACK_DAYS = 7
 
 # Composite score weights — tune if one source feels noisier than the others.
+# Google Trends is split by query type (see trends_signal.py's "type" field):
+# "rising" queries are the real spiking-now signal, so they're weighted heavily.
+# "top" queries are just permanently popular terms (e.g. "power bi", "data
+# analytics") that would show up in the Top 10 in any given week regardless of
+# what's actually trending — weighted low so they barely register.
 WEIGHTS = {
     "reddit": 1.0,
-    "hn": 1.2,       # HN points are a strong practitioner-buzz signal, weighted slightly higher
+    "hn": 1.2,           # HN points are a strong practitioner-buzz signal, weighted slightly higher
     "github": 0.8,
-    "trends": 1.5,   # Google Trends rising queries weighted highest — direct search-intent signal
+    "trends_rising": 3.0,
+    "trends_top": 0.3,
 }
