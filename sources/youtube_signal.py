@@ -25,11 +25,16 @@ VIDEOS_URL = "https://www.googleapis.com/youtube/v3/videos"
 
 # Generic connector words ignored by the relevance check below — a video
 # title has to share at least one word with the search topic that ISN'T one
-# of these, or it doesn't count as genuine competition.
+# of these, or it doesn't count as genuine competition. "data" is included
+# despite being a real topic word: it's used in nearly every title across
+# this entire niche (legitimate or not), so on its own it doesn't actually
+# discriminate — e.g. it let "Data Engineer vs. Data Scientist" (a career
+# comparison, nothing to do with pipelines) count as a match for "data
+# pipeline" purely on the shared word "data".
 _FILLER_WORDS = {
     "a", "an", "the", "is", "are", "was", "were", "what", "how", "to", "for",
     "of", "in", "on", "and", "or", "with", "vs", "versus", "your", "you",
-    "this", "that", "it", "its", "from", "best", "why",
+    "this", "that", "it", "its", "from", "best", "why", "data",
 }
 
 
