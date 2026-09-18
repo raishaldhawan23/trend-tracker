@@ -6,98 +6,98 @@ Ranked by a composite score across Reddit upvotes, Hacker News points, GitHub st
 
 ## Top 10 This Week
 
-1. **dbt charts** — NEW / SPIKE, score 3.00 (trends) ([link](https://trends.google.com/trends/explore?q=dbt+charts))
-2. **dbt v2** — NEW / SPIKE, score 1.37 (trends) ([link](https://trends.google.com/trends/explore?q=dbt+v2))
-3. **Show HN: Capsule – Single-file web apps that save their data into SQLite** — RECURRING, score 1.20 (hn) ([link](https://withcapsule.app/))
-4. **dbt summit** — NEW / SPIKE, score 0.91 (trends) ([link](https://trends.google.com/trends/explore?q=dbt+summit))
-5. **coreyhaines31/marketingskills** — EVERGREEN, score 0.80 (github) ([link](https://github.com/coreyhaines31/marketingskills))
-6. **DataTalksClub/data-engineering-zoomcamp** — EVERGREEN, score 0.72 (github) ([link](https://github.com/DataTalksClub/data-engineering-zoomcamp))
-7. **dbt status tracker** — NEW / SPIKE, score 0.72 (trends) ([link](https://trends.google.com/trends/explore?q=dbt+status+tracker))
-8. **pfms dbt tracker** — NEW / SPIKE, score 0.65 (trends) ([link](https://trends.google.com/trends/explore?q=pfms+dbt+tracker))
-9. **pfms dbt status tracker** — NEW / SPIKE, score 0.59 (trends) ([link](https://trends.google.com/trends/explore?q=pfms+dbt+status+tracker))
-10. **what is data pipeline** — NEW / SPIKE, score 0.58 (trends) ([link](https://trends.google.com/trends/explore?q=what+is+data+pipeline))
+1. **meditation** — NEW / SPIKE, score 3.02 (trends) ([link](https://trends.google.com/trends/explore?q=meditation))
+2. **dbt charts** — NEW / SPIKE, score 3.00 (trends) ([link](https://trends.google.com/trends/explore?q=dbt+charts))
+3. **dbt v2** — NEW / SPIKE, score 1.37 (trends) ([link](https://trends.google.com/trends/explore?q=dbt+v2))
+4. **Show HN: Capsule – Single-file web apps that save their data into SQLite** — RECURRING, score 1.20 (hn) ([link](https://withcapsule.app/))
+5. **dbt summit** — NEW / SPIKE, score 0.91 (trends) ([link](https://trends.google.com/trends/explore?q=dbt+summit))
+6. **coreyhaines31/marketingskills** — EVERGREEN, score 0.80 (github) ([link](https://github.com/coreyhaines31/marketingskills))
+7. **data privacy regulations** — NEW / SPIKE, score 0.78 (trends) ([link](https://trends.google.com/trends/explore?q=data+privacy+regulations))
+8. **dbt status tracker** — NEW / SPIKE, score 0.78 (trends) ([link](https://trends.google.com/trends/explore?q=dbt+status+tracker))
+9. **DataTalksClub/data-engineering-zoomcamp** — EVERGREEN, score 0.72 (github) ([link](https://github.com/DataTalksClub/data-engineering-zoomcamp))
+10. **pfms dbt tracker** — NEW / SPIKE, score 0.65 (trends) ([link](https://trends.google.com/trends/explore?q=pfms+dbt+tracker))
 
 ## Content Topic Ideas
 
 Ready-to-use post/video angles based on the topics above:
 
-1. WHITESPACE — only one relevant video exists ("LightDash Demo: Ultimate Setup Guide for Modern BI Tool on DBT | Charts & Metrics Explained", 4.7k views). Your angle: claim the space — straightforward, solid coverage of "dbt charts" has almost no competition right now.
+1. REVISIT — "Flying: Relaxing Sleep Music for Meditation, Stress Relief & Relaxation by Peder B. Helland" has 532.1M views, but it's from 10 years ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
+   _(based on: "meditation")_
+2. WHITESPACE — only one relevant video exists ("LightDash Demo: Ultimate Setup Guide for Modern BI Tool on DBT | Charts & Metrics Explained", 4.7k views). Your angle: claim the space — straightforward, solid coverage of "dbt charts" has almost no competition right now.
    _(based on: "dbt charts")_
-2. PROVEN DEMAND — "Tema El Saxofon 2.0 DBT DjFranyerCarAudio" has 278.1k views from 11 months ago. There's a proven audience for this. Your angle: don't repeat it — bring something only you have (a real client story, a contrarian take, your own data) instead of another generic walkthrough.
+3. PROVEN DEMAND — "Tema El Saxofon 2.0 DBT DjFranyerCarAudio" has 278.1k views from 11 months ago. There's a proven audience for this. Your angle: don't repeat it — bring something only you have (a real client story, a contrarian take, your own data) instead of another generic walkthrough.
    _(based on: "dbt v2")_
-3. OPPORTUNITY — a few videos exist but none has broken through (best is "Show HN: Capsule – Single-file web apps that save their data into SQLite #Shorts" at 727 views). Your angle: the existing coverage isn't landing — try a sharper hook, a real example, or a format nobody else has used on this topic.
+4. OPPORTUNITY — a few videos exist but none has broken through (best is "Show HN: Capsule – Single-file web apps that save their data into SQLite #Shorts" at 730 views). Your angle: the existing coverage isn't landing — try a sharper hook, a real example, or a format nobody else has used on this topic.
    _(based on: "Show HN: Capsule – Single-file web apps that save their data into SQLite")_
-4. REVISIT — "dbt Explained ft. Anders Swanson" has 34.2k views, but it's from 23 months ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
+5. REVISIT — "dbt Explained ft. Anders Swanson" has 34.2k views, but it's from 23 months ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
    _(based on: "dbt summit")_
-5. WHITESPACE — no real YouTube coverage of "coreyhaines31/marketingskills" yet. Your angle: be first — a clear explainer or tutorial claims this space before anyone else covers it.
+6. WHITESPACE — no real YouTube coverage of "coreyhaines31/marketingskills" yet. Your angle: be first — a clear explainer or tutorial claims this space before anyone else covers it.
    _(based on: "coreyhaines31/marketingskills")_
-6. REVISIT — "Data Engineering Course for Beginners" has 1.1M views, but it's from 2 years ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
-   _(based on: "DataTalksClub/data-engineering-zoomcamp")_
-7. WHITESPACE — no real YouTube coverage of "dbt status tracker" yet. Your angle: be first — a clear explainer or tutorial claims this space before anyone else covers it.
+7. WHITESPACE — only one relevant video exists ("WILL INDIAN GOVERNMENT DESTROY YOUR PRIVACY?? #informative #indiangovernment", 1.6M views). Your angle: claim the space — straightforward, solid coverage of "data privacy regulations" has almost no competition right now.
+   _(based on: "data privacy regulations")_
+8. WHITESPACE — no real YouTube coverage of "dbt status tracker" yet. Your angle: be first — a clear explainer or tutorial claims this space before anyone else covers it.
    _(based on: "dbt status tracker")_
-8. WHITESPACE — only one relevant video exists ("pfms how to check pfms status pfms account balance kaise check kare aapne Android mobile se", 1.6M views). Your angle: claim the space — straightforward, solid coverage of "pfms dbt tracker" has almost no competition right now.
+9. REVISIT — "Data Engineering Course for Beginners" has 1.1M views, but it's from 2 years ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
+   _(based on: "DataTalksClub/data-engineering-zoomcamp")_
+10. WHITESPACE — only one relevant video exists ("pfms how to check pfms status pfms account balance kaise check kare aapne Android mobile se", 1.6M views). Your angle: claim the space — straightforward, solid coverage of "pfms dbt tracker" has almost no competition right now.
    _(based on: "pfms dbt tracker")_
-9. WHITESPACE — only one relevant video exists ("pfms how to check pfms status pfms account balance kaise check kare aapne Android mobile se", 1.6M views). Your angle: claim the space — straightforward, solid coverage of "pfms dbt status tracker" has almost no competition right now.
-   _(based on: "pfms dbt status tracker")_
-10. REVISIT — "Data Engineer vs. Data Scientist ft. @eczachly_" has 2.1M views, but it's from 22 months ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
-   _(based on: "what is data pipeline")_
 
 ## Full Ranked List (top 50)
 
 | Rank | Topic | Status | Score | Sources | Example Link |
 |---|---|---|---|---|---|
-| 1 | dbt charts | NEW / SPIKE | 3.00 | trends | [link](https://trends.google.com/trends/explore?q=dbt+charts) |
-| 2 | dbt v2 | NEW / SPIKE | 1.37 | trends | [link](https://trends.google.com/trends/explore?q=dbt+v2) |
-| 3 | Show HN: Capsule – Single-file web apps that save their data into SQLite | RECURRING | 1.20 | hn | [link](https://withcapsule.app/) |
-| 4 | dbt summit | NEW / SPIKE | 0.91 | trends | [link](https://trends.google.com/trends/explore?q=dbt+summit) |
-| 5 | coreyhaines31/marketingskills | EVERGREEN | 0.80 | github | [link](https://github.com/coreyhaines31/marketingskills) |
-| 6 | DataTalksClub/data-engineering-zoomcamp | EVERGREEN | 0.72 | github | [link](https://github.com/DataTalksClub/data-engineering-zoomcamp) |
-| 7 | dbt status tracker | NEW / SPIKE | 0.72 | trends | [link](https://trends.google.com/trends/explore?q=dbt+status+tracker) |
-| 8 | pfms dbt tracker | NEW / SPIKE | 0.65 | trends | [link](https://trends.google.com/trends/explore?q=pfms+dbt+tracker) |
-| 9 | pfms dbt status tracker | NEW / SPIKE | 0.59 | trends | [link](https://trends.google.com/trends/explore?q=pfms+dbt+status+tracker) |
-| 10 | what is data pipeline | NEW / SPIKE | 0.58 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+pipeline) |
-| 11 | langfuse/langfuse | EVERGREEN | 0.55 | github | [link](https://github.com/langfuse/langfuse) |
-| 12 | pfms dbt | NEW / SPIKE | 0.54 | trends | [link](https://trends.google.com/trends/explore?q=pfms+dbt) |
-| 13 | pfms dbt status | NEW / SPIKE | 0.52 | trends | [link](https://trends.google.com/trends/explore?q=pfms+dbt+status) |
-| 14 | dbt boursorama | NEW / SPIKE | 0.52 | trends | [link](https://trends.google.com/trends/explore?q=dbt+boursorama) |
-| 15 | dbt bourse | NEW / SPIKE | 0.46 | trends | [link](https://trends.google.com/trends/explore?q=dbt+bourse) |
-| 16 | google analytics | NEW / SPIKE | 0.35 | trends | [link](https://trends.google.com/trends/explore?q=google+analytics) |
-| 17 | airbytehq/airbyte | NEW / SPIKE | 0.35 | github | [link](https://github.com/airbytehq/airbyte) |
-| 18 | Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data | NEW / SPIKE | 0.32 | hn | [link](https://arxiv.org/abs/2609.18842) |
-| 19 | what is data engineering | NEW / SPIKE | 0.30 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+engineering) |
-| 20 | microsoft power bi | NEW / SPIKE | 0.30 | trends | [link](https://trends.google.com/trends/explore?q=microsoft+power+bi) |
-| 21 | data and analytics | RECURRING | 0.30 | trends | [link](https://trends.google.com/trends/explore?q=data+and+analytics) |
-| 22 | mage-ai/mage-ai | NEW / SPIKE | 0.28 | github | [link](https://github.com/mage-ai/mage-ai) |
-| 23 | dbt center of orange county | NEW / SPIKE | 0.26 | trends | [link](https://trends.google.com/trends/explore?q=dbt+center+of+orange+county) |
-| 24 | power bi desktop | EVERGREEN | 0.23 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+desktop) |
-| 25 | what is power bi | NEW / SPIKE | 0.22 | trends | [link](https://trends.google.com/trends/explore?q=what+is+power+bi) |
-| 26 | dbt-labs/dbt | NEW / SPIKE | 0.22 | github | [link](https://github.com/dbt-labs/dbt) |
-| 27 | data science | RECURRING | 0.22 | trends | [link](https://trends.google.com/trends/explore?q=data+science) |
-| 28 | what is dbt | NEW / SPIKE | 0.20 | trends | [link](https://trends.google.com/trends/explore?q=what+is+dbt) |
-| 29 | dbt vs airflow | NEW / SPIKE | 0.20 | trends | [link](https://trends.google.com/trends/explore?q=dbt+vs+airflow) |
-| 30 | power bi dashboard | EVERGREEN | 0.18 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+dashboard) |
-| 31 | dashboard | NEW / SPIKE | 0.18 | trends | [link](https://trends.google.com/trends/explore?q=dashboard) |
-| 32 | dbt status | RECURRING | 0.17 | trends | [link](https://trends.google.com/trends/explore?q=dbt+status) |
-| 33 | download power bi | NEW / SPIKE | 0.16 | trends | [link](https://trends.google.com/trends/explore?q=download+power+bi) |
-| 34 | dbt check | NEW / SPIKE | 0.15 | trends | [link](https://trends.google.com/trends/explore?q=dbt+check) |
-| 35 | data engineering jobs | EVERGREEN | 0.15 | trends | [link](https://trends.google.com/trends/explore?q=data+engineering+jobs) |
-| 36 | dbt | EVERGREEN | 0.14 | trends | [link](https://trends.google.com/trends/explore?q=dbt) |
-| 37 | dbt skills | EVERGREEN | 0.14 | trends | [link](https://trends.google.com/trends/explore?q=dbt+skills) |
-| 38 | sql | NEW / SPIKE | 0.14 | trends | [link](https://trends.google.com/trends/explore?q=sql) |
-| 39 | dbt data | EVERGREEN | 0.13 | trends | [link](https://trends.google.com/trends/explore?q=dbt+data) |
-| 40 | circular dependency detected power bi | NEW / SPIKE | 0.13 | trends | [link](https://trends.google.com/trends/explore?q=circular+dependency+detected+power+bi) |
-| 41 | data pipeline solutions | NEW / SPIKE | 0.13 | trends | [link](https://trends.google.com/trends/explore?q=data+pipeline+solutions) |
-| 42 | evidentlyai/evidently | NEW / SPIKE | 0.12 | github | [link](https://github.com/evidentlyai/evidently) |
-| 43 | what is data analytics | NEW / SPIKE | 0.12 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+analytics) |
-| 44 | power bi free | NEW / SPIKE | 0.12 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+free) |
-| 45 | power bi service | RECURRING | 0.12 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+service) |
-| 46 | evidence-dev/evidence | NEW / SPIKE | 0.11 | github | [link](https://github.com/evidence-dev/evidence) |
-| 47 | Open-sourced jev architecture last year with model,paper and dataset | NEW / SPIKE | 0.11 | hn | [link](https://news.ycombinator.com/item?id=49736660) |
-| 48 | clearml/clearml | NEW / SPIKE | 0.11 | github | [link](https://github.com/clearml/clearml) |
-| 49 | data engineering services | NEW / SPIKE | 0.11 | trends | [link](https://trends.google.com/trends/explore?q=data+engineering+services) |
-| 50 | power query | NEW / SPIKE | 0.10 | trends | [link](https://trends.google.com/trends/explore?q=power+query) |
+| 1 | meditation | NEW / SPIKE | 3.02 | trends | [link](https://trends.google.com/trends/explore?q=meditation) |
+| 2 | dbt charts | NEW / SPIKE | 3.00 | trends | [link](https://trends.google.com/trends/explore?q=dbt+charts) |
+| 3 | dbt v2 | NEW / SPIKE | 1.37 | trends | [link](https://trends.google.com/trends/explore?q=dbt+v2) |
+| 4 | Show HN: Capsule – Single-file web apps that save their data into SQLite | RECURRING | 1.20 | hn | [link](https://withcapsule.app/) |
+| 5 | dbt summit | NEW / SPIKE | 0.91 | trends | [link](https://trends.google.com/trends/explore?q=dbt+summit) |
+| 6 | coreyhaines31/marketingskills | EVERGREEN | 0.80 | github | [link](https://github.com/coreyhaines31/marketingskills) |
+| 7 | data privacy regulations | NEW / SPIKE | 0.78 | trends | [link](https://trends.google.com/trends/explore?q=data+privacy+regulations) |
+| 8 | dbt status tracker | NEW / SPIKE | 0.78 | trends | [link](https://trends.google.com/trends/explore?q=dbt+status+tracker) |
+| 9 | DataTalksClub/data-engineering-zoomcamp | EVERGREEN | 0.72 | github | [link](https://github.com/DataTalksClub/data-engineering-zoomcamp) |
+| 10 | pfms dbt tracker | NEW / SPIKE | 0.65 | trends | [link](https://trends.google.com/trends/explore?q=pfms+dbt+tracker) |
+| 11 | what is data pipeline | NEW / SPIKE | 0.60 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+pipeline) |
+| 12 | langfuse/langfuse | EVERGREEN | 0.55 | github | [link](https://github.com/langfuse/langfuse) |
+| 13 | pfms dbt | NEW / SPIKE | 0.54 | trends | [link](https://trends.google.com/trends/explore?q=pfms+dbt) |
+| 14 | pfms dbt status tracker | NEW / SPIKE | 0.52 | trends | [link](https://trends.google.com/trends/explore?q=pfms+dbt+status+tracker) |
+| 15 | dbt boursorama | NEW / SPIKE | 0.52 | trends | [link](https://trends.google.com/trends/explore?q=dbt+boursorama) |
+| 16 | dbt bourse | NEW / SPIKE | 0.46 | trends | [link](https://trends.google.com/trends/explore?q=dbt+bourse) |
+| 17 | pfms dbt status | NEW / SPIKE | 0.46 | trends | [link](https://trends.google.com/trends/explore?q=pfms+dbt+status) |
+| 18 | google analytics | NEW / SPIKE | 0.36 | trends | [link](https://trends.google.com/trends/explore?q=google+analytics) |
+| 19 | airbytehq/airbyte | NEW / SPIKE | 0.35 | github | [link](https://github.com/airbytehq/airbyte) |
+| 20 | Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data | NEW / SPIKE | 0.33 | hn | [link](https://arxiv.org/abs/2609.18842) |
+| 21 | data analytics | EVERGREEN | 0.30 | trends | [link](https://trends.google.com/trends/explore?q=data+analytics) |
+| 22 | data and analytics | RECURRING | 0.30 | trends | [link](https://trends.google.com/trends/explore?q=data+and+analytics) |
+| 23 | what is data engineering | NEW / SPIKE | 0.30 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+engineering) |
+| 24 | power bi microsoft | RECURRING | 0.30 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+microsoft) |
+| 25 | mage-ai/mage-ai | NEW / SPIKE | 0.28 | github | [link](https://github.com/mage-ai/mage-ai) |
+| 26 | what is power bi | NEW / SPIKE | 0.23 | trends | [link](https://trends.google.com/trends/explore?q=what+is+power+bi) |
+| 27 | power bi desktop | EVERGREEN | 0.23 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+desktop) |
+| 28 | dbt-labs/dbt | NEW / SPIKE | 0.22 | github | [link](https://github.com/dbt-labs/dbt) |
+| 29 | data science | RECURRING | 0.21 | trends | [link](https://trends.google.com/trends/explore?q=data+science) |
+| 30 | dashboard power bi | NEW / SPIKE | 0.20 | trends | [link](https://trends.google.com/trends/explore?q=dashboard+power+bi) |
+| 31 | data pipeline solutions | NEW / SPIKE | 0.20 | trends | [link](https://trends.google.com/trends/explore?q=data+pipeline+solutions) |
+| 32 | dbt vs airflow | NEW / SPIKE | 0.20 | trends | [link](https://trends.google.com/trends/explore?q=dbt+vs+airflow) |
+| 33 | dbt center of orange county | NEW / SPIKE | 0.20 | trends | [link](https://trends.google.com/trends/explore?q=dbt+center+of+orange+county) |
+| 34 | what is dbt | NEW / SPIKE | 0.20 | trends | [link](https://trends.google.com/trends/explore?q=what+is+dbt) |
+| 35 | jobs | NEW / SPIKE | 0.20 | trends | [link](https://trends.google.com/trends/explore?q=jobs) |
+| 36 | dashboard | NEW / SPIKE | 0.19 | trends | [link](https://trends.google.com/trends/explore?q=dashboard) |
+| 37 | dbt status | RECURRING | 0.17 | trends | [link](https://trends.google.com/trends/explore?q=dbt+status) |
+| 38 | dbt check | NEW / SPIKE | 0.16 | trends | [link](https://trends.google.com/trends/explore?q=dbt+check) |
+| 39 | power bi download | RECURRING | 0.16 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+download) |
+| 40 | data engineering jobs | EVERGREEN | 0.16 | trends | [link](https://trends.google.com/trends/explore?q=data+engineering+jobs) |
+| 41 | sql | NEW / SPIKE | 0.14 | trends | [link](https://trends.google.com/trends/explore?q=sql) |
+| 42 | dbt skills | EVERGREEN | 0.14 | trends | [link](https://trends.google.com/trends/explore?q=dbt+skills) |
+| 43 | dbt data | EVERGREEN | 0.14 | trends | [link](https://trends.google.com/trends/explore?q=dbt+data) |
+| 44 | power bi gateway download | NEW / SPIKE | 0.13 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+gateway+download) |
+| 45 | circular dependency detected power bi | NEW / SPIKE | 0.13 | trends | [link](https://trends.google.com/trends/explore?q=circular+dependency+detected+power+bi) |
+| 46 | evidentlyai/evidently | NEW / SPIKE | 0.12 | github | [link](https://github.com/evidentlyai/evidently) |
+| 47 | power bi service | RECURRING | 0.12 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+service) |
+| 48 | what is data analytics | NEW / SPIKE | 0.12 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+analytics) |
+| 49 | power bi free | NEW / SPIKE | 0.12 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+free) |
+| 50 | power query | NEW / SPIKE | 0.11 | trends | [link](https://trends.google.com/trends/explore?q=power+query) |
 
-## Evergreen Question Bank (277 questions)
+## Evergreen Question Bank (278 questions)
 
 Google autocomplete data — no weekly time signal, so it doesn't compete in the ranking above, but it's a reliable list of the questions people always ask. Good for always-relevant, not necessarily timely, content.
 
@@ -179,15 +179,15 @@ Google autocomplete data — no weekly time signal, so it doesn't compete in the
 - cybersecurity vs data analytics
 - cybersecurity vs data engineering
 - data analytics
-- data analytics apprenticeship
+- data analytics apprenticeship google
 - data analytics certification
 - data analytics courses
 - data analytics degree
 - data analytics internship
 - data analytics jobs
+- data analytics jobs remote
 - data analytics meaning
 - data analytics salary
-- data analytics wsu
 - data engineering
 - data engineering academy
 - data engineering bootcamp
@@ -277,9 +277,9 @@ Google autocomplete data — no weekly time signal, so it doesn't compete in the
 - or power bi measure
 - or power bi symbol
 - power bi
+- power bi app
 - power bi certification
 - power bi dashboard
-- power bi dashboard examples
 - power bi desktop
 - power bi desktop download
 - power bi download
@@ -300,6 +300,7 @@ Google autocomplete data — no weekly time signal, so it doesn't compete in the
 - what is analytics engineering dbt
 - what is analytics engineering reddit
 - what is data analytics
+- what is data analytics and visualization
 - what is data analytics degree
 - what is data analytics engineering
 - what is data analytics in accounting
