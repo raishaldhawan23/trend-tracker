@@ -5,11 +5,21 @@ Edit these lists to tune what 'your niche' means — no code changes needed else
 
 # Seed keywords used for Google Trends (related/rising queries) and Google Suggest.
 # Keep these broad-ish — the tools expand them into specific rising queries for you.
+#
+# Deliberately NOT here: "dbt". As a bare keyword it's too semantically
+# overloaded for Trends/Suggest to ever fully disambiguate — Direct Benefit
+# Transfer government schemes, Dialectical Behavior Therapy, and apparently
+# even "meditation" via Google's own related-query graph, no matter how big
+# NEGATIVE_FILTERS gets. Reddit, HN, and GitHub (see HN_QUERIES/GITHUB_QUERIES
+# below) already use "dbt" unambiguously as a community/dev-facing search, so
+# real dbt-the-tool signal still comes through those sources. If Trends-based
+# dbt signal is wanted later, that would need Google's Knowledge Graph
+# topic-ID feature (searching a specific "dbt (data tool)" entity ID instead
+# of the plain keyword) — a possible future improvement, not implemented here.
 SEED_KEYWORDS = [
     "data analytics",
     "AI in analytics",
     "analytics engineering",
-    "dbt",
     "power bi",
     "data engineering",
     "data pipeline",
@@ -53,6 +63,13 @@ GITHUB_QUERIES = [
 # Substrings that mean a seed keyword got hijacked by an unrelated meaning
 # (e.g. "dbt" = Direct Benefit Transfer / govt scheme / therapy, not the tool).
 # Any Trends/Suggest hit for that seed whose title contains one of these is dropped.
+#
+# "dbt" is no longer in SEED_KEYWORDS (see the comment there), so this entry
+# no longer filters any Trends/Suggest rows directly — but it's still used by
+# sources/youtube_signal.py, which matches a search topic against these keys
+# by substring regardless of where the topic came from (e.g. a legitimate
+# Reddit/HN/GitHub "dbt" topic could still coincidentally pull a bad YouTube
+# match). Kept for that reason.
 NEGATIVE_FILTERS = {
     "dbt": [
         "therapy", "therapie", "cbt", "bpd", "psycholog", "counsel",
@@ -61,7 +78,7 @@ NEGATIVE_FILTERS = {
         "farmer", "agricultur", "bihar", "karnataka", "aadhaar",
         "bank account", "bank", "sbi", "pnb", "portal", "login",
         "status check", "check status", "link", "mp dbt", "mha dbt",
-        "biocare",
+        "biocare", "pfms",
     ],
     "power bi": [
         "power bill", "power bike", "power big building", "power biomass",
