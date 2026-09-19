@@ -222,6 +222,20 @@ def build_content_idea(topic, sources, tier, top_video):
 # when building a mixed Top 10 (see build_mixed_top10).
 CATEGORIES = ["data_analytics", "ai_analytics", "analytics_engineering"]
 
+# Categories where Trends has demonstrably no real signal for the underlying
+# seed and just surfaces broad, unrelated noise instead — confirmed live for
+# ai_analytics ("music," "jobs," "google analytics" outranking genuine HN
+# content by ~100x). A Trends-sourced row tagged with one of these categories
+# is excluded from Top 10 selection for it entirely (not just its guaranteed
+# slots — also the score-based leftover fill, so it can't sneak back in that
+# way either); Reddit/HN/GitHub fill the category's slots instead. Trends
+# still contributes normally everywhere else.
+CATEGORIES_EXCLUDING_TRENDS = {"ai_analytics"}
+
+
+def _is_excluded_trends_row(row):
+    return row["category"] in CATEGORIES_EXCLUDING_TRENDS and "trends" in str(row.get("sources", ""))
+
 
 def build_mixed_top10(ranked_df, per_category=3, total=10):
     """A single global top-N-by-score let GitHub's engineering-only results
@@ -234,14 +248,16 @@ def build_mixed_top10(ranked_df, per_category=3, total=10):
     if ranked_df.empty or "category" not in ranked_df.columns:
         return ranked_df.head(total).copy()
 
+    eligible = ranked_df[~ranked_df.apply(_is_excluded_trends_row, axis=1)]
+
     selected_idx = []
     for cat in CATEGORIES:
-        cat_rows = ranked_df[ranked_df["category"] == cat]
+        cat_rows = eligible[eligible["category"] == cat]
         selected_idx.extend(cat_rows.head(per_category).index.tolist())
 
     remaining = total - len(selected_idx)
     if remaining > 0:
-        leftover = ranked_df[~ranked_df.index.isin(selected_idx)]
+        leftover = eligible[~eligible.index.isin(selected_idx)]
         selected_idx.extend(leftover.head(remaining).index.tolist())
 
     return (

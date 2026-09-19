@@ -25,6 +25,17 @@ Edit these lists to tune what 'your niche' means — no code changes needed else
 # enough practice-side seeds feeding Trends/Suggest, the Top 10 skewed toward
 # data engineering by default. The additions below (Power BI DAX, dashboard
 # design, KPI dashboard, etc.) balance that out.
+#
+# Also deliberately NOT here: "AI agent analytics" and "AI in analytics" —
+# same class of problem as the earlier "dbt" removal. They're short/generic
+# enough that Google's related-query graph can't tell they're supposed to be
+# about analytics at all, and defaults to surfacing whatever's broadly
+# trending among anyone who searched them for unrelated reasons — confirmed
+# live: "music," "jobs," and "google analytics" outranking genuine content by
+# roughly 100x under these seeds. "AI agent analytics" stays in HN_QUERIES
+# (HN hasn't shown this failure mode — see build_mixed_top10 in run.py, which
+# also excludes Trends specifically from the ai_analytics category slate for
+# the same reason); real ai_analytics signal comes from HN/GitHub/Reddit now.
 SEED_KEYWORDS = [
     # data_analytics
     "data analytics",
@@ -35,9 +46,7 @@ SEED_KEYWORDS = [
     "KPI dashboard",
     "business intelligence trends",
     # ai_analytics
-    "AI in analytics",
     "LLM analytics",
-    "AI agent analytics",
     "AI copilot for data analysis",
     "ChatGPT for data analysis",
     "LLM for BI",
@@ -100,9 +109,8 @@ CATEGORY_TAGS = {
     "business intelligence trends": "data_analytics",
     "data analyst": "data_analytics",  # HN_QUERIES
     # ai_analytics
-    "AI in analytics": "ai_analytics",
     "LLM analytics": "ai_analytics",
-    "AI agent analytics": "ai_analytics",
+    "AI agent analytics": "ai_analytics",  # HN_QUERIES only now — see SEED_KEYWORDS comment
     "AI copilot for data analysis": "ai_analytics",
     "ChatGPT for data analysis": "ai_analytics",
     "LLM for BI": "ai_analytics",
