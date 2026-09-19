@@ -121,5 +121,7 @@ SCALE_CAPS = {
     "trends": 500,   # matches the existing rising-query percentage cap
     "reddit": 3000,
     "hn": 800,
-    "github": 5000,
+    "github": 20000,  # raised from 5000 — real runs saw raw scores up to 50,900,
+                       # so 5000 was blowing through by a wide margin and tying
+                       # 9-11 repos per run at the 1.0 ceiling
 }
