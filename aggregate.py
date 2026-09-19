@@ -26,10 +26,17 @@ def _normalize_title(title):
     return " ".join(words)
 
 
-def _minmax_normalize(series):
-    if series.max() == series.min():
-        return series.apply(lambda x: 0.5)
-    return (series - series.min()) / (series.max() - series.min())
+def _fixed_scale_normalize(row):
+    """Normalizes a raw score onto 0-1 using config.SCALE_CAPS[source] — a
+    fixed upper bound, NOT a within-batch min-max. Min-max structurally
+    guarantees today's single highest-scoring item always gets full weight
+    (1.0) regardless of whether it's topically relevant or even strong in
+    absolute terms — that's what let an off-topic one-day spike (e.g. an
+    "ice cream" Trends anomaly) outrank every genuine result just for
+    happening to be the day's top number. A fixed cap means a moderate score
+    stays moderate, and only a genuinely strong absolute score reaches 1.0."""
+    cap = config.SCALE_CAPS.get(row["source"], 1.0)
+    return min(row["score"] / cap, 1.0) if cap > 0 else 0.0
 
 
 def _passes_negative_filters(row):
@@ -80,12 +87,12 @@ def build_ranked_table(all_hits):
     df["norm_title"] = df["title"].apply(_normalize_title)
     df = df[df["norm_title"].str.len() > 0]
 
-    # normalize raw scores 0-1 WITHIN each weight group (so HN points, Reddit
-    # upvotes, and Trends' rising/top values are comparable), then apply weight
+    # normalize raw scores 0-1 against a fixed per-source scale cap (not a
+    # within-batch min-max — see _fixed_scale_normalize), then apply weight
     df["norm_score"] = 0.0
     for grp, sub in df.groupby(df.apply(_weight_group, axis=1)):
         weight = config.WEIGHTS.get(grp, 1.0)
-        df.loc[sub.index, "norm_score"] = _minmax_normalize(sub["score"]) * weight
+        df.loc[sub.index, "norm_score"] = sub.apply(_fixed_scale_normalize, axis=1) * weight
 
     # aggregate by normalized topic text: sum weighted scores across sources,
     # count how many sources mentioned it (cross-source agreement = stronger signal)

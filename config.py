@@ -105,3 +105,21 @@ WEIGHTS = {
     "trends_rising": 3.0,
     "trends_top": 0.3,
 }
+
+# Fixed upper bounds per source's raw score, used to normalize scores onto a
+# comparable 0-1 scale (see aggregate.py — norm_score = min(raw/cap, 1.0)).
+# Deliberately NOT min-max within each run's batch: min-max always maps
+# today's single highest-scoring item to exactly 1.0 (full weight) no matter
+# how strong or weak it actually is or whether it's even topically relevant
+# — that's what let an off-topic one-day Trends spike ("lidl near me", then
+# "ice cream") get crowned #1 purely for being the day's top number. A fixed
+# cap means a moderate spike scores as moderate, and only a score that's
+# genuinely strong in absolute terms reaches full weight. These are rough
+# estimates of what a strong (not just "today's highest") result looks like
+# for each source — tune from observed data as the tracker accumulates runs.
+SCALE_CAPS = {
+    "trends": 500,   # matches the existing rising-query percentage cap
+    "reddit": 3000,
+    "hn": 800,
+    "github": 5000,
+}
