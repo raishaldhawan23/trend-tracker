@@ -1,2 +1,11 @@
 __pycache__/
 *.pyc
+
+# Local secrets/credentials — this project reads all keys (YOUTUBE_API_KEY,
+# GITHUB_TOKEN) from environment variables / GitHub Actions secrets, never
+# from a file, but this guards against one being added for local testing.
+.env
+.env.*
+*.pem
+*.key
+credentials.json

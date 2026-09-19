@@ -145,6 +145,59 @@ def _format_age(published_at_iso):
     return f"{years} year ago" if years == 1 else f"{years} years ago"
 
 
+def _video_year(published_at_iso):
+    return datetime.datetime.fromisoformat(published_at_iso.replace("Z", "+00:00")).year
+
+
+def _video_scope(video_title):
+    """A rough read on what an existing video's coverage level is, inferred
+    from its title alone (no transcript access) — used to suggest what a
+    differentiated take would need to go past, not to claim to know its
+    actual content."""
+    t = video_title.lower()
+    if any(w in t for w in ("beginner", "for beginners", "101", "basics", "intro", "introduction")):
+        return "a beginner-level walkthrough"
+    if any(w in t for w in ("full course", "complete course", "bootcamp", "masterclass", "hours")):
+        return "a broad, from-scratch course"
+    if any(w in t for w in ("tutorial", "how to", "guide")):
+        return "a standard how-to tutorial"
+    return "a general overview"
+
+
+# Signals that a topic is a specific, practical pain point (an error message,
+# a "why won't this work" moment) rather than a general subject — these get a
+# different WHITESPACE structure (fix-first) than an unfamiliar tool would.
+_PAIN_POINT_INDICATORS = (
+    "error", "fix", "issue", "problem", "not working", "fails", "failing",
+    "broken", "crash", "bug", "troubleshoot", "circular dependency",
+    "doesn't work", "won't", "cannot", "can't",
+)
+
+
+def _looks_like_pain_point(topic):
+    t = topic.lower()
+    return any(ind in t for ind in _PAIN_POINT_INDICATORS)
+
+
+# A GitHub repo whose title AND description mention none of these is flagged
+# as possibly off-niche for a data-analytics/BI/analytics-engineering
+# audience (e.g. a general marketing tool, or low-level infra with no BI
+# angle) — flagged, not dropped, so relevance is your call, not an assumption
+# baked into the score.
+_NICHE_SIGNAL_WORDS = (
+    "data", "analytics", "dashboard", "bi", "business intelligence", "kpi",
+    "reporting", "warehouse", "etl", "elt", "pipeline", "dbt", "sql",
+    "visualization", "chart", "metrics", "insight", "llm", "ai agent",
+)
+
+
+def _is_likely_off_niche(topic, description, sources):
+    if "github" not in str(sources):
+        return False
+    text = f"{topic} {description}".lower()
+    return not any(w in text for w in _NICHE_SIGNAL_WORDS)
+
+
 def classify_competition(videos):
     """videos: None (YOUTUBE_API_KEY not set, or the API call failed), []
     (checked, found nothing relevant), or a list of video dicts from
@@ -171,51 +224,84 @@ def classify_competition(videos):
     return "REVISIT", top_video
 
 
-def build_content_idea(topic, sources, tier, top_video):
-    """Plain-language Content Idea entry: the competitive tier, the actual
-    top competing video (title + view count) when one exists, and a
-    suggested differentiation angle."""
+def build_content_idea(topic, sources, tier, top_video, description=""):
+    """A Content Idea entry: a structural suggestion tailored to the
+    competitive tier — a hook and shape for the piece, not a competition
+    verdict. Never asserts a personal claim or experience on your behalf
+    (no assumed "I hit this on a client project" lines) — personalizing it
+    is left to you. GitHub-sourced topics with no clear BI/analytics signal
+    in their title or description get an off-niche flag prepended, so
+    relevance is your judgment call, not an assumption baked into the score.
+    """
+    off_niche_note = ""
+    if _is_likely_off_niche(topic, description, sources):
+        off_niche_note = (
+            "⚠️ Possibly off-niche for a BI/analytics audience (no clear data/BI "
+            "angle in this repo's description) — judge for yourself. "
+        )
+
     if tier == "UNKNOWN":
         # No YOUTUBE_API_KEY configured (or the API call failed) — fall back
         # to the old pattern-based angle rather than block the report on it.
-        return generate_content_angle(topic, sources) + " [competitive check unavailable — set YOUTUBE_API_KEY]"
+        body = generate_content_angle(topic, sources) + " [competitive check unavailable — set YOUTUBE_API_KEY]"
+        return off_niche_note + body
 
     if tier == "WHITESPACE":
-        if top_video:
-            return (
-                f'WHITESPACE — only one relevant video exists ("{top_video["title"]}", '
-                f'{_format_views(top_video["view_count"])}). Your angle: claim the space — '
-                f'straightforward, solid coverage of "{topic}" has almost no competition right now.'
-            )
-        return (
-            f'WHITESPACE — no real YouTube coverage of "{topic}" yet. Your angle: be first — '
-            "a clear explainer or tutorial claims this space before anyone else covers it."
+        existing_note = (
+            f' (only one relevant video exists: "{top_video["title"]}", {_format_views(top_video["view_count"])})'
+            if top_video else ""
         )
+        if _looks_like_pain_point(topic):
+            body = (
+                f'WHITESPACE — "{topic}" is a specific, practical pain point with almost no dedicated '
+                f'coverage{existing_note}. Structure: state the actual fix up front, then explain why most '
+                "existing explanations (forum answers, docs) get it wrong or skip the real cause."
+            )
+        elif "github" in str(sources):
+            body = (
+                f'WHITESPACE — "{topic}" has little to no video coverage yet{existing_note}. '
+                "Structure: a quick hands-on first look — install it, then specifically test (1) setup/"
+                "onboarding friction, (2) output quality on a real dataset (not the demo data), and "
+                "(3) how it fits into an existing stack."
+            )
+        else:
+            body = (
+                f'WHITESPACE — "{topic}" has little to no video coverage yet{existing_note}. '
+                "Structure: a clear, direct explainer that states plainly what it is and who actually "
+                "needs it, before generic coverage catches up."
+            )
+        return off_niche_note + body
 
     if tier == "OPPORTUNITY":
-        return (
-            f'OPPORTUNITY — a few videos exist but none has broken through (best is '
-            f'"{top_video["title"]}" at {_format_views(top_video["view_count"])}). Your angle: '
-            "the existing coverage isn't landing — try a sharper hook, a real example, or a "
-            "format nobody else has used on this topic."
+        body = (
+            f'OPPORTUNITY — a few videos exist on "{topic}" but none has broken through (best is '
+            f'"{top_video["title"]}" at {_format_views(top_video["view_count"])}). Structure: the existing '
+            "coverage clearly isn't landing — try a sharper, more specific hook (a concrete before/after "
+            "or a named use case) instead of another general overview."
         )
+        return off_niche_note + body
 
     if tier == "PROVEN DEMAND":
-        return (
-            f'PROVEN DEMAND — "{top_video["title"]}" has {_format_views(top_video["view_count"])} '
-            f'from {_format_age(top_video["published_at"])}. There\'s a proven audience for this. '
-            "Your angle: don't repeat it — bring something only you have (a real client story, "
-            "a contrarian take, your own data) instead of another generic walkthrough."
+        scope = _video_scope(top_video["title"])
+        body = (
+            f'PROVEN DEMAND — "{top_video["title"]}" has {_format_views(top_video["view_count"])} from '
+            f'{_format_age(top_video["published_at"])}: {scope}. There\'s a proven audience for this topic. '
+            f"Structure: to stand out, go past what {scope} covers — leave room for a real edge case, a "
+            "more advanced angle, or a current example instead of repeating the same overview."
         )
+        return off_niche_note + body
 
     if tier == "REVISIT":
-        return (
-            f'REVISIT — "{top_video["title"]}" has {_format_views(top_video["view_count"])}, but it\'s '
-            f'from {_format_age(top_video["published_at"])} — likely stale or off people\'s radar by now. '
-            "Your angle: cover what's changed since then, or redo it for today's tools and best practices."
+        year = _video_year(top_video["published_at"])
+        body = (
+            f'REVISIT — "{top_video["title"]}" has {_format_views(top_video["view_count"])}, but it\'s from '
+            f'{_format_age(top_video["published_at"])} ({year}) and likely outdated. Structure: a direct '
+            f'"what\'s changed since {year}" comparison — name the specific things that are different now '
+            "(new versions, deprecated features, changed best practices) rather than a generic refresh."
         )
+        return off_niche_note + body
 
-    return generate_content_angle(topic, sources)  # unreachable, but never crash the report over it
+    return off_niche_note + generate_content_angle(topic, sources)  # unreachable, but never crash over it
 
 
 # The three content niches from config.CATEGORY_TAGS, in the order checked
@@ -275,22 +361,26 @@ def _top10_with_ideas(ranked_df, youtube_results=None):
     top10 = build_mixed_top10(ranked_df).copy()
     youtube_results = youtube_results or {}
 
-    tiers, angles, video_titles, video_views, video_urls = [], [], [], [], []
+    tiers, angles, video_titles, video_views, video_urls, off_niche_flags = [], [], [], [], [], []
     for _, row in top10.iterrows():
         topic = row["example_title"]
+        sources = row.get("sources", "")
+        description = row.get("description", "")
         videos = youtube_results.get(topic)
         tier, top_video = classify_competition(videos)
-        angles.append(build_content_idea(topic, row.get("sources", ""), tier, top_video))
+        angles.append(build_content_idea(topic, sources, tier, top_video, description))
         tiers.append(tier)
         video_titles.append(top_video["title"] if top_video else "")
         video_views.append(top_video["view_count"] if top_video else None)
         video_urls.append(top_video["url"] if top_video else "")
+        off_niche_flags.append(_is_likely_off_niche(topic, description, sources))
 
     top10["competition_tier"] = tiers
     top10["content_angle"] = angles
     top10["top_video_title"] = video_titles
     top10["top_video_views"] = video_views
     top10["top_video_url"] = video_urls
+    top10["possibly_off_niche"] = off_niche_flags
     return top10
 
 
@@ -391,12 +481,12 @@ def write_excel_report(ranked_df, path="report.xlsx", youtube_results=None, ever
     top10_sheet.columns = ["Rank", "Topic", "Status", "Score", "Sources", "Link"]
 
     ideas_sheet = top10[[
-        "competition_tier", "content_angle", "example_title",
+        "competition_tier", "content_angle", "example_title", "possibly_off_niche",
         "top_video_title", "top_video_views", "status", "composite_score", "example_url",
     ]].copy()
     ideas_sheet.insert(0, "rank", range(1, len(ideas_sheet) + 1))
     ideas_sheet.columns = [
-        "Rank", "Competition Tier", "Content Angle", "Based On Topic",
+        "Rank", "Competition Tier", "Content Angle", "Based On Topic", "Possibly Off-Niche",
         "Top Competing Video", "Video Views", "Status", "Score", "Link",
     ]
 

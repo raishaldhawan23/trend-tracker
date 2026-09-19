@@ -100,6 +100,10 @@ def build_ranked_table(all_hits):
     df["query"] = df["query"].fillna("")
     df["category"] = df.apply(_lookup_category, axis=1)
 
+    if "description" not in df.columns:
+        df["description"] = ""
+    df["description"] = df["description"].fillna("")
+
     df["norm_title"] = df["title"].apply(_normalize_title)
     df = df[df["norm_title"].str.len() > 0]
 
@@ -119,6 +123,7 @@ def build_ranked_table(all_hits):
         example_title=("title", "first"),
         example_url=("url", "first"),
         category=("category", "first"),  # a topic clustered from multiple queries just takes the first's tag
+        description=("description", "first"),  # GitHub repo description, used for off-niche flagging
     ).reset_index()  # keep norm_title as a column — needed for history tracking
 
     # cross-source agreement bonus: a topic 3 sources agree on beats one loud single-source spike
