@@ -1,171 +1,68 @@
 norm_title,composite_score,source_count,sources,example_title,example_url,status
-meditation,3.018,1,trends,meditation,https://trends.google.com/trends/explore?q=meditation,NEW / SPIKE
-dbt charts,3.0,1,trends,dbt charts,https://trends.google.com/trends/explore?q=dbt+charts,NEW / SPIKE
-dbt v2,1.3695652173913042,1,trends,dbt v2,https://trends.google.com/trends/explore?q=dbt+v2,NEW / SPIKE
-show hn capsule singlefile web apps that save their data into sqlite,1.2,1,hn,Show HN: Capsule – Single-file web apps that save their data into SQLite,https://withcapsule.app/,RECURRING
-dbt summit,0.9130434782608696,1,trends,dbt summit,https://trends.google.com/trends/explore?q=dbt+summit,NEW / SPIKE
+show hn capsule singlefile web apps that save their data into sqlite,1.2,1,hn,Show HN: Capsule – Single-file web apps that save their data into SQLite,https://withcapsule.app/,EVERGREEN
 coreyhaines31marketingskills,0.8,1,github,coreyhaines31/marketingskills,https://github.com/coreyhaines31/marketingskills,EVERGREEN
-data privacy regulations,0.7826086956521738,1,trends,data privacy regulations,https://trends.google.com/trends/explore?q=data+privacy+regulations,NEW / SPIKE
-dbt status tracker,0.7826086956521738,1,trends,dbt status tracker,https://trends.google.com/trends/explore?q=dbt+status+tracker,NEW / SPIKE
-datatalksclubdataengineeringzoomcamp,0.7191560682243913,1,github,DataTalksClub/data-engineering-zoomcamp,https://github.com/DataTalksClub/data-engineering-zoomcamp,EVERGREEN
-pfms dbt tracker,0.6521739130434783,1,trends,pfms dbt tracker,https://trends.google.com/trends/explore?q=pfms+dbt+tracker,NEW / SPIKE
-what data pipeline,0.597,1,trends,what is data pipeline,https://trends.google.com/trends/explore?q=what+is+data+pipeline,NEW / SPIKE
-langfuselangfuse,0.5477353840086759,1,github,langfuse/langfuse,https://github.com/langfuse/langfuse,EVERGREEN
-pfms dbt,0.5435217391304348,1,trends,pfms dbt,https://trends.google.com/trends/explore?q=pfms+dbt,NEW / SPIKE
-pfms dbt status tracker,0.5217391304347826,1,trends,pfms dbt status tracker,https://trends.google.com/trends/explore?q=pfms+dbt+status+tracker,NEW / SPIKE
-dbt boursorama,0.5217391304347826,1,trends,dbt boursorama,https://trends.google.com/trends/explore?q=dbt+boursorama,NEW / SPIKE
-dbt bourse,0.4565217391304348,1,trends,dbt bourse,https://trends.google.com/trends/explore?q=dbt+bourse,NEW / SPIKE
-pfms dbt status,0.4565217391304348,1,trends,pfms dbt status,https://trends.google.com/trends/explore?q=pfms+dbt+status,NEW / SPIKE
-google analytics,0.357,1,trends,google analytics,https://trends.google.com/trends/explore?q=google+analytics,NEW / SPIKE
-airbytehqairbyte,0.3481100266193434,1,github,airbytehq/airbyte,https://github.com/airbytehq/airbyte,NEW / SPIKE
-infiniteparameter llms generating and adapting weights from live data,0.3296,1,hn,Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data,https://arxiv.org/abs/2609.18842,NEW / SPIKE
-data analytics,0.3,1,trends,data analytics,https://trends.google.com/trends/explore?q=data+analytics,EVERGREEN
-data and analytics,0.3,1,trends,data and analytics,https://trends.google.com/trends/explore?q=data+and+analytics,RECURRING
-what data engineering,0.3,1,trends,what is data engineering,https://trends.google.com/trends/explore?q=what+is+data+engineering,NEW / SPIKE
-power bi microsoft,0.3,1,trends,power bi microsoft,https://trends.google.com/trends/explore?q=power+bi+microsoft,RECURRING
-mageaimageai,0.2778822833481219,1,github,mage-ai/mage-ai,https://github.com/mage-ai/mage-ai,NEW / SPIKE
-what power bi,0.23399999999999999,1,trends,what is power bi,https://trends.google.com/trends/explore?q=what+is+power+bi,NEW / SPIKE
-power bi desktop,0.23099999999999998,1,trends,power bi desktop,https://trends.google.com/trends/explore?q=power+bi+desktop,EVERGREEN
-dbtlabsdbt,0.21830227743271224,1,github,dbt-labs/dbt,https://github.com/dbt-labs/dbt,NEW / SPIKE
-data science,0.213,1,trends,data science,https://trends.google.com/trends/explore?q=data+science,RECURRING
-dashboard power bi,0.201,1,trends,dashboard power bi,https://trends.google.com/trends/explore?q=dashboard+power+bi,NEW / SPIKE
-data pipeline solutions,0.19865217391304346,1,trends,data pipeline solutions,https://trends.google.com/trends/explore?q=data+pipeline+solutions,NEW / SPIKE
-dbt vs airflow,0.19565217391304346,1,trends,dbt vs airflow,https://trends.google.com/trends/explore?q=dbt+vs+airflow,NEW / SPIKE
-dbt center of orange county,0.19565217391304346,1,trends,dbt center of orange county,https://trends.google.com/trends/explore?q=dbt+center+of+orange+county,NEW / SPIKE
-what dbt,0.195,1,trends,what is dbt,https://trends.google.com/trends/explore?q=what+is+dbt,NEW / SPIKE
-jobs,0.195,1,trends,jobs,https://trends.google.com/trends/explore?q=jobs,NEW / SPIKE
-dashboard,0.189,1,trends,dashboard,https://trends.google.com/trends/explore?q=dashboard,NEW / SPIKE
-dbt status,0.17099999999999999,1,trends,dbt status,https://trends.google.com/trends/explore?q=dbt+status,RECURRING
-dbt check,0.159,1,trends,dbt check,https://trends.google.com/trends/explore?q=dbt+check,NEW / SPIKE
-power bi download,0.159,1,trends,power bi download,https://trends.google.com/trends/explore?q=power+bi+download,RECURRING
-data engineering jobs,0.156,1,trends,data engineering jobs,https://trends.google.com/trends/explore?q=data+engineering+jobs,EVERGREEN
-sql,0.144,1,trends,sql,https://trends.google.com/trends/explore?q=sql,NEW / SPIKE
-dbt skills,0.141,1,trends,dbt skills,https://trends.google.com/trends/explore?q=dbt+skills,EVERGREEN
-dbt data,0.135,1,trends,dbt data,https://trends.google.com/trends/explore?q=dbt+data,EVERGREEN
-power bi gateway download,0.13043478260869565,1,trends,power bi gateway download,https://trends.google.com/trends/explore?q=power+bi+gateway+download,NEW / SPIKE
-circular dependency detected power bi,0.13043478260869565,1,trends,circular dependency detected power bi,https://trends.google.com/trends/explore?q=circular+dependency+detected+power+bi,NEW / SPIKE
-evidentlyaievidently,0.1247441585329784,1,github,evidentlyai/evidently,https://github.com/evidentlyai/evidently,NEW / SPIKE
-power bi service,0.12,1,trends,power bi service,https://trends.google.com/trends/explore?q=power+bi+service,RECURRING
-what data analytics,0.12,1,trends,what is data analytics,https://trends.google.com/trends/explore?q=what+is+data+analytics,NEW / SPIKE
-power bi free,0.11699999999999999,1,trends,power bi free,https://trends.google.com/trends/explore?q=power+bi+free,NEW / SPIKE
-power query,0.11399999999999999,1,trends,power query,https://trends.google.com/trends/explore?q=power+query,NEW / SPIKE
-evidencedevevidence,0.10931677018633541,1,github,evidence-dev/evidence,https://github.com/evidence-dev/evidence,NEW / SPIKE
-opensourced jev architecture last year with modelpaper and dataset,0.10880000000000001,1,hn,"Open-sourced jev architecture last year with model,paper and dataset",https://news.ycombinator.com/item?id=49736660,NEW / SPIKE
-clearmlclearml,0.10819678596076113,1,github,clearml/clearml,https://github.com/clearml/clearml,NEW / SPIKE
-data engineering services,0.108,1,trends,data engineering services,https://trends.google.com/trends/explore?q=data+engineering+services,NEW / SPIKE
-dax power bi,0.108,1,trends,dax power bi,https://trends.google.com/trends/explore?q=dax+power+bi,NEW / SPIKE
-dbt pdf,0.108,1,trends,dbt pdf,https://trends.google.com/trends/explore?q=dbt+pdf,NEW / SPIKE
-dax,0.108,1,trends,dax,https://trends.google.com/trends/explore?q=dax,NEW / SPIKE
-engineering data management,0.10200000000000001,1,trends,engineering data management,https://trends.google.com/trends/explore?q=engineering+data+management,NEW / SPIKE
-data engineering and analytics,0.099,1,trends,data engineering and analytics,https://trends.google.com/trends/explore?q=data+engineering+and+analytics,NEW / SPIKE
-ai data analytics,0.099,1,trends,ai data analytics,https://trends.google.com/trends/explore?q=ai+data+analytics,NEW / SPIKE
-lightdashlightdash,0.0966025830622104,1,github,lightdash/lightdash,https://github.com/lightdash/lightdash,NEW / SPIKE
-business data analytics,0.093,1,trends,business data analytics,https://trends.google.com/trends/explore?q=business+data+analytics,NEW / SPIKE
-powerbi,0.09,1,trends,powerbi,https://trends.google.com/trends/explore?q=powerbi,NEW / SPIKE
-learn power bi,0.087,1,trends,learn power bi,https://trends.google.com/trends/explore?q=learn+power+bi,NEW / SPIKE
-travel,0.087,1,trends,travel,https://trends.google.com/trends/explore?q=travel,NEW / SPIKE
-power bi ai,0.087,1,trends,power bi ai,https://trends.google.com/trends/explore?q=power+bi+ai,NEW / SPIKE
-data engineer,0.087,1,trends,data engineer,https://trends.google.com/trends/explore?q=data+engineer,NEW / SPIKE
-power bi online,0.084,1,trends,power bi online,https://trends.google.com/trends/explore?q=power+bi+online,NEW / SPIKE
-power bi gateway,0.081,1,trends,power bi gateway,https://trends.google.com/trends/explore?q=power+bi+gateway,NEW / SPIKE
-power bi jobs,0.081,1,trends,power bi jobs,https://trends.google.com/trends/explore?q=power+bi+jobs,NEW / SPIKE
-social engineering,0.081,1,trends,social engineering,https://trends.google.com/trends/explore?q=social+engineering,NEW / SPIKE
-power bi pro,0.081,1,trends,power bi pro,https://trends.google.com/trends/explore?q=power+bi+pro,NEW / SPIKE
-langwatchlangwatch,0.07565414571625752,1,github,langwatch/langwatch,https://github.com/langwatch/langwatch,NEW / SPIKE
-big data analytics,0.075,1,trends,big data analytics,https://trends.google.com/trends/explore?q=big+data+analytics,NEW / SPIKE
-app power bi,0.075,1,trends,app power bi,https://trends.google.com/trends/explore?q=app+power+bi,NEW / SPIKE
-data science pipeline,0.07421739130434782,1,trends,data science pipeline,https://trends.google.com/trends/explore?q=data+science+pipeline,NEW / SPIKE
-data analyst,0.07200000000000001,1,trends,data analyst,https://trends.google.com/trends/explore?q=data+analyst,NEW / SPIKE
-business analytics,0.072,1,trends,business analytics,https://trends.google.com/trends/explore?q=business+analytics,NEW / SPIKE
-tableau,0.072,1,trends,tableau,https://trends.google.com/trends/explore?q=tableau,NEW / SPIKE
-power bi course,0.066,1,trends,power bi course,https://trends.google.com/trends/explore?q=power+bi+course,NEW / SPIKE
-data analytics jobs,0.066,1,trends,data analytics jobs,https://trends.google.com/trends/explore?q=data+analytics+jobs,RECURRING
-dbt meaning,0.063,1,trends,dbt meaning,https://trends.google.com/trends/explore?q=dbt+meaning,RECURRING
-snowflake dbt,0.063,1,trends,snowflake dbt,https://trends.google.com/trends/explore?q=snowflake+dbt,NEW / SPIKE
-snowflake,0.063,1,trends,snowflake,https://trends.google.com/trends/explore?q=snowflake,NEW / SPIKE
-xodbtpl,0.061204771763777976,1,github,xo/dbtpl,https://github.com/xo/dbtpl,NEW / SPIKE
-power bi curso,0.056999999999999995,1,trends,power bi curso,https://trends.google.com/trends/explore?q=power+bi+curso,NEW / SPIKE
-google data analytics,0.056999999999999995,1,trends,google data analytics,https://trends.google.com/trends/explore?q=google+data+analytics,NEW / SPIKE
-power bi reports,0.056999999999999995,1,trends,power bi reports,https://trends.google.com/trends/explore?q=power+bi+reports,NEW / SPIKE
-data engineering solutions,0.056999999999999995,1,trends,data engineering solutions,https://trends.google.com/trends/explore?q=data+engineering+solutions,NEW / SPIKE
-argillaiodistilabel,0.05330178448190871,1,github,argilla-io/distilabel,https://github.com/argilla-io/distilabel,NEW / SPIKE
-sqlmeshsqlmesh,0.05167701863354038,1,github,SQLMesh/sqlmesh,https://github.com/SQLMesh/sqlmesh,NEW / SPIKE
-data analytics services,0.051000000000000004,1,trends,data analytics services,https://trends.google.com/trends/explore?q=data+analytics+services,NEW / SPIKE
-spiceaispiceai,0.048395938085379085,1,github,spiceai/spiceai,https://github.com/spiceai/spiceai,NEW / SPIKE
-music,0.048,1,trends,music,https://trends.google.com/trends/explore?q=music,NEW / SPIKE
-python,0.048,1,trends,python,https://trends.google.com/trends/explore?q=python,NEW / SPIKE
-data engineering course,0.045,1,trends,data engineering course,https://trends.google.com/trends/explore?q=data+engineering+course,NEW / SPIKE
-slothflowlabsduckle,0.04076111604061915,1,github,slothflowlabs/duckle,https://github.com/slothflowlabs/duckle,NEW / SPIKE
-sodadatasodacore,0.03803214039238884,1,github,sodadata/soda-core,https://github.com/sodadata/soda-core,NEW / SPIKE
-elementarydataelementary,0.03777974958099182,1,github,elementary-data/elementary,https://github.com/elementary-data/elementary,NEW / SPIKE
-data analytics course,0.036,1,trends,data analytics course,https://trends.google.com/trends/explore?q=data+analytics+course,NEW / SPIKE
-nvidiaaiblueprintsvideosearchandsummarization,0.029230010844917678,1,github,NVIDIA-AI-Blueprints/video-search-and-summarization,https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization,NEW / SPIKE
-dbtlabsdbtutils,0.028188898747904964,1,github,dbt-labs/dbt-utils,https://github.com/dbt-labs/dbt-utils,NEW / SPIKE
-data analytics healthcare,0.027,1,trends,data analytics healthcare,https://trends.google.com/trends/explore?q=data+analytics+healthcare,NEW / SPIKE
-data engineering courses,0.027,1,trends,data engineering courses,https://trends.google.com/trends/explore?q=data+engineering+courses,RECURRING
-data engineering consulting,0.027,1,trends,data engineering consulting,https://trends.google.com/trends/explore?q=data+engineering+consulting,NEW / SPIKE
-hiflylabsawesomedbt,0.026974267968056787,1,github,Hiflylabs/awesome-dbt,https://github.com/Hiflylabs/awesome-dbt,NEW / SPIKE
-multiwovenmultiwoven,0.026153997831016462,1,github,Multiwoven/multiwoven,https://github.com/Multiwoven/multiwoven,NEW / SPIKE
-kaelioktx,0.024907818199743664,1,github,Kaelio/ktx,https://github.com/Kaelio/ktx,NEW / SPIKE
-data analytics tools,0.024,1,trends,data analytics tools,https://trends.google.com/trends/explore?q=data+analytics+tools,RECURRING
-duckdbdbtduckdb,0.021106181603076014,1,github,duckdb/dbt-duckdb,https://github.com/duckdb/dbt-duckdb,NEW / SPIKE
-astronomerastronomercosmos,0.019702257714680076,1,github,astronomer/astronomer-cosmos,https://github.com/astronomer/astronomer-cosmos,NEW / SPIKE
-data analytics degree,0.018,1,trends,data analytics degree,https://trends.google.com/trends/explore?q=data+analytics+degree,RECURRING
-snowflake data engineering,0.018,1,trends,snowflake data engineering,https://trends.google.com/trends/explore?q=snowflake+data+engineering,NEW / SPIKE
-dbt data engineering,0.015,1,trends,dbt data engineering,https://trends.google.com/trends/explore?q=dbt+data+engineering,NEW / SPIKE
-data analytics masters,0.015,1,trends,data analytics masters,https://trends.google.com/trends/explore?q=data+analytics+masters,NEW / SPIKE
-google data analytics certificate,0.012,1,trends,google data analytics certificate,https://trends.google.com/trends/explore?q=google+data+analytics+certificate,NEW / SPIKE
-data analytics certification,0.012,1,trends,data analytics certification,https://trends.google.com/trends/explore?q=data+analytics+certification,RECURRING
-dbt,0.012,1,trends,dbt,https://trends.google.com/trends/explore?q=dbt,EVERGREEN
-mikehasaagentacct,0.011404909790002958,1,github,mikehasa/agentacct,https://github.com/mikehasa/agentacct,NEW / SPIKE
-zhongyu09openchatbi,0.009953662624470078,1,github,zhongyu09/openchatbi,https://github.com/zhongyu09/openchatbi,NEW / SPIKE
-timecopilottimecopilot,0.009401557724539092,1,github,TimeCopilot/timecopilot,https://github.com/TimeCopilot/timecopilot,NEW / SPIKE
-masters in data analytics,0.009,1,trends,masters in data analytics,https://trends.google.com/trends/explore?q=masters+in+data+analytics,NEW / SPIKE
-google data analytics professional certificate,0.009,1,trends,google data analytics professional certificate,https://trends.google.com/trends/explore?q=google+data+analytics+professional+certificate,NEW / SPIKE
-what big data analytics,0.009,1,trends,what is big data analytics,https://trends.google.com/trends/explore?q=what+is+big+data+analytics,NEW / SPIKE
-evelyyyyynnnnn50aiengineeringtoolkit,0.0072562358276643995,1,github,evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,https://github.com/evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,NEW / SPIKE
-show hn crypto portfolio risk and scenario analysis with ai agents on top,0.0063999999999999994,1,hn,Show HN: Crypto portfolio risk and scenario analysis with AI agents on top,https://sentralis.io/,NEW / SPIKE
-show hn plainoldanalytics analytics middlware for go,0.0063999999999999994,1,hn,Show HN: Plainoldanalytics: Analytics Middlware for Go,https://github.com/poundifdef/plainoldanalytics,NEW / SPIKE
-data pipeline tools,0.006,1,trends,data pipeline tools,https://trends.google.com/trends/explore?q=data+pipeline+tools,RECURRING
-data pipeline software,0.006,1,trends,data pipeline software,https://trends.google.com/trends/explore?q=data+pipeline+software,NEW / SPIKE
-data pipeline platform,0.006,1,trends,data pipeline platform,https://trends.google.com/trends/explore?q=data+pipeline+platform,NEW / SPIKE
-data pipeline aws,0.006,1,trends,data pipeline aws,https://trends.google.com/trends/explore?q=data+pipeline+aws,NEW / SPIKE
-data pipeline architecture,0.006,1,trends,data pipeline architecture,https://trends.google.com/trends/explore?q=data+pipeline+architecture,RECURRING
-upginiupgini,0.005394853593611358,1,github,upgini/upgini,https://github.com/upgini/upgini,NEW / SPIKE
-we benchmark analytics agents this explains how,0.0031999999999999997,1,hn,"We Benchmark Analytics Agents, this explains how",https://benchouse.ai/blog/how-we-benchmark-analytics-agents,NEW / SPIKE
-anguskitanguskit,0.0031864339938874105,1,github,AngusKit/AngusKit,https://github.com/AngusKit/AngusKit,NEW / SPIKE
-big data pipeline,0.003,1,trends,big data pipeline,https://trends.google.com/trends/explore?q=big+data+pipeline,NEW / SPIKE
-data pipeline monitoring,0.003,1,trends,data pipeline monitoring,https://trends.google.com/trends/explore?q=data+pipeline+monitoring,NEW / SPIKE
-dbt analytics engineering certification,0.003,1,trends,dbt analytics engineering certification,https://trends.google.com/trends/explore?q=dbt+analytics+engineering+certification,NEW / SPIKE
-etl data pipeline,0.003,1,trends,etl data pipeline,https://trends.google.com/trends/explore?q=etl+data+pipeline,NEW / SPIKE
-data pipeline meaning,0.003,1,trends,data pipeline meaning,https://trends.google.com/trends/explore?q=data+pipeline+meaning,RECURRING
-cesarjoquinmarketingskills,0.0027447500739426205,1,github,Cesarjoquin/Marketing-Skills,https://github.com/Cesarjoquin/Marketing-Skills,NEW / SPIKE
-colossuslabopenarg_backend,0.0020349009168884945,1,github,colossus-lab/openarg_backend,https://github.com/colossus-lab/openarg_backend,NEW / SPIKE
-hoangsonwwendtoenddatapipeline,0.001956028788326925,1,github,hoangsonww/End-to-End-Data-Pipeline,https://github.com/hoangsonww/End-to-End-Data-Pipeline,NEW / SPIKE
-chrisinho8dachdatajobmarket,0.0017194124026422165,1,github,Chrisinho8/DACH-data-job-market,https://github.com/Chrisinho8/DACH-data-job-market,NEW / SPIKE
-mujtba4fattritioninsightsengineering,0.0016089914226560188,1,github,MUJTBA4F/attrition-insights-engineering,https://github.com/MUJTBA4F/attrition-insights-engineering,NEW / SPIKE
-docwiredocwire,0.0015301192940944495,1,github,docwire/docwire,https://github.com/docwire/docwire,NEW / SPIKE
-shaf2665hermesrouter,0.0014827960169575076,1,github,Shaf2665/Hermes-router,https://github.com/Shaf2665/Hermes-router,NEW / SPIKE
-marieaimarieai,0.0012777284826974268,1,github,marieai/marie-ai,https://github.com/marieai/marie-ai,NEW / SPIKE
-ellie886datalume,0.0012777284826974268,1,github,ellie886/Datalume,https://github.com/ellie886/Datalume,NEW / SPIKE
-esipfedgeoweaver,0.0012619540569851128,1,github,ESIPFed/Geoweaver,https://github.com/ESIPFed/Geoweaver,NEW / SPIKE
-servicenowsygra,0.0011988563541358575,1,github,ServiceNow/SyGra,https://github.com/ServiceNow/SyGra,NEW / SPIKE
-decisionboxiodecisionboxplatform,0.0011988563541358575,1,github,decisionbox-io/decisionbox-platform,https://github.com/decisionbox-io/decisionbox-platform,NEW / SPIKE
-socialmediaskillsskills,0.0011673075027112294,1,github,social-media-skills/skills,https://github.com/social-media-skills/skills,NEW / SPIKE
-agentscopeaiqwenpawdata,0.0010095632455880902,1,github,agentscope-ai/QwenPaw-Data,https://github.com/agentscope-ai/QwenPaw-Data,NEW / SPIKE
-centerforthreatinformeddefensesummitingthepyramid,0.0007887212856156956,1,github,center-for-threat-informed-defense/summiting-the-pyramid,https://github.com/center-for-threat-informed-defense/summiting-the-pyramid,NEW / SPIKE
-priyanshubytecodercontextrot,0.0005994281770679287,1,github,Priyanshu-byte-coder/contextrot,https://github.com/Priyanshu-byte-coder/contextrot,NEW / SPIKE
-victorkiprutoropreal_time_transaction_streamingmpesa,0.0004890071970817312,1,github,Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,https://github.com/Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,NEW / SPIKE
-pellalabspellametric,0.0004732327713694173,1,github,pella-labs/pellametric,https://github.com/pella-labs/pellametric,NEW / SPIKE
-amirhosseinhonardoustcoffeeshopprofitpredictor,0.0003943606428078478,1,github,AmirhosseinHonardoust/Coffee-Shop-Profit-Predictor,https://github.com/AmirhosseinHonardoust/Coffee-Shop-Profit-Predictor,NEW / SPIKE
-dreameroldreamerol,0.00034703736567090606,1,github,Dreamerol/Dreamerol,https://github.com/Dreamerol/Dreamerol,NEW / SPIKE
-nirholasbnbchainmcp,0.0002839396628216504,1,github,nirholas/bnbchain-mcp,https://github.com/nirholas/bnbchain-mcp,NEW / SPIKE
-victorkiprutoropmedallionlakehouseplatform,0.00018929310854776693,1,github,Victor-Kipruto-Rop/medallion-lakehouse-platform,https://github.com/Victor-Kipruto-Rop/medallion-lakehouse-platform,NEW / SPIKE
-exmergodex,0.0001419698314108252,1,github,exmergo/dex,https://github.com/exmergo/dex,NEW / SPIKE
-analyticsdurgeshsnowflake_dbt_project,0.00012619540569851128,1,github,analyticsdurgesh/Snowflake_DBT_Project,https://github.com/analyticsdurgesh/Snowflake_DBT_Project,NEW / SPIKE
-dreamerolallstats,3.154885142462782e-05,1,github,Dreamerol/ALLSTATS,https://github.com/Dreamerol/ALLSTATS,NEW / SPIKE
-errajeshcspixelds4earth,1.577442571231391e-05,1,github,errajeshcs-pixel/DS4Earth,https://github.com/errajeshcs-pixel/DS4Earth,NEW / SPIKE
-ameythakuroptimizingstocktradingstrategywithkmeansclustering,0.0,1,github,Amey-Thakur/OPTIMIZING-STOCK-TRADING-STRATEGY-WITH-K-MEANS-CLUSTERING,https://github.com/Amey-Thakur/OPTIMIZING-STOCK-TRADING-STRATEGY-WITH-K-MEANS-CLUSTERING,NEW / SPIKE
+datatalksclubdataengineeringzoomcamp,0.7174576970697483,1,github,DataTalksClub/data-engineering-zoomcamp,https://github.com/DataTalksClub/data-engineering-zoomcamp,EVERGREEN
+langfuselangfuse,0.5470746614782933,1,github,langfuse/langfuse,https://github.com/langfuse/langfuse,EVERGREEN
+infiniteparameter llms generating and adapting weights from live data,0.4946808510638298,1,hn,Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data,https://arxiv.org/abs/2609.18842,RECURRING
+airbytehqairbyte,0.34708645323585485,1,github,airbytehq/airbyte,https://github.com/airbytehq/airbyte,RECURRING
+mageaimageai,0.2769962462905096,1,github,mage-ai/mage-ai,https://github.com/mage-ai/mage-ai,RECURRING
+opensourced jev architecture last year with modelpaper and dataset,0.22659574468085106,1,hn,"Open-sourced jev architecture last year with model,paper and dataset",https://news.ycombinator.com/item?id=49736660,NEW / SPIKE
+dbtlabsdbt,0.21781734567537292,1,github,dbt-labs/dbt,https://github.com/dbt-labs/dbt,RECURRING
+evidentlyaievidently,0.12437945875832793,1,github,evidentlyai/evidently,https://github.com/evidentlyai/evidently,NEW / SPIKE
+evidencedevevidence,0.10901872924159346,1,github,evidence-dev/evidence,https://github.com/evidence-dev/evidence,NEW / SPIKE
+clearmlclearml,0.1078552758288623,1,github,clearml/clearml,https://github.com/clearml/clearml,NEW / SPIKE
+lightdashlightdash,0.09634652044887292,1,github,lightdash/lightdash,https://github.com/lightdash/lightdash,NEW / SPIKE
+langwatchlangwatch,0.07556158245386475,1,github,langwatch/langwatch,https://github.com/langwatch/langwatch,NEW / SPIKE
+xodbtpl,0.061002692451309876,1,github,xo/dbtpl,https://github.com/xo/dbtpl,NEW / SPIKE
+argillaiodistilabel,0.053125798400251556,1,github,argilla-io/distilabel,https://github.com/argilla-io/distilabel,NEW / SPIKE
+sqlmeshsqlmesh,0.05153784171530767,1,github,SQLMesh/sqlmesh,https://github.com/SQLMesh/sqlmesh,NEW / SPIKE
+spiceaispiceai,0.0482361495980976,1,github,spiceai/spiceai,https://github.com/spiceai/spiceai,NEW / SPIKE
+slothflowlabsduckle,0.0406894247587603,1,github,slothflowlabs/duckle,https://github.com/slothflowlabs/duckle,NEW / SPIKE
+sodadatasodacore,0.03789084763083938,1,github,sodadata/soda-core,https://github.com/sodadata/soda-core,NEW / SPIKE
+elementarydataelementary,0.0376392901361948,1,github,elementary-data/elementary,https://github.com/elementary-data/elementary,NEW / SPIKE
+nvidiaaiblueprintsvideosearchandsummarization,0.029149224691940336,1,github,NVIDIA-AI-Blueprints/video-search-and-summarization,https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization,NEW / SPIKE
+dbtlabsdbtutils,0.028080105339700887,1,github,dbt-labs/dbt-utils,https://github.com/dbt-labs/dbt-utils,NEW / SPIKE
+hiflylabsawesomedbt,0.02690092958355443,1,github,Hiflylabs/awesome-dbt,https://github.com/Hiflylabs/awesome-dbt,NEW / SPIKE
+multiwovenmultiwoven,0.02606764538254427,1,github,Multiwoven/multiwoven,https://github.com/Multiwoven/multiwoven,NEW / SPIKE
+kaelioktx,0.024857024939567245,1,github,Kaelio/ktx,https://github.com/Kaelio/ktx,NEW / SPIKE
+duckdbdbtduckdb,0.021036495489652734,1,github,duckdb/dbt-duckdb,https://github.com/duckdb/dbt-duckdb,NEW / SPIKE
+astronomerastronomercosmos,0.01962148458227699,1,github,astronomer/astronomer-cosmos,https://github.com/astronomer/astronomer-cosmos,NEW / SPIKE
+mikehasaagentacct,0.011320087259005955,1,github,mikehasa/agentacct,https://github.com/mikehasa/agentacct,NEW / SPIKE
+zhongyu09openchatbi,0.009967965725291355,1,github,zhongyu09/openchatbi,https://github.com/zhongyu09/openchatbi,NEW / SPIKE
+timecopilottimecopilot,0.009401961362341059,1,github,TimeCopilot/timecopilot,https://github.com/TimeCopilot/timecopilot,NEW / SPIKE
+evelyyyyynnnnn50aiengineeringtoolkit,0.007216555627616296,1,github,evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,https://github.com/evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,NEW / SPIKE
+show hn opensource revenue recognition and analytics for stripe and metronome,0.006382978723404255,1,hn,Show HN: Open-source revenue recognition and analytics for Stripe and Metronome,https://news.ycombinator.com/item?id=49758181,NEW / SPIKE
+show hn plainoldanalytics analytics middlware for go,0.006382978723404255,1,hn,Show HN: Plainoldanalytics: Analytics Middlware for Go,https://github.com/poundifdef/plainoldanalytics,NEW / SPIKE
+show hn crypto portfolio risk and scenario analysis with ai agents on top,0.006382978723404255,1,hn,Show HN: Crypto portfolio risk and scenario analysis with AI agents on top,https://sentralis.io/,NEW / SPIKE
+upginiupgini,0.005377041448027829,1,github,upgini/upgini,https://github.com/upgini/upgini,NEW / SPIKE
+anguskitanguskit,0.0034117485211170723,1,github,AngusKit/AngusKit,https://github.com/AngusKit/AngusKit,NEW / SPIKE
+we benchmark analytics agents this explains how,0.0031914893617021275,1,hn,"We Benchmark Analytics Agents, this explains how",https://benchouse.ai/blog/how-we-benchmark-analytics-agents,NEW / SPIKE
+cesarjoquinmarketingskills,0.002735687754259773,1,github,Cesarjoquin/Marketing-Skills,https://github.com/Cesarjoquin/Marketing-Skills,NEW / SPIKE
+colossuslabopenarg_backend,0.0020124599571566142,1,github,colossus-lab/openarg_backend,https://github.com/colossus-lab/openarg_backend,NEW / SPIKE
+hoangsonwwendtoenddatapipeline,0.0019338482400801842,1,github,hoangsonww/End-to-End-Data-Pipeline,https://github.com/hoangsonww/End-to-End-Data-Pipeline,NEW / SPIKE
+surfalyticsdataprojects,0.0017294577756814655,1,github,surfalytics/data-projects,https://github.com/surfalytics/data-projects,NEW / SPIKE
+chrisinho8dachdatajobmarket,0.001650846058605035,1,github,Chrisinho8/DACH-data-job-market,https://github.com/Chrisinho8/DACH-data-job-market,NEW / SPIKE
+decisionboxiodecisionboxplatform,0.0015250673112827467,1,github,decisionbox-io/decisionbox-platform,https://github.com/decisionbox-io/decisionbox-platform,NEW / SPIKE
+docwiredocwire,0.0015093449678674608,1,github,docwire/docwire,https://github.com/docwire/docwire,NEW / SPIKE
+shaf2665hermesrouter,0.0014621779376216026,1,github,Shaf2665/Hermes-router,https://github.com/Shaf2665/Hermes-router,NEW / SPIKE
+ellie886datalume,0.001257787473222884,1,github,ellie886/Datalume,https://github.com/ellie886/Datalume,NEW / SPIKE
+marieaimarieai,0.001257787473222884,1,github,marieai/marie-ai,https://github.com/marieai/marie-ai,NEW / SPIKE
+esipfedgeoweaver,0.001242065129807598,1,github,ESIPFed/Geoweaver,https://github.com/ESIPFed/Geoweaver,NEW / SPIKE
+servicenowsygra,0.0011948980995617397,1,github,ServiceNow/SyGra,https://github.com/ServiceNow/SyGra,NEW / SPIKE
+socialmediaskillsskills,0.0011634534127311677,1,github,social-media-skills/skills,https://github.com/social-media-skills/skills,NEW / SPIKE
+agentscopeaiqwenpawdata,0.0010219523219935933,1,github,agentscope-ai/QwenPaw-Data,https://github.com/agentscope-ai/QwenPaw-Data,NEW / SPIKE
+centerforthreatinformeddefensesummitingthepyramid,0.0007703948273490164,1,github,center-for-threat-informed-defense/summiting-the-pyramid,https://github.com/center-for-threat-informed-defense/summiting-the-pyramid,NEW / SPIKE
+priyanshubytecodercontextrot,0.0005817267063655838,1,github,Priyanshu-byte-coder/contextrot,https://github.com/Priyanshu-byte-coder/contextrot,NEW / SPIKE
+victorkiprutoropreal_time_transaction_streamingmpesa,0.00047167030245858144,1,github,Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,https://github.com/Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,NEW / SPIKE
+pellalabspellametric,0.00045594795904329547,1,github,pella-labs/pellametric,https://github.com/pella-labs/pellametric,NEW / SPIKE
+amirhosseinhonardoustcoffeeshopprofitpredictor,0.0003773362419668652,1,github,AmirhosseinHonardoust/Coffee-Shop-Profit-Predictor,https://github.com/AmirhosseinHonardoust/Coffee-Shop-Profit-Predictor,NEW / SPIKE
+dreameroldreamerol,0.00033016921172100705,1,github,Dreamerol/Dreamerol,https://github.com/Dreamerol/Dreamerol,NEW / SPIKE
+nirholasbnbchainmcp,0.0002830021814751489,1,github,nirholas/bnbchain-mcp,https://github.com/nirholas/bnbchain-mcp,NEW / SPIKE
+victorkiprutoropmedallionlakehouseplatform,0.00017294577756814654,1,github,Victor-Kipruto-Rop/medallion-lakehouse-platform,https://github.com/Victor-Kipruto-Rop/medallion-lakehouse-platform,NEW / SPIKE
+exmergodex,0.0001257787473222884,1,github,exmergo/dex,https://github.com/exmergo/dex,NEW / SPIKE
+analyticsdurgeshsnowflake_dbt_project,0.00011005640390700233,1,github,analyticsdurgesh/Snowflake_DBT_Project,https://github.com/analyticsdurgesh/Snowflake_DBT_Project,NEW / SPIKE
+dreamerolallstats,1.572234341528605e-05,1,github,Dreamerol/ALLSTATS,https://github.com/Dreamerol/ALLSTATS,NEW / SPIKE
+errajeshcspixelds4earth,0.0,1,github,errajeshcs-pixel/DS4Earth,https://github.com/errajeshcs-pixel/DS4Earth,NEW / SPIKE
+codpallimiteddeckgauge,0.0,1,github,Codpal-Limited/deckgauge,https://github.com/Codpal-Limited/deckgauge,NEW / SPIKE
 show hn etlfunnel selfhosted codefirst data pipelines v111,0.0,1,hn,"Show HN: ETLFunnel – self-hosted, code-first data pipelines (v1.1.1)",https://etlfunnel.com,NEW / SPIKE
 speclockdiff framework for agentic dbt development,0.0,1,hn,Spec-Lock-Diff: a framework for agentic dbt development,https://github.com/miloskimatheus/spec-lock-diff/,NEW / SPIKE
-what dbt stand for,0.0,1,trends,what does dbt stand for,https://trends.google.com/trends/explore?q=what+does+dbt+stand+for,NEW / SPIKE
