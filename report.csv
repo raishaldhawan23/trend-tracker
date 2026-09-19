@@ -4,26 +4,24 @@ coreyhaines31marketingskills,0.8,1,github,coreyhaines31/marketingskills,https://
 datatalksclubdataengineeringzoomcamp,0.8,1,github,DataTalksClub/data-engineering-zoomcamp,https://github.com/DataTalksClub/data-engineering-zoomcamp,analytics_engineering,EVERGREEN
 langfuselangfuse,0.8,1,github,langfuse/langfuse,https://github.com/langfuse/langfuse,ai_analytics,EVERGREEN
 mageaimageai,0.706,1,github,mage-ai/mage-ai,https://github.com/mage-ai/mage-ai,analytics_engineering,RECURRING
-what social engineering attack,0.6636000000000001,1,trends,what is a social engineering attack,https://trends.google.com/trends/explore?q=what+is+a+social+engineering+attack,analytics_engineering,NEW / SPIKE
+circular dependency detected power bi,0.6000000000000001,1,trends,circular dependency detected power bi,https://trends.google.com/trends/explore?q=circular+dependency+detected+power+bi,data_analytics,RECURRING
 show hn capsule singlefile web apps that save their data into sqlite,0.5655,1,hn,Show HN: Capsule – Single-file web apps that save their data into SQLite,https://withcapsule.app/,analytics_engineering,EVERGREEN
 dbtlabsdbt,0.5548000000000001,1,github,dbt-labs/dbt,https://github.com/dbt-labs/dbt,analytics_engineering,RECURRING
 data engineering,0.36000000000000004,1,trends,data engineering,https://trends.google.com/trends/explore?q=data+engineering,analytics_engineering,EVERGREEN
-power bi para que sirve,0.36,1,trends,power bi para que sirve,https://trends.google.com/trends/explore?q=power+bi+para+que+sirve,data_analytics,NEW / SPIKE
-data analytics engineering,0.35940000000000005,1,trends,data analytics engineering,https://trends.google.com/trends/explore?q=data+analytics+engineering,analytics_engineering,RECURRING
-data analytics,0.35940000000000005,1,trends,data analytics,https://trends.google.com/trends/explore?q=data+analytics,analytics_engineering,EVERGREEN
 evidentlyaievidently,0.31716000000000005,1,github,evidentlyai/evidently,https://github.com/evidentlyai/evidently,analytics_engineering,NEW / SPIKE
+power bi para que sirve,0.30000000000000004,1,trends,power bi para que sirve,https://trends.google.com/trends/explore?q=power+bi+para+que+sirve,data_analytics,NEW / SPIKE
 evidencedevevidence,0.27799999999999997,1,github,evidence-dev/evidence,https://github.com/evidence-dev/evidence,analytics_engineering,NEW / SPIKE
 clearmlclearml,0.27504,1,github,clearml/clearml,https://github.com/clearml/clearml,analytics_engineering,NEW / SPIKE
 lightdashlightdash,0.24580000000000002,1,github,lightdash/lightdash,https://github.com/lightdash/lightdash,analytics_engineering,NEW / SPIKE
-circular dependency detected power bi,0.24,1,trends,circular dependency detected power bi,https://trends.google.com/trends/explore?q=circular+dependency+detected+power+bi,data_analytics,RECURRING
+dbt analytics engineering certification,0.2412,1,trends,dbt analytics engineering certification,https://trends.google.com/trends/explore?q=dbt+analytics+engineering+certification,analytics_engineering,NEW / SPIKE
 infiniteparameter llms generating and adapting weights from live data,0.23399999999999999,1,hn,Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data,https://arxiv.org/abs/2609.18842,analytics_engineering,RECURRING
 langwatchlangwatch,0.19324,1,github,langwatch/langwatch,https://github.com/langwatch/langwatch,ai_analytics,NEW / SPIKE
 xodbtpl,0.15584,1,github,xo/dbtpl,https://github.com/xo/dbtpl,analytics_engineering,NEW / SPIKE
 argillaiodistilabel,0.1358,1,github,argilla-io/distilabel,https://github.com/argilla-io/distilabel,analytics_engineering,NEW / SPIKE
 sqlmeshsqlmesh,0.13176000000000002,1,github,SQLMesh/sqlmesh,https://github.com/SQLMesh/sqlmesh,analytics_engineering,NEW / SPIKE
 spiceaispiceai,0.12340000000000001,1,github,spiceai/spiceai,https://github.com/spiceai/spiceai,ai_analytics,NEW / SPIKE
-what data pipeline,0.1182,1,trends,what is data pipeline,https://trends.google.com/trends/explore?q=what+is+data+pipeline,analytics_engineering,RECURRING
-opensourced jev architecture last year with modelpaper and dataset,0.1095,1,hn,"Open-sourced jev architecture last year with model,paper and dataset",https://news.ycombinator.com/item?id=49736660,analytics_engineering,NEW / SPIKE
+what data pipeline,0.1164,1,trends,what is data pipeline,https://trends.google.com/trends/explore?q=what+is+data+pipeline,analytics_engineering,RECURRING
+opensourced jev architecture last year with modelpaper and dataset,0.11249999999999999,1,hn,"Open-sourced jev architecture last year with model,paper and dataset",https://news.ycombinator.com/item?id=49736660,analytics_engineering,NEW / SPIKE
 slothflowlabsduckle,0.1048,1,github,slothflowlabs/duckle,https://github.com/slothflowlabs/duckle,analytics_engineering,NEW / SPIKE
 sodadatasodacore,0.09704000000000002,1,github,sodadata/soda-core,https://github.com/sodadata/soda-core,analytics_engineering,NEW / SPIKE
 elementarydataelementary,0.0964,1,github,elementary-data/elementary,https://github.com/elementary-data/elementary,analytics_engineering,NEW / SPIKE
@@ -32,101 +30,108 @@ dbtlabsdbtutils,0.07208,1,github,dbt-labs/dbt-utils,https://github.com/dbt-labs/
 hiflylabsawesomedbt,0.06908,1,github,Hiflylabs/awesome-dbt,https://github.com/Hiflylabs/awesome-dbt,analytics_engineering,NEW / SPIKE
 multiwovenmultiwoven,0.06696,1,github,Multiwoven/multiwoven,https://github.com/Multiwoven/multiwoven,analytics_engineering,NEW / SPIKE
 kaelioktx,0.06392,1,github,Kaelio/ktx,https://github.com/Kaelio/ktx,ai_analytics,NEW / SPIKE
-microsoft power bi,0.06,1,trends,microsoft power bi,https://trends.google.com/trends/explore?q=microsoft+power+bi,data_analytics,RECURRING
-what data engineering,0.06,1,trends,what is data engineering,https://trends.google.com/trends/explore?q=what+is+data+engineering,analytics_engineering,RECURRING
+kpi dashboard software,0.06,1,trends,kpi dashboard software,https://trends.google.com/trends/explore?q=kpi+dashboard+software,data_analytics,NEW / SPIKE
 what data analytics,0.06,1,trends,what is data analytics,https://trends.google.com/trends/explore?q=what+is+data+analytics,data_analytics,NEW / SPIKE
-dashboard design ui,0.06,1,trends,dashboard design ui,https://trends.google.com/trends/explore?q=dashboard+design+ui,data_analytics,NEW / SPIKE
+power bi microsoft,0.06,1,trends,power bi microsoft,https://trends.google.com/trends/explore?q=power+bi+microsoft,data_analytics,EVERGREEN
+dax in power bi,0.06,1,trends,dax in power bi,https://trends.google.com/trends/explore?q=dax+in+power+bi,data_analytics,NEW / SPIKE
+what data engineering,0.06,1,trends,what is data engineering,https://trends.google.com/trends/explore?q=what+is+data+engineering,analytics_engineering,RECURRING
+ui dashboard design,0.06,1,trends,ui dashboard design,https://trends.google.com/trends/explore?q=ui+dashboard+design,data_analytics,NEW / SPIKE
+ui design,0.0588,1,trends,ui design,https://trends.google.com/trends/explore?q=ui+design,data_analytics,NEW / SPIKE
+dashboard ui,0.0588,1,trends,dashboard ui,https://trends.google.com/trends/explore?q=dashboard+ui,data_analytics,NEW / SPIKE
 duckdbdbtduckdb,0.05416,1,github,duckdb/dbt-duckdb,https://github.com/duckdb/dbt-duckdb,analytics_engineering,NEW / SPIKE
-data science,0.05279999999999999,1,trends,data science,https://trends.google.com/trends/explore?q=data+science,analytics_engineering,EVERGREEN
+data science,0.052199999999999996,1,trends,data science,https://trends.google.com/trends/explore?q=data+science,analytics_engineering,EVERGREEN
+best dashboard design,0.051000000000000004,1,trends,best dashboard design,https://trends.google.com/trends/explore?q=best+dashboard+design,data_analytics,NEW / SPIKE
 astronomerastronomercosmos,0.05056000000000001,1,github,astronomer/astronomer-cosmos,https://github.com/astronomer/astronomer-cosmos,analytics_engineering,NEW / SPIKE
-best dashboard design,0.0504,1,trends,best dashboard design,https://trends.google.com/trends/explore?q=best+dashboard+design,data_analytics,NEW / SPIKE
-data center engineering,0.048,1,trends,data center engineering,https://trends.google.com/trends/explore?q=data+center+engineering,analytics_engineering,NEW / SPIKE
+power bi desktop,0.048,1,trends,power bi desktop,https://trends.google.com/trends/explore?q=power+bi+desktop,data_analytics,EVERGREEN
 data engineering jobs,0.0474,1,trends,data engineering jobs,https://trends.google.com/trends/explore?q=data+engineering+jobs,analytics_engineering,EVERGREEN
-power bi desktop,0.045599999999999995,1,trends,power bi desktop,https://trends.google.com/trends/explore?q=power+bi+desktop,data_analytics,EVERGREEN
-big data analytics,0.04259999999999999,1,trends,big data analytics,https://trends.google.com/trends/explore?q=big+data+analytics,data_analytics,NEW / SPIKE
-google data analytics,0.042,1,trends,google data analytics,https://trends.google.com/trends/explore?q=google+data+analytics,data_analytics,NEW / SPIKE
-what power bi,0.0336,1,trends,what is power bi,https://trends.google.com/trends/explore?q=what+is+power+bi,data_analytics,RECURRING
-power bi download,0.0312,1,trends,power bi download,https://trends.google.com/trends/explore?q=power+bi+download,data_analytics,RECURRING
+data center engineering,0.0474,1,trends,data center engineering,https://trends.google.com/trends/explore?q=data+center+engineering,analytics_engineering,NEW / SPIKE
+big data analytics,0.044399999999999995,1,trends,big data analytics,https://trends.google.com/trends/explore?q=big+data+analytics,data_analytics,NEW / SPIKE
+google data analytics,0.04259999999999999,1,trends,google data analytics,https://trends.google.com/trends/explore?q=google+data+analytics,data_analytics,NEW / SPIKE
+power query,0.0372,1,trends,power query,https://trends.google.com/trends/explore?q=power+query,data_analytics,NEW / SPIKE
+what power bi,0.033,1,trends,what is power bi,https://trends.google.com/trends/explore?q=what+is+power+bi,data_analytics,RECURRING
+power bi download,0.031799999999999995,1,trends,power bi download,https://trends.google.com/trends/explore?q=power+bi+download,data_analytics,RECURRING
 dashboard,0.030599999999999995,1,trends,dashboard,https://trends.google.com/trends/explore?q=dashboard,data_analytics,RECURRING
-dashboard power bi,0.030599999999999995,1,trends,dashboard power bi,https://trends.google.com/trends/explore?q=dashboard+power+bi,data_analytics,RECURRING
+power bi dashboard,0.030599999999999995,1,trends,power bi dashboard,https://trends.google.com/trends/explore?q=power+bi+dashboard,data_analytics,EVERGREEN
+sql,0.03,1,trends,sql,https://trends.google.com/trends/explore?q=sql,data_analytics,RECURRING
+data engineering services,0.03,1,trends,data engineering services,https://trends.google.com/trends/explore?q=data+engineering+services,analytics_engineering,RECURRING
 mikehasaagentacct,0.02944,1,github,mikehasa/agentacct,https://github.com/mikehasa/agentacct,ai_analytics,NEW / SPIKE
-data engineering services,0.0288,1,trends,data engineering services,https://trends.google.com/trends/explore?q=data+engineering+services,analytics_engineering,RECURRING
-sql,0.0288,1,trends,sql,https://trends.google.com/trends/explore?q=sql,data_analytics,RECURRING
 zhongyu09openchatbi,0.026000000000000002,1,github,zhongyu09/openchatbi,https://github.com/zhongyu09/openchatbi,ai_analytics,NEW / SPIKE
+data analytics course,0.025799999999999997,1,trends,data analytics course,https://trends.google.com/trends/explore?q=data+analytics+course,data_analytics,NEW / SPIKE
 timecopilottimecopilot,0.024560000000000002,1,github,TimeCopilot/timecopilot,https://github.com/TimeCopilot/timecopilot,ai_analytics,NEW / SPIKE
-data analytics course,0.024,1,trends,data analytics course,https://trends.google.com/trends/explore?q=data+analytics+course,data_analytics,NEW / SPIKE
 data engineer,0.024,1,trends,data engineer,https://trends.google.com/trends/explore?q=data+engineer,analytics_engineering,NEW / SPIKE
 ai dashboard design,0.022799999999999997,1,trends,ai dashboard design,https://trends.google.com/trends/explore?q=ai+dashboard+design,data_analytics,NEW / SPIKE
-power bi service,0.022199999999999998,1,trends,power bi service,https://trends.google.com/trends/explore?q=power+bi+service,data_analytics,EVERGREEN
+power bi service,0.022799999999999997,1,trends,power bi service,https://trends.google.com/trends/explore?q=power+bi+service,data_analytics,EVERGREEN
 data engineering platform,0.021599999999999998,1,trends,data engineering platform,https://trends.google.com/trends/explore?q=data+engineering+platform,analytics_engineering,NEW / SPIKE
+dax,0.0192,1,trends,dax,https://trends.google.com/trends/explore?q=dax,data_analytics,NEW / SPIKE
 power bi ai,0.0192,1,trends,power bi ai,https://trends.google.com/trends/explore?q=power+bi+ai,data_analytics,NEW / SPIKE
+dax power bi,0.0192,1,trends,dax power bi,https://trends.google.com/trends/explore?q=dax+power+bi,data_analytics,NEW / SPIKE
 evelyyyyynnnnn50aiengineeringtoolkit,0.019000000000000003,1,github,evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,https://github.com/evelyyyyynnnnn/5.0-Ai-Engineering-Toolkit,analytics_engineering,NEW / SPIKE
-dax power bi,0.0186,1,trends,dax power bi,https://trends.google.com/trends/explore?q=dax+power+bi,data_analytics,NEW / SPIKE
-dax,0.0186,1,trends,dax,https://trends.google.com/trends/explore?q=dax,data_analytics,NEW / SPIKE
-power query,0.018,1,trends,power query,https://trends.google.com/trends/explore?q=power+query,data_analytics,NEW / SPIKE
-power bi jobs,0.018,1,trends,power bi jobs,https://trends.google.com/trends/explore?q=power+bi+jobs,data_analytics,NEW / SPIKE
+power bi jobs,0.0186,1,trends,power bi jobs,https://trends.google.com/trends/explore?q=power+bi+jobs,data_analytics,NEW / SPIKE
 power bi online,0.0168,1,trends,power bi online,https://trends.google.com/trends/explore?q=power+bi+online,data_analytics,NEW / SPIKE
-business analytics,0.0156,1,trends,business analytics,https://trends.google.com/trends/explore?q=business+analytics,analytics_engineering,NEW / SPIKE
-power bi pro,0.0156,1,trends,power bi pro,https://trends.google.com/trends/explore?q=power+bi+pro,data_analytics,NEW / SPIKE
+power bi pro,0.0162,1,trends,power bi pro,https://trends.google.com/trends/explore?q=power+bi+pro,data_analytics,NEW / SPIKE
+data analytics courses,0.015,1,trends,data analytics courses,https://trends.google.com/trends/explore?q=data+analytics+courses,data_analytics,RECURRING
+powerbi,0.015,1,trends,powerbi,https://trends.google.com/trends/explore?q=powerbi,data_analytics,NEW / SPIKE
+app power bi,0.0144,1,trends,app power bi,https://trends.google.com/trends/explore?q=app+power+bi,data_analytics,NEW / SPIKE
 learn power bi,0.0144,1,trends,learn power bi,https://trends.google.com/trends/explore?q=learn+power+bi,data_analytics,NEW / SPIKE
-powerbi,0.0144,1,trends,powerbi,https://trends.google.com/trends/explore?q=powerbi,data_analytics,NEW / SPIKE
 data engineering solutions,0.0144,1,trends,data engineering solutions,https://trends.google.com/trends/explore?q=data+engineering+solutions,analytics_engineering,NEW / SPIKE
 upginiupgini,0.01432,1,github,upgini/upgini,https://github.com/upgini/upgini,analytics_engineering,NEW / SPIKE
 modern dashboard design,0.0138,1,trends,modern dashboard design,https://trends.google.com/trends/explore?q=modern+dashboard+design,data_analytics,NEW / SPIKE
-app power bi,0.0138,1,trends,app power bi,https://trends.google.com/trends/explore?q=app+power+bi,data_analytics,NEW / SPIKE
-data analytics courses,0.0138,1,trends,data analytics courses,https://trends.google.com/trends/explore?q=data+analytics+courses,data_analytics,RECURRING
+tableau,0.013199999999999998,1,trends,tableau,https://trends.google.com/trends/explore?q=tableau,data_analytics,NEW / SPIKE
 data analyst,0.013199999999999998,1,trends,data analyst,https://trends.google.com/trends/explore?q=data+analyst,analytics_engineering,NEW / SPIKE
-power bi course,0.013199999999999998,1,trends,power bi course,https://trends.google.com/trends/explore?q=power+bi+course,data_analytics,NEW / SPIKE
-tableau,0.0126,1,trends,tableau,https://trends.google.com/trends/explore?q=tableau,data_analytics,NEW / SPIKE
-dashboard design best practices,0.0126,1,trends,dashboard design best practices,https://trends.google.com/trends/explore?q=dashboard+design+best+practices,data_analytics,NEW / SPIKE
-data engineering course,0.012,1,trends,data engineering course,https://trends.google.com/trends/explore?q=data+engineering+course,analytics_engineering,NEW / SPIKE
+dashboard design best practices,0.013199999999999998,1,trends,dashboard design best practices,https://trends.google.com/trends/explore?q=dashboard+design+best+practices,data_analytics,NEW / SPIKE
+power bi course,0.0126,1,trends,power bi course,https://trends.google.com/trends/explore?q=power+bi+course,data_analytics,NEW / SPIKE
 power bi gateway,0.012,1,trends,power bi gateway,https://trends.google.com/trends/explore?q=power+bi+gateway,data_analytics,NEW / SPIKE
+data engineering course,0.011399999999999999,1,trends,data engineering course,https://trends.google.com/trends/explore?q=data+engineering+course,analytics_engineering,NEW / SPIKE
 analytics dashboard design,0.011399999999999999,1,trends,analytics dashboard design,https://trends.google.com/trends/explore?q=analytics+dashboard+design,data_analytics,NEW / SPIKE
-download power bi desktop,0.010799999999999999,1,trends,download power bi desktop,https://trends.google.com/trends/explore?q=download+power+bi+desktop,data_analytics,NEW / SPIKE
+data analytics degree,0.011399999999999999,1,trends,data analytics degree,https://trends.google.com/trends/explore?q=data+analytics+degree,data_analytics,RECURRING
+python,0.010799999999999999,1,trends,python,https://trends.google.com/trends/explore?q=python,data_analytics,NEW / SPIKE
+power bi download desktop,0.010799999999999999,1,trends,power bi download desktop,https://trends.google.com/trends/explore?q=power+bi+download+desktop,data_analytics,NEW / SPIKE
 bi dashboard design,0.010799999999999999,1,trends,bi dashboard design,https://trends.google.com/trends/explore?q=bi+dashboard+design,data_analytics,NEW / SPIKE
-data analytics degree,0.010799999999999999,1,trends,data analytics degree,https://trends.google.com/trends/explore?q=data+analytics+degree,data_analytics,RECURRING
-dashboard design template,0.0102,1,trends,dashboard design template,https://trends.google.com/trends/explore?q=dashboard+design+template,data_analytics,NEW / SPIKE
+admin dashboard,0.0102,1,trends,admin dashboard,https://trends.google.com/trends/explore?q=admin+dashboard,data_analytics,NEW / SPIKE
+power bi curso,0.0102,1,trends,power bi curso,https://trends.google.com/trends/explore?q=power+bi+curso,data_analytics,NEW / SPIKE
 admin dashboard design,0.0102,1,trends,admin dashboard design,https://trends.google.com/trends/explore?q=admin+dashboard+design,data_analytics,NEW / SPIKE
-python,0.0102,1,trends,python,https://trends.google.com/trends/explore?q=python,data_analytics,NEW / SPIKE
-curso power bi,0.0102,1,trends,curso power bi,https://trends.google.com/trends/explore?q=curso+power+bi,data_analytics,NEW / SPIKE
-power bi login,0.0096,1,trends,power bi login,https://trends.google.com/trends/explore?q=power+bi+login,data_analytics,NEW / SPIKE
-anguskitanguskit,0.00936,1,github,AngusKit/AngusKit,https://github.com/AngusKit/AngusKit,analytics_engineering,NEW / SPIKE
-information dashboard design,0.009,1,trends,information dashboard design,https://trends.google.com/trends/explore?q=information+dashboard+design,data_analytics,NEW / SPIKE
-user dashboard design,0.009,1,trends,user dashboard design,https://trends.google.com/trends/explore?q=user+dashboard+design,data_analytics,NEW / SPIKE
-data analytics certification,0.009,1,trends,data analytics certification,https://trends.google.com/trends/explore?q=data+analytics+certification,data_analytics,RECURRING
-dashboard design examples,0.0084,1,trends,dashboard design examples,https://trends.google.com/trends/explore?q=dashboard+design+examples,data_analytics,NEW / SPIKE
-excel dashboard design,0.0084,1,trends,excel dashboard design,https://trends.google.com/trends/explore?q=excel+dashboard+design,data_analytics,NEW / SPIKE
-dashboard design figma,0.0078,1,trends,dashboard design figma,https://trends.google.com/trends/explore?q=dashboard+design+figma,data_analytics,NEW / SPIKE
+power bi web,0.0096,1,trends,power bi web,https://trends.google.com/trends/explore?q=power+bi+web,data_analytics,NEW / SPIKE
+data analytics certification,0.0096,1,trends,data analytics certification,https://trends.google.com/trends/explore?q=data+analytics+certification,data_analytics,RECURRING
+dashboard design template,0.0096,1,trends,dashboard design template,https://trends.google.com/trends/explore?q=dashboard+design+template,data_analytics,NEW / SPIKE
+dashboard template,0.0096,1,trends,dashboard template,https://trends.google.com/trends/explore?q=dashboard+template,data_analytics,NEW / SPIKE
+anguskitanguskit,0.0094,1,github,AngusKit/AngusKit,https://github.com/AngusKit/AngusKit,analytics_engineering,NEW / SPIKE
+user dashboard design,0.0084,1,trends,user dashboard design,https://trends.google.com/trends/explore?q=user+dashboard+design,data_analytics,NEW / SPIKE
+information dashboard design,0.0084,1,trends,information dashboard design,https://trends.google.com/trends/explore?q=information+dashboard+design,data_analytics,NEW / SPIKE
+excel dashboard design,0.0078,1,trends,excel dashboard design,https://trends.google.com/trends/explore?q=excel+dashboard+design,data_analytics,NEW / SPIKE
+dashboard design examples,0.0078,1,trends,dashboard design examples,https://trends.google.com/trends/explore?q=dashboard+design+examples,data_analytics,NEW / SPIKE
 cesarjoquinmarketingskills,0.0076,1,github,Cesarjoquin/Marketing-Skills,https://github.com/Cesarjoquin/Marketing-Skills,analytics_engineering,NEW / SPIKE
+dbt,0.0072,1,trends,dbt,https://trends.google.com/trends/explore?q=dbt,analytics_engineering,EVERGREEN
+dax query in power bi,0.0072,1,trends,dax query in power bi,https://trends.google.com/trends/explore?q=dax+query+in+power+bi,data_analytics,NEW / SPIKE
 data engineering consulting,0.0072,1,trends,data engineering consulting,https://trends.google.com/trends/explore?q=data+engineering+consulting,analytics_engineering,NEW / SPIKE
-google analytics,0.0072,1,trends,google analytics,https://trends.google.com/trends/explore?q=google+analytics,analytics_engineering,RECURRING
+google analytics,0.006599999999999999,1,trends,google analytics,https://trends.google.com/trends/explore?q=google+analytics,analytics_engineering,RECURRING
 data scientist,0.006599999999999999,1,trends,data scientist,https://trends.google.com/trends/explore?q=data+scientist,analytics_engineering,NEW / SPIKE
 data engineering courses,0.006599999999999999,1,trends,data engineering courses,https://trends.google.com/trends/explore?q=data+engineering+courses,analytics_engineering,RECURRING
+google data analytics professional certificate,0.006599999999999999,1,trends,google data analytics professional certificate,https://trends.google.com/trends/explore?q=google+data+analytics+professional+certificate,data_analytics,NEW / SPIKE
 show hn opensource revenue recognition and analytics for stripe and metronome,0.006,1,hn,Show HN: Open-source revenue recognition and analytics for Stripe and Metronome,https://news.ycombinator.com/item?id=49758181,analytics_engineering,NEW / SPIKE
-google data analytics professional certificate,0.006,1,trends,google data analytics professional certificate,https://trends.google.com/trends/explore?q=google+data+analytics+professional+certificate,data_analytics,NEW / SPIKE
 colossuslabopenarg_backend,0.00576,1,github,colossus-lab/openarg_backend,https://github.com/colossus-lab/openarg_backend,analytics_engineering,NEW / SPIKE
 hoangsonwwendtoenddatapipeline,0.00556,1,github,hoangsonww/End-to-End-Data-Pipeline,https://github.com/hoangsonww/End-to-End-Data-Pipeline,analytics_engineering,NEW / SPIKE
+dax functions,0.005399999999999999,1,trends,dax functions,https://trends.google.com/trends/explore?q=dax+functions,data_analytics,NEW / SPIKE
+dax function in power bi,0.005399999999999999,1,trends,dax function in power bi,https://trends.google.com/trends/explore?q=dax+function+in+power+bi,data_analytics,NEW / SPIKE
 surfalyticsdataprojects,0.00504,1,github,surfalytics/data-projects,https://github.com/surfalytics/data-projects,analytics_engineering,NEW / SPIKE
 chrisinho8dachdatajobmarket,0.0048400000000000006,1,github,Chrisinho8/DACH-data-job-market,https://github.com/Chrisinho8/DACH-data-job-market,analytics_engineering,NEW / SPIKE
 decisionboxiodecisionboxplatform,0.004560000000000001,1,github,decisionbox-io/decisionbox-platform,https://github.com/decisionbox-io/decisionbox-platform,ai_analytics,NEW / SPIKE
-show hn plainoldanalytics analytics middlware for go,0.0045,1,hn,Show HN: Plainoldanalytics: Analytics Middlware for Go,https://github.com/poundifdef/plainoldanalytics,data_analytics,NEW / SPIKE
 show hn crypto portfolio risk and scenario analysis with ai agents on top,0.0045,1,hn,Show HN: Crypto portfolio risk and scenario analysis with AI agents on top,https://sentralis.io/,ai_analytics,NEW / SPIKE
+show hn plainoldanalytics analytics middlware for go,0.0045,1,hn,Show HN: Plainoldanalytics: Analytics Middlware for Go,https://github.com/poundifdef/plainoldanalytics,data_analytics,NEW / SPIKE
 docwiredocwire,0.0044800000000000005,1,github,docwire/docwire,https://github.com/docwire/docwire,analytics_engineering,NEW / SPIKE
 shaf2665hermesrouter,0.00436,1,github,Shaf2665/Hermes-router,https://github.com/Shaf2665/Hermes-router,ai_analytics,NEW / SPIKE
 snowflake data engineering,0.0042,1,trends,snowflake data engineering,https://trends.google.com/trends/explore?q=snowflake+data+engineering,analytics_engineering,NEW / SPIKE
-ellie886datalume,0.0038399999999999997,1,github,ellie886/Datalume,https://github.com/ellie886/Datalume,ai_analytics,NEW / SPIKE
 marieaimarieai,0.0038399999999999997,1,github,marieai/marie-ai,https://github.com/marieai/marie-ai,analytics_engineering,NEW / SPIKE
+ellie886datalume,0.0038399999999999997,1,github,ellie886/Datalume,https://github.com/ellie886/Datalume,ai_analytics,NEW / SPIKE
 esipfedgeoweaver,0.0038,1,github,ESIPFed/Geoweaver,https://github.com/ESIPFed/Geoweaver,analytics_engineering,NEW / SPIKE
 servicenowsygra,0.00368,1,github,ServiceNow/SyGra,https://github.com/ServiceNow/SyGra,analytics_engineering,NEW / SPIKE
+socialmediaskillsskills,0.0036400000000000004,1,github,social-media-skills/skills,https://github.com/social-media-skills/skills,ai_analytics,NEW / SPIKE
+dax functions in power bi,0.0036,1,trends,dax functions in power bi,https://trends.google.com/trends/explore?q=dax+functions+in+power+bi,data_analytics,NEW / SPIKE
 dbt data engineering,0.0036,1,trends,dbt data engineering,https://trends.google.com/trends/explore?q=dbt+data+engineering,analytics_engineering,NEW / SPIKE
-dbt,0.0036,1,trends,dbt,https://trends.google.com/trends/explore?q=dbt,analytics_engineering,EVERGREEN
-socialmediaskillsskills,0.0036,1,github,social-media-skills/skills,https://github.com/social-media-skills/skills,ai_analytics,NEW / SPIKE
+python for data engineering,0.0036,1,trends,python for data engineering,https://trends.google.com/trends/explore?q=python+for+data+engineering,analytics_engineering,NEW / SPIKE
 agentscopeaiqwenpawdata,0.00324,1,github,agentscope-ai/QwenPaw-Data,https://github.com/agentscope-ai/QwenPaw-Data,ai_analytics,NEW / SPIKE
-google data analytics certification,0.003,1,trends,google data analytics certification,https://trends.google.com/trends/explore?q=google+data+analytics+certification,data_analytics,NEW / SPIKE
 we benchmark analytics agents this explains how,0.003,1,hn,"We Benchmark Analytics Agents, this explains how",https://benchouse.ai/blog/how-we-benchmark-analytics-agents,ai_analytics,NEW / SPIKE
-data engineering vs data analytics,0.003,1,trends,data engineering vs data analytics,https://trends.google.com/trends/explore?q=data+engineering+vs+data+analytics,analytics_engineering,NEW / SPIKE
+google data analytics certification,0.003,1,trends,google data analytics certification,https://trends.google.com/trends/explore?q=google+data+analytics+certification,data_analytics,NEW / SPIKE
 centerforthreatinformeddefensesummitingthepyramid,0.0026,1,github,center-for-threat-informed-defense/summiting-the-pyramid,https://github.com/center-for-threat-informed-defense/summiting-the-pyramid,analytics_engineering,NEW / SPIKE
-data pipeline development,0.0024,1,trends,data pipeline development,https://trends.google.com/trends/explore?q=data+pipeline+development,analytics_engineering,NEW / SPIKE
 priyanshubytecodercontextrot,0.00212,1,github,Priyanshu-byte-coder/contextrot,https://github.com/Priyanshu-byte-coder/contextrot,ai_analytics,NEW / SPIKE
 victorkiprutoropreal_time_transaction_streamingmpesa,0.00184,1,github,Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,https://github.com/Victor-Kipruto-Rop/Real_Time_Transaction_Streaming-MPESA-,analytics_engineering,NEW / SPIKE
 data pipeline tools,0.0018,1,trends,data pipeline tools,https://trends.google.com/trends/explore?q=data+pipeline+tools,analytics_engineering,RECURRING
@@ -137,11 +142,11 @@ show hn etlfunnel selfhosted codefirst data pipelines v111,0.0015,1,hn,"Show HN:
 dreameroldreamerol,0.0014800000000000002,1,github,Dreamerol/Dreamerol,https://github.com/Dreamerol/Dreamerol,analytics_engineering,NEW / SPIKE
 nirholasbnbchainmcp,0.00136,1,github,nirholas/bnbchain-mcp,https://github.com/nirholas/bnbchain-mcp,ai_analytics,NEW / SPIKE
 big data pipeline,0.0012,1,trends,big data pipeline,https://trends.google.com/trends/explore?q=big+data+pipeline,analytics_engineering,NEW / SPIKE
-data pipeline platform,0.0012,1,trends,data pipeline platform,https://trends.google.com/trends/explore?q=data+pipeline+platform,analytics_engineering,NEW / SPIKE
-data pipeline monitoring,0.0012,1,trends,data pipeline monitoring,https://trends.google.com/trends/explore?q=data+pipeline+monitoring,analytics_engineering,NEW / SPIKE
 data pipeline architecture,0.0012,1,trends,data pipeline architecture,https://trends.google.com/trends/explore?q=data+pipeline+architecture,analytics_engineering,RECURRING
-data pipeline meaning,0.0012,1,trends,data pipeline meaning,https://trends.google.com/trends/explore?q=data+pipeline+meaning,analytics_engineering,RECURRING
+data pipeline monitoring,0.0012,1,trends,data pipeline monitoring,https://trends.google.com/trends/explore?q=data+pipeline+monitoring,analytics_engineering,NEW / SPIKE
+data pipeline platform,0.0012,1,trends,data pipeline platform,https://trends.google.com/trends/explore?q=data+pipeline+platform,analytics_engineering,NEW / SPIKE
 data pipeline aws,0.0012,1,trends,data pipeline aws,https://trends.google.com/trends/explore?q=data+pipeline+aws,analytics_engineering,NEW / SPIKE
+data pipeline meaning,0.0012,1,trends,data pipeline meaning,https://trends.google.com/trends/explore?q=data+pipeline+meaning,analytics_engineering,RECURRING
 victorkiprutoropmedallionlakehouseplatform,0.00108,1,github,Victor-Kipruto-Rop/medallion-lakehouse-platform,https://github.com/Victor-Kipruto-Rop/medallion-lakehouse-platform,analytics_engineering,NEW / SPIKE
 exmergodex,0.0009599999999999999,1,github,exmergo/dex,https://github.com/exmergo/dex,analytics_engineering,NEW / SPIKE
 analyticsdurgeshsnowflake_dbt_project,0.00092,1,github,analyticsdurgesh/Snowflake_DBT_Project,https://github.com/analyticsdurgesh/Snowflake_DBT_Project,analytics_engineering,NEW / SPIKE
