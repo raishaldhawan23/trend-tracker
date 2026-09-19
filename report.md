@@ -15,32 +15,32 @@ Ranked by a composite score across Reddit upvotes, Hacker News points, GitHub st
 7. **power bi para que sirve** — NEW / SPIKE, score 0.30 (trends) ([link](https://trends.google.com/trends/explore?q=power+bi+para+que+sirve))
 8. **langwatch/langwatch** — NEW / SPIKE, score 0.19 (github) ([link](https://github.com/langwatch/langwatch))
 9. **spiceai/spiceai** — NEW / SPIKE, score 0.12 (github) ([link](https://github.com/spiceai/spiceai))
-10. **kpi dashboard software** — NEW / SPIKE, score 0.06 (trends) ([link](https://trends.google.com/trends/explore?q=kpi+dashboard+software))
+10. **power bi microsoft** — EVERGREEN, score 0.06 (trends) ([link](https://trends.google.com/trends/explore?q=power+bi+microsoft))
 
 ## Content Topic Ideas
 
 Ready-to-use post/video angles based on the topics above:
 
-1. REVISIT — "Data Engineering Course for Beginners" has 1.1M views, but it's from 2 years ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
+1. REVISIT — "Data Engineering Course for Beginners" has 1.1M views, but it's from 2 years ago (2024) and likely outdated. Structure: a direct "what's changed since 2024" comparison — name the specific things that are different now (new versions, deprecated features, changed best practices) rather than a generic refresh.
    _(based on: "DataTalksClub/data-engineering-zoomcamp")_
-2. WHITESPACE — only one relevant video exists ("Get Started with Langfuse - Open-Source LLM Monitoring", 79.9k views). Your angle: claim the space — straightforward, solid coverage of "langfuse/langfuse" has almost no competition right now.
+2. WHITESPACE — "langfuse/langfuse" has little to no video coverage yet (only one relevant video exists: "Get Started with Langfuse - Open-Source LLM Monitoring", 79.9k views). Structure: a quick hands-on first look — install it, then specifically test (1) setup/onboarding friction, (2) output quality on a real dataset (not the demo data), and (3) how it fits into an existing stack.
    _(based on: "langfuse/langfuse")_
-3. WHITESPACE — no real YouTube coverage of "coreyhaines31/marketingskills" yet. Your angle: be first — a clear explainer or tutorial claims this space before anyone else covers it.
+3. WHITESPACE — "coreyhaines31/marketingskills" has little to no video coverage yet. Structure: a quick hands-on first look — install it, then specifically test (1) setup/onboarding friction, (2) output quality on a real dataset (not the demo data), and (3) how it fits into an existing stack.
    _(based on: "coreyhaines31/marketingskills")_
-4. WHITESPACE — only one relevant video exists ("Airbyte 2.0: Enterprise Flex", 619.9k views). Your angle: claim the space — straightforward, solid coverage of "airbytehq/airbyte" has almost no competition right now.
+4. WHITESPACE — "airbytehq/airbyte" has little to no video coverage yet (only one relevant video exists: "Airbyte 2.0: Enterprise Flex", 619.9k views). Structure: a quick hands-on first look — install it, then specifically test (1) setup/onboarding friction, (2) output quality on a real dataset (not the demo data), and (3) how it fits into an existing stack.
    _(based on: "airbytehq/airbyte")_
-5. REVISIT — "Aye Enna Pana Mage (ආයේ එන්න පණ මාගේ) - Chamika Sirimanna" has 16.5M views, but it's from 5 years ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
+5. REVISIT — "Aye Enna Pana Mage (ආයේ එන්න පණ මාගේ) - Chamika Sirimanna" has 16.5M views, but it's from 5 years ago (2021) and likely outdated. Structure: a direct "what's changed since 2021" comparison — name the specific things that are different now (new versions, deprecated features, changed best practices) rather than a generic refresh.
    _(based on: "mage-ai/mage-ai")_
-6. REVISIT — "Avoiding circular dependency errors in DAX" has 41.9k views, but it's from 5 years ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
+6. REVISIT — "Avoiding circular dependency errors in DAX" has 41.9k views, but it's from 5 years ago (2021) and likely outdated. Structure: a direct "what's changed since 2021" comparison — name the specific things that are different now (new versions, deprecated features, changed best practices) rather than a generic refresh.
    _(based on: "circular dependency detected power bi")_
-7. REVISIT — "Cómo usar Power BI (Tutorial desde cero)" has 2.9M views, but it's from 5 years ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
+7. REVISIT — "Cómo usar Power BI (Tutorial desde cero)" has 2.9M views, but it's from 5 years ago (2020) and likely outdated. Structure: a direct "what's changed since 2020" comparison — name the specific things that are different now (new versions, deprecated features, changed best practices) rather than a generic refresh.
    _(based on: "power bi para que sirve")_
-8. WHITESPACE — only one relevant video exists ("LangWatch LLM Optimization Studio", 89.1k views). Your angle: claim the space — straightforward, solid coverage of "langwatch/langwatch" has almost no competition right now.
+8. WHITESPACE — "langwatch/langwatch" has little to no video coverage yet (only one relevant video exists: "LangWatch LLM Optimization Studio", 89.1k views). Structure: a quick hands-on first look — install it, then specifically test (1) setup/onboarding friction, (2) output quality on a real dataset (not the demo data), and (3) how it fits into an existing stack.
    _(based on: "langwatch/langwatch")_
-9. WHITESPACE — no real YouTube coverage of "spiceai/spiceai" yet. Your angle: be first — a clear explainer or tutorial claims this space before anyone else covers it.
+9. WHITESPACE — "spiceai/spiceai" has little to no video coverage yet. Structure: a quick hands-on first look — install it, then specifically test (1) setup/onboarding friction, (2) output quality on a real dataset (not the demo data), and (3) how it fits into an existing stack.
    _(based on: "spiceai/spiceai")_
-10. REVISIT — "Power BI Tutorial For Beginners | Create Your First Dashboard Now (Practice Files included)" has 3.1M views, but it's from 4 years ago — likely stale or off people's radar by now. Your angle: cover what's changed since then, or redo it for today's tools and best practices.
-   _(based on: "kpi dashboard software")_
+10. REVISIT — "Power BI Tutorial From Beginner to Pro ⚡ Desktop to Dashboard in 60 Minutes ⏰" has 5.8M views, but it's from 7 years ago (2019) and likely outdated. Structure: a direct "what's changed since 2019" comparison — name the specific things that are different now (new versions, deprecated features, changed best practices) rather than a generic refresh.
+   _(based on: "power bi microsoft")_
 
 ## Full Ranked List (top 50)
 
@@ -60,44 +60,44 @@ Ready-to-use post/video angles based on the topics above:
 | 12 | evidence-dev/evidence | NEW / SPIKE | 0.28 | github | [link](https://github.com/evidence-dev/evidence) |
 | 13 | clearml/clearml | NEW / SPIKE | 0.28 | github | [link](https://github.com/clearml/clearml) |
 | 14 | lightdash/lightdash | NEW / SPIKE | 0.25 | github | [link](https://github.com/lightdash/lightdash) |
-| 15 | dbt analytics engineering certification | NEW / SPIKE | 0.24 | trends | [link](https://trends.google.com/trends/explore?q=dbt+analytics+engineering+certification) |
-| 16 | Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data | RECURRING | 0.23 | hn | [link](https://arxiv.org/abs/2609.18842) |
-| 17 | langwatch/langwatch | NEW / SPIKE | 0.19 | github | [link](https://github.com/langwatch/langwatch) |
-| 18 | xo/dbtpl | NEW / SPIKE | 0.16 | github | [link](https://github.com/xo/dbtpl) |
-| 19 | argilla-io/distilabel | NEW / SPIKE | 0.14 | github | [link](https://github.com/argilla-io/distilabel) |
-| 20 | SQLMesh/sqlmesh | NEW / SPIKE | 0.13 | github | [link](https://github.com/SQLMesh/sqlmesh) |
-| 21 | spiceai/spiceai | NEW / SPIKE | 0.12 | github | [link](https://github.com/spiceai/spiceai) |
-| 22 | what is data pipeline | RECURRING | 0.12 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+pipeline) |
-| 23 | Open-sourced jev architecture last year with model,paper and dataset | NEW / SPIKE | 0.11 | hn | [link](https://news.ycombinator.com/item?id=49736660) |
-| 24 | slothflowlabs/duckle | NEW / SPIKE | 0.10 | github | [link](https://github.com/slothflowlabs/duckle) |
-| 25 | sodadata/soda-core | NEW / SPIKE | 0.10 | github | [link](https://github.com/sodadata/soda-core) |
-| 26 | elementary-data/elementary | NEW / SPIKE | 0.10 | github | [link](https://github.com/elementary-data/elementary) |
-| 27 | NVIDIA-AI-Blueprints/video-search-and-summarization | NEW / SPIKE | 0.07 | github | [link](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization) |
-| 28 | dbt-labs/dbt-utils | NEW / SPIKE | 0.07 | github | [link](https://github.com/dbt-labs/dbt-utils) |
-| 29 | Hiflylabs/awesome-dbt | NEW / SPIKE | 0.07 | github | [link](https://github.com/Hiflylabs/awesome-dbt) |
-| 30 | Multiwoven/multiwoven | NEW / SPIKE | 0.07 | github | [link](https://github.com/Multiwoven/multiwoven) |
-| 31 | Kaelio/ktx | NEW / SPIKE | 0.06 | github | [link](https://github.com/Kaelio/ktx) |
-| 32 | kpi dashboard software | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=kpi+dashboard+software) |
+| 15 | Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data | RECURRING | 0.23 | hn | [link](https://arxiv.org/abs/2609.18842) |
+| 16 | langwatch/langwatch | NEW / SPIKE | 0.19 | github | [link](https://github.com/langwatch/langwatch) |
+| 17 | xo/dbtpl | NEW / SPIKE | 0.16 | github | [link](https://github.com/xo/dbtpl) |
+| 18 | argilla-io/distilabel | NEW / SPIKE | 0.14 | github | [link](https://github.com/argilla-io/distilabel) |
+| 19 | SQLMesh/sqlmesh | NEW / SPIKE | 0.13 | github | [link](https://github.com/SQLMesh/sqlmesh) |
+| 20 | spiceai/spiceai | NEW / SPIKE | 0.12 | github | [link](https://github.com/spiceai/spiceai) |
+| 21 | what is data pipeline | RECURRING | 0.12 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+pipeline) |
+| 22 | Open-sourced jev architecture last year with model,paper and dataset | NEW / SPIKE | 0.11 | hn | [link](https://news.ycombinator.com/item?id=49736660) |
+| 23 | slothflowlabs/duckle | NEW / SPIKE | 0.10 | github | [link](https://github.com/slothflowlabs/duckle) |
+| 24 | sodadata/soda-core | NEW / SPIKE | 0.10 | github | [link](https://github.com/sodadata/soda-core) |
+| 25 | elementary-data/elementary | NEW / SPIKE | 0.10 | github | [link](https://github.com/elementary-data/elementary) |
+| 26 | NVIDIA-AI-Blueprints/video-search-and-summarization | NEW / SPIKE | 0.07 | github | [link](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization) |
+| 27 | dbt-labs/dbt-utils | NEW / SPIKE | 0.07 | github | [link](https://github.com/dbt-labs/dbt-utils) |
+| 28 | Hiflylabs/awesome-dbt | NEW / SPIKE | 0.07 | github | [link](https://github.com/Hiflylabs/awesome-dbt) |
+| 29 | Multiwoven/multiwoven | NEW / SPIKE | 0.07 | github | [link](https://github.com/Multiwoven/multiwoven) |
+| 30 | Kaelio/ktx | NEW / SPIKE | 0.06 | github | [link](https://github.com/Kaelio/ktx) |
+| 31 | power bi microsoft | EVERGREEN | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+microsoft) |
+| 32 | what is data engineering | RECURRING | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+engineering) |
 | 33 | what is data analytics | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+analytics) |
-| 34 | power bi microsoft | EVERGREEN | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+microsoft) |
-| 35 | dax in power bi | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=dax+in+power+bi) |
-| 36 | what is data engineering | RECURRING | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=what+is+data+engineering) |
-| 37 | ui dashboard design | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=ui+dashboard+design) |
+| 34 | dax in power bi | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=dax+in+power+bi) |
+| 35 | kpi dashboard software | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=kpi+dashboard+software) |
+| 36 | ui dashboard design | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=ui+dashboard+design) |
+| 37 | dashboard ui | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=dashboard+ui) |
 | 38 | ui design | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=ui+design) |
-| 39 | dashboard ui | NEW / SPIKE | 0.06 | trends | [link](https://trends.google.com/trends/explore?q=dashboard+ui) |
-| 40 | duckdb/dbt-duckdb | NEW / SPIKE | 0.05 | github | [link](https://github.com/duckdb/dbt-duckdb) |
-| 41 | data science | EVERGREEN | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=data+science) |
-| 42 | best dashboard design | NEW / SPIKE | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=best+dashboard+design) |
-| 43 | astronomer/astronomer-cosmos | NEW / SPIKE | 0.05 | github | [link](https://github.com/astronomer/astronomer-cosmos) |
-| 44 | power bi desktop | EVERGREEN | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+desktop) |
-| 45 | data engineering jobs | EVERGREEN | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=data+engineering+jobs) |
-| 46 | data center engineering | NEW / SPIKE | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=data+center+engineering) |
-| 47 | big data analytics | NEW / SPIKE | 0.04 | trends | [link](https://trends.google.com/trends/explore?q=big+data+analytics) |
-| 48 | google data analytics | NEW / SPIKE | 0.04 | trends | [link](https://trends.google.com/trends/explore?q=google+data+analytics) |
-| 49 | power query | NEW / SPIKE | 0.04 | trends | [link](https://trends.google.com/trends/explore?q=power+query) |
-| 50 | what is power bi | RECURRING | 0.03 | trends | [link](https://trends.google.com/trends/explore?q=what+is+power+bi) |
+| 39 | duckdb/dbt-duckdb | NEW / SPIKE | 0.05 | github | [link](https://github.com/duckdb/dbt-duckdb) |
+| 40 | data science | EVERGREEN | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=data+science) |
+| 41 | best dashboard design | NEW / SPIKE | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=best+dashboard+design) |
+| 42 | astronomer/astronomer-cosmos | NEW / SPIKE | 0.05 | github | [link](https://github.com/astronomer/astronomer-cosmos) |
+| 43 | power bi desktop | EVERGREEN | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+desktop) |
+| 44 | data engineering jobs | EVERGREEN | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=data+engineering+jobs) |
+| 45 | data center engineering | NEW / SPIKE | 0.05 | trends | [link](https://trends.google.com/trends/explore?q=data+center+engineering) |
+| 46 | big data analytics | NEW / SPIKE | 0.04 | trends | [link](https://trends.google.com/trends/explore?q=big+data+analytics) |
+| 47 | google data analytics | NEW / SPIKE | 0.04 | trends | [link](https://trends.google.com/trends/explore?q=google+data+analytics) |
+| 48 | power query | NEW / SPIKE | 0.04 | trends | [link](https://trends.google.com/trends/explore?q=power+query) |
+| 49 | what is power bi | RECURRING | 0.03 | trends | [link](https://trends.google.com/trends/explore?q=what+is+power+bi) |
+| 50 | power bi download | RECURRING | 0.03 | trends | [link](https://trends.google.com/trends/explore?q=power+bi+download) |
 
-## Evergreen Question Bank (376 questions)
+## Evergreen Question Bank (377 questions)
 
 Google autocomplete data — no weekly time signal, so it doesn't compete in the ranking above, but it's a reliable list of the questions people always ask. Good for always-relevant, not necessarily timely, content.
 
@@ -217,25 +217,26 @@ Google autocomplete data — no weekly time signal, so it doesn't compete in the
 - data analytics certification
 - data analytics courses
 - data analytics degree
-- data analytics google certification
-- data analytics internships
+- data analytics internship
 - data analytics jobs
+- data analytics jobs remote
+- data analytics meaning
 - data analytics salary
-- data analytics vs data science
 - data engineering
 - data engineering academy
+- data engineering bootcamp
+- data engineering certification
 - data engineering courses
 - data engineering interview questions
 - data engineering jobs
-- data engineering manager
-- data engineering projects
-- data engineering system design
-- data engineering things
+- data engineering salary
 - data engineering vs analytics engineering
+- data engineering vs data science
 - data engineering zoomcamp
 - data pipeline architecture
-- data pipeline architecture diagram
+- data pipeline design
 - data pipeline diagram
+- data pipeline engineer
 - data pipeline icon
 - data pipeline meaning
 - data pipeline tools
