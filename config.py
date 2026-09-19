@@ -149,6 +149,12 @@ NEGATIVE_FILTERS = {
         "power bill", "power bike", "power big building", "power biomass",
         "power bioreactor", "satisfactory", "subnautica", "pokopia",
     ],
+    # "engineering" alone is broad enough that Google's related-query graph
+    # pulled in the unrelated cybersecurity sense ("social engineering
+    # attack") under one of these two seeds — added to both since the exact
+    # seed couldn't be confirmed live (Trends was rate-limiting at the time).
+    "analytics engineering": ["social engineering attack", "social engineering"],
+    "data engineering": ["social engineering attack", "social engineering"],
 }
 
 # Where run history (for evergreen vs spike detection) is stored.

@@ -61,15 +61,21 @@ def _matching_negative_filter_seed(topic):
 
 def _shares_meaningful_word(topic, video_title):
     """A lightweight relevance floor: the video title must share at least one
-    non-filler word with the searched topic, so a video that YouTube's own
-    fuzzy search matched but that isn't actually about the topic (e.g. an
-    unrelated video sharing no real subject words) doesn't count as
-    competition."""
+    non-filler word with the searched topic AS PLAIN TEXT, so a video that
+    YouTube's own fuzzy search matched but that isn't actually about the
+    topic doesn't count as competition. A word that appears ONLY as a
+    hashtag (e.g. an unrelated Hindi shorts video tagged "#spiceai" purely
+    for reach) does NOT count — a hashtag is a reach-hacking tag, not
+    evidence the video is actually about that topic, unlike the same word
+    appearing in running text."""
     topic_words = {w for w in re.findall(r"[a-z0-9]+", topic.lower()) if w not in _FILLER_WORDS and len(w) > 2}
     if not topic_words:
         return True  # nothing meaningful to compare against — don't filter blindly
-    title_words = {w for w in re.findall(r"[a-z0-9]+", video_title.lower())}
-    return bool(topic_words & title_words)
+    title_lower = video_title.lower()
+    for is_hashtag, word in re.findall(r"(#?)([a-z0-9]+)", title_lower):
+        if word in topic_words and not is_hashtag:
+            return True
+    return False
 
 
 def top_videos_for_topic(topic, max_results=3):
