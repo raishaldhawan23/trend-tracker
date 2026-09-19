@@ -218,12 +218,45 @@ def build_content_idea(topic, sources, tier, top_video):
     return generate_content_angle(topic, sources)  # unreachable, but never crash the report over it
 
 
+# The three content niches from config.CATEGORY_TAGS, in the order checked
+# when building a mixed Top 10 (see build_mixed_top10).
+CATEGORIES = ["data_analytics", "ai_analytics", "analytics_engineering"]
+
+
+def build_mixed_top10(ranked_df, per_category=3, total=10):
+    """A single global top-N-by-score let GitHub's engineering-only results
+    (nobody publishes a repo for "how I built a stakeholder dashboard")
+    crowd out the data-analytics and AI-analytics niches entirely. This
+    guarantees up to `per_category` rows from each of the three categories
+    first, then fills any remaining slots with the next-best rows overall
+    regardless of category — so a category with an unusually strong week
+    can still claim more than its guaranteed share."""
+    if ranked_df.empty or "category" not in ranked_df.columns:
+        return ranked_df.head(total).copy()
+
+    selected_idx = []
+    for cat in CATEGORIES:
+        cat_rows = ranked_df[ranked_df["category"] == cat]
+        selected_idx.extend(cat_rows.head(per_category).index.tolist())
+
+    remaining = total - len(selected_idx)
+    if remaining > 0:
+        leftover = ranked_df[~ranked_df.index.isin(selected_idx)]
+        selected_idx.extend(leftover.head(remaining).index.tolist())
+
+    return (
+        ranked_df.loc[selected_idx]
+        .sort_values("composite_score", ascending=False)
+        .reset_index(drop=True)
+    )
+
+
 def _top10_with_ideas(ranked_df, youtube_results=None):
     """youtube_results: {topic: videos_or_None} from youtube_signal, already
-    limited to this ranked_df's Top 10 topics. Pass None (or omit) to fall
-    back to the old pattern-based angle for every row, e.g. when the caller
-    hasn't run the competitive check at all."""
-    top10 = ranked_df.head(10).copy()
+    limited to this ranked_df's mixed Top 10 topics (see build_mixed_top10).
+    Pass None (or omit) to fall back to the old pattern-based angle for
+    every row, e.g. when the caller hasn't run the competitive check at all."""
+    top10 = build_mixed_top10(ranked_df).copy()
     youtube_results = youtube_results or {}
 
     tiers, angles, video_titles, video_views, video_urls = [], [], [], [], []
@@ -383,7 +416,7 @@ def main():
 
     ranked = update_history_and_classify(ranked)
 
-    top10_rows = ranked.head(10)
+    top10_rows = build_mixed_top10(ranked)
     # Map each Top 10 topic to a cleaned-up search query (e.g. a GitHub
     # 'owner/repo' hit searches on just the repo name, not the literal path).
     queries = {

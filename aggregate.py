@@ -50,6 +50,17 @@ def _passes_negative_filters(row):
     return not any(bad in title for bad in config.NEGATIVE_FILTERS[seed])
 
 
+def _lookup_category(row):
+    """Which config.CATEGORY_TAGS niche a row belongs to, via whichever
+    keyword/query actually produced it: "seed" for Trends/Suggest, "query"
+    for HN/GitHub. Rows with neither (e.g. Reddit, which searches subreddits
+    rather than a keyword) resolve to "" — uncategorized, so they only fill
+    leftover Top 10 slots by score rather than counting toward any of the
+    three category quotas."""
+    key = row["seed"] or row["query"]
+    return config.CATEGORY_TAGS.get(key, "")
+
+
 def _weight_group(row):
     """Which config.WEIGHTS key a row's score gets normalized/weighted under.
     Trends is split by query type — "rising" is the real spiking-now signal,
@@ -84,6 +95,11 @@ def build_ranked_table(all_hits):
     if df.empty:
         return df
 
+    if "query" not in df.columns:
+        df["query"] = ""
+    df["query"] = df["query"].fillna("")
+    df["category"] = df.apply(_lookup_category, axis=1)
+
     df["norm_title"] = df["title"].apply(_normalize_title)
     df = df[df["norm_title"].str.len() > 0]
 
@@ -102,6 +118,7 @@ def build_ranked_table(all_hits):
         sources=("source", lambda s: ", ".join(sorted(set(s)))),
         example_title=("title", "first"),
         example_url=("url", "first"),
+        category=("category", "first"),  # a topic clustered from multiple queries just takes the first's tag
     ).reset_index()  # keep norm_title as a column — needed for history tracking
 
     # cross-source agreement bonus: a topic 3 sources agree on beats one loud single-source spike

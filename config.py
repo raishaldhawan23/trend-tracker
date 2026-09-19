@@ -16,15 +16,35 @@ Edit these lists to tune what 'your niche' means — no code changes needed else
 # dbt signal is wanted later, that would need Google's Knowledge Graph
 # topic-ID feature (searching a specific "dbt (data tool)" entity ID instead
 # of the plain keyword) — a possible future improvement, not implemented here.
+# Grouped by CATEGORY_TAGS below rather than alphabetically, so it's obvious
+# at a glance which of the three content niches each seed feeds. Analytics
+# PRACTICE terms (dashboards, BI, stakeholder-facing work) were previously
+# under-represented here relative to analytics ENGINEERING terms (dbt,
+# pipelines) — GitHub only ever surfaces tool/engineering repos (nobody
+# publishes a repo for "how I built a stakeholder dashboard"), so without
+# enough practice-side seeds feeding Trends/Suggest, the Top 10 skewed toward
+# data engineering by default. The additions below (Power BI DAX, dashboard
+# design, KPI dashboard, etc.) balance that out.
 SEED_KEYWORDS = [
+    # data_analytics
     "data analytics",
-    "AI in analytics",
-    "analytics engineering",
     "power bi",
-    "data engineering",
-    "data pipeline",
+    "Power BI DAX",
+    "dashboard design",
+    "stakeholder reporting",
+    "KPI dashboard",
+    "business intelligence trends",
+    # ai_analytics
+    "AI in analytics",
     "LLM analytics",
     "AI agent analytics",
+    "AI copilot for data analysis",
+    "ChatGPT for data analysis",
+    "LLM for BI",
+    # analytics_engineering
+    "analytics engineering",
+    "data engineering",
+    "data pipeline",
 ]
 
 # Subreddits worth scanning for what practitioners are actually discussing/upvoting.
@@ -59,6 +79,43 @@ GITHUB_QUERIES = [
     "data pipeline AI",
     "llm agent analytics",
 ]
+
+# Which content niche each seed keyword / HN query / GitHub query belongs to:
+# "data_analytics" (dashboards, BI, stakeholder-facing analytics practice),
+# "ai_analytics" (AI/LLM applied to analytics work), or "analytics_engineering"
+# (dbt, pipelines, the underlying data infra). aggregate.py propagates this
+# onto each ranked row via its originating seed/query, and run.py uses it to
+# build a guaranteed mixed Top 10 instead of one that GitHub's engineering-only
+# results can crowd out on raw score alone. A row whose source doesn't map to
+# any of these (e.g. Reddit, which searches subreddits rather than a keyword)
+# is left uncategorized and only fills leftover Top 10 slots by score.
+CATEGORY_TAGS = {
+    # data_analytics
+    "data analytics": "data_analytics",
+    "power bi": "data_analytics",
+    "Power BI DAX": "data_analytics",
+    "dashboard design": "data_analytics",
+    "stakeholder reporting": "data_analytics",
+    "KPI dashboard": "data_analytics",
+    "business intelligence trends": "data_analytics",
+    "data analyst": "data_analytics",  # HN_QUERIES
+    # ai_analytics
+    "AI in analytics": "ai_analytics",
+    "LLM analytics": "ai_analytics",
+    "AI agent analytics": "ai_analytics",
+    "AI copilot for data analysis": "ai_analytics",
+    "ChatGPT for data analysis": "ai_analytics",
+    "LLM for BI": "ai_analytics",
+    "LLM data analysis": "ai_analytics",       # HN_QUERIES
+    "LLM analytics workflow": "ai_analytics",  # HN_QUERIES
+    "llm agent analytics": "ai_analytics",     # GITHUB_QUERIES
+    # analytics_engineering
+    "analytics engineering": "analytics_engineering",
+    "data engineering": "analytics_engineering",
+    "data pipeline": "analytics_engineering",
+    "dbt": "analytics_engineering",             # HN_QUERIES / GITHUB_QUERIES
+    "data pipeline AI": "analytics_engineering",  # GITHUB_QUERIES
+}
 
 # Substrings that mean a seed keyword got hijacked by an unrelated meaning
 # (e.g. "dbt" = Direct Benefit Transfer / govt scheme / therapy, not the tool).
