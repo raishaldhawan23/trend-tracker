@@ -1,0 +1,59 @@
+name: Daily Niche Pulse
+
+on:
+  # Same "always UTC, gate on actual UK wall clock" approach as
+  # weekly-report.yml, so this doesn't drift an hour twice a year with BST/GMT.
+  schedule:
+    - cron: '0 6 * * *'  # 7am BST (Apr-Oct, UTC+1)
+    - cron: '0 7 * * *'  # 7am GMT (Nov-Mar, UTC+0)
+  workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: read  # nothing is committed back — this repo is public, and the
+                   # digest (real discussion content) is delivered by email
+                   # only, never written into the repo. See README.md's
+                   # "Niche Pulse" section.
+
+jobs:
+  daily-pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check it's actually 7am UK time (only gates the scheduled cron trigger — see downstream `if:` conditions)
+        id: uk_time
+        run: |
+          UK_HOUR=$(TZ="Europe/London" date +%H)
+          echo "UK local hour is $UK_HOUR"
+          if [ "$UK_HOUR" != "07" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: github.event_name == 'workflow_dispatch' || steps.uk_time.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: github.event_name == 'workflow_dispatch' || steps.uk_time.outputs.skip != 'true'
+        run: pip install -r requirements.txt
+
+      - name: Run niche pulse
+        if: github.event_name == 'workflow_dispatch' || steps.uk_time.outputs.skip != 'true'
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NITTER_INSTANCE: ${{ secrets.NITTER_INSTANCE }}
+        run: python pulse.py --email
+        # pulse_report.md/.xlsx and pulse_raw.json are written to the runner's
+        # workspace during this step (pulse.py always writes them locally so
+        # a local `python pulse.py` run still has something to open), but
+        # nothing here uploads or commits them — the runner and everything on
+        # it is discarded when the job ends. The email step above is the only
+        # place this run's actual discussion content leaves the job. If you
+        # ever want a local copy without relying on email, run `python
+        # pulse.py` on your own machine instead of via this workflow.

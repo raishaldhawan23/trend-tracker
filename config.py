@@ -177,6 +177,75 @@ WEIGHTS = {
     "trends_top": 0.3,
 }
 
+# =============================================================================
+# NICHE PULSE — daily "what is the community actually discussing right now"
+# monitor (pulse.py), separate from the weekly Top-10 tracker above (run.py).
+# Same niche, different job: instead of ranking search/trend signal for
+# content ideation, this pulls live conversation (posts, comments, tweets)
+# from Reddit, YouTube comments, and X/Twitter over a short recent window,
+# clusters it into themes, and emails a daily digest of what's getting
+# reaction and what's being debated.
+# =============================================================================
+
+# How far back "recent" means for the daily pulse (hours, not days — this is
+# meant to run daily and catch conversation since roughly the last run).
+PULSE_LOOKBACK_HOURS = 30
+
+# Broad search queries used across Reddit / YouTube / X for the pulse (kept
+# separate from SEED_KEYWORDS above, which are tuned specifically for Google
+# Trends/Suggest's related-query graph and include some terms too broad or
+# too narrow for a direct keyword search on the other platforms).
+PULSE_QUERIES = [
+    "data analytics",
+    "power bi",
+    "dashboard design",
+    "business intelligence",
+    "analytics engineering",
+    "data engineering",
+    "dbt",
+    "data pipeline",
+    "data analyst",
+    "AI in analytics",
+    "LLM analytics",
+    "AI agent analytics",
+]
+
+# Audience filter: Raishal wants this tool to surface conversation that lets
+# him show up as a practitioner with real opinions on tools/workflows/data
+# debates — content that resonates with people who hire and manage analytics
+# talent — not conversation whose audience is people currently job-hunting
+# (a thread full of job seekers doesn't convert into clients or hiring-manager
+# attention, even though it's topically "on niche"). This is a heuristic
+# keyword screen, not a hard filter — see pulse_cluster.py: matching items
+# are demoted (deprioritized in ranking, tagged) rather than dropped, so nothing
+# disappears silently and you can still see it if it's the whole conversation
+# that day.
+JOB_SEEKER_FILTERS = [
+    "hiring", "hire me", "job seeker", "job search", "job hunt",
+    "looking for a job", "looking for work", "applying to jobs",
+    "how to get a job", "how to become a data analyst", "how to become an analyst",
+    "break into data", "breaking into analytics", "career switch", "career change",
+    "entry level", "entry-level", "laid off", "layoff", "got fired", "just got fired",
+    "resume review", "resume feedback", "cv review", "interview questions",
+    "interview experience", "rejected me", "ghosted me", "no experience needed",
+    "is it too late to learn", "should i learn", "worth learning in 2026",
+    "bootcamp worth it", "certification worth it", "will i get hired",
+]
+
+# Words/phrases that suggest a thread is a live debate/disagreement rather
+# than a plain announcement or question — used by pulse_cluster.py to flag
+# "what's being debated" separately from "what's getting reaction" (raw
+# engagement). Deliberately generic — this is a text heuristic, not sentiment
+# analysis, so it will both miss real debates and occasionally flag a calm
+# thread; treat the tag as "worth a skim," not a verdict.
+DEBATE_SIGNAL_PHRASES = [
+    "unpopular opinion", "hot take", "am i wrong", "am i the only one",
+    "change my mind", "disagree", "overrated", "underrated", "controversial",
+    "hard disagree", "this is wrong", "actually bad", "is dead", "is dying",
+    "vs", "versus", "better than", "worse than", "waste of time", "overhyped",
+    "don't get the hype", "why does everyone", "why is everyone",
+]
+
 # Fixed upper bounds per source's raw score, used to normalize scores onto a
 # comparable 0-1 scale (see aggregate.py — norm_score = min(raw/cap, 1.0)).
 # Deliberately NOT min-max within each run's batch: min-max always maps

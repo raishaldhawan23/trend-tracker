@@ -1,13 +1,20 @@
 name: Weekly Trend Report
 
+# RETIRED (2026-09-25): superseded by the daily-pulse.yml workflow, which
+# pulls real discussion (Reddit/YouTube/X) instead of Trends/Suggest keyword
+# signal and emails the digest directly instead of committing it here. The
+# scheduled triggers below are disabled so this no longer runs automatically;
+# workflow_dispatch is left in so it can still be run manually from the
+# Actions tab if the Top-10/evergreen-question data is ever wanted again —
+# see run.py and README.md's "Niche Topic Tracker" section for what it does.
 on:
   # GitHub Actions cron is always UTC. UK local time alternates between
   # GMT (UTC+0) and BST (UTC+1), so two triggers are scheduled — one for
   # each half of the year — and the job itself checks the actual UK wall
   # clock and skips if it isn't 7am, so only one of the two ever does work.
-  schedule:
-    - cron: '0 6 * * 5'  # 7am BST (Apr-Oct, UTC+1)
-    - cron: '0 7 * * 5'  # 7am GMT (Nov-Mar, UTC+0)
+  # schedule:
+  #   - cron: '0 6 * * 5'  # 7am BST (Apr-Oct, UTC+1)
+  #   - cron: '0 7 * * 5'  # 7am GMT (Nov-Mar, UTC+0)
   workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
 
 permissions:

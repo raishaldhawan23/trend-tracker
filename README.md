@@ -1,5 +1,14 @@
 # Niche Topic Tracker
 
+> **⚠️ Retired (2026-09-25).** This tool's automatic weekly run is turned
+> off — see **Niche Pulse** further down for the active tool. This one
+> ranked Trends/Suggest keyword signal, which turned out to surface generic
+> or off-topic "trending" terms rather than real conversation; Niche Pulse
+> replaces it with actual Reddit/YouTube/X discussion, clustered into
+> themes and emailed daily. `run.py` still works if triggered manually (see
+> "Setup" below) — kept in case the Top-10/evergreen-question angle is ever
+> useful again — but nothing here runs on a schedule anymore.
+
 Manually eyeballing Google Trends to figure out what to post about next is
 slow and vague: it tells you a query is "rising" but not whether anyone's
 already covered it well, or whether it's even a real topic vs. a one-day
@@ -167,3 +176,89 @@ it: the first few runs will show everything as NEW/SPIKE, which is expected.
   and evade the flag. Absence of the flag isn't a guarantee of relevance.
 - This is designed to run on GitHub Actions (see above), but `run.py` has
   no hard dependency on that; it runs anywhere Python does.
+
+---
+
+# Niche Pulse (daily conversation monitor)
+
+A second, separate tool in this repo (`pulse.py`) with a different job from
+the weekly tracker above: instead of ranking search/trend signal for content
+ideation, it answers **"what is my niche actually discussing right now, and
+what's getting a reaction or a debate"** — pulled from Reddit, YouTube
+comments, and X/Twitter over roughly the last 30 hours, clustered into
+themes, and emailed to you daily.
+
+## Platforms and their real limitations
+
+| Platform | Status | Why |
+|---|---|---|
+| Reddit | Full support | Public JSON search endpoint, no auth needed. Searches **all of Reddit**, not a fixed subreddit list, so it catches discussion in subs the weekly tracker's curated list wouldn't. |
+| YouTube comments | Full support | Uses the same `YOUTUBE_API_KEY` as the weekly tracker's competitive check — `commentThreads.list` on recently-published niche videos. No new cost. |
+| X/Twitter | **Best-effort only, expect gaps** | X's API dropped free search access; a paid tier runs ~$200/month. This uses `snscrape` (no login, no API key) as a free workaround — X actively works against this, so it can silently return 0 results for stretches at a time. See `pulse_sources/twitter_pulse.py` for details and the optional Nitter fallback. If reliable X coverage matters, the real fix is paying for their API. |
+| LinkedIn | **Not included** | No public search API exists, and scraping it risks your own account being flagged — especially relevant since you post there under your own name. Left out entirely rather than done unreliably or riskily. |
+
+## Audience filter
+
+The digest is meant to surface conversation useful for showing up as a
+practitioner with real opinions — the kind that resonates with people who
+hire/manage analytics talent — not job-seeker discussion (which doesn't
+convert into that audience even when it's topically on-niche). `config.py`'s
+`JOB_SEEKER_FILTERS` is a keyword heuristic that **flags and demotes**
+matching themes (tagged 🎯 in the report) rather than deleting them, so nothing
+disappears silently.
+
+## Running it
+
+```bash
+python pulse.py                    # full run: reddit + youtube + twitter, ~30h lookback
+python pulse.py --lookback-hours 24
+python pulse.py --skip-twitter     # skip the least reliable source
+python pulse.py --email            # also email the digest (see Email setup below)
+```
+
+Outputs, written locally wherever it runs (repo root):
+- `pulse_report.md` — the themed digest (also used as the email body)
+- `pulse_report.xlsx` — `Themes` summary sheet + `All Items` raw sheet
+- `pulse_raw.json` — every collected item pre-clustering, so nothing is lost even if a given run's clustering isn't ideal
+
+**Nothing here gets committed to the repo.** This repo is public, and the
+digest content is real discussion/opinions pulled from other people's posts
+and comments — not something to publish into a public folder. When run via
+GitHub Actions, these files exist only on that run's disposable runner and
+are discarded when the job ends; the email is the only place the content
+leaves the job. Running `python pulse.py` locally still writes these files
+to your own machine as normal, for your own reference.
+
+## Automation
+
+`.github/workflows/daily-pulse.yml` runs this daily at 7am UK time (same
+BST/GMT-aware gating as the weekly workflow used) and emails you the digest
+— nothing is committed. Trigger it manually any time from the **Actions**
+tab → "Daily Niche Pulse" → "Run workflow".
+
+## Email setup (one-time)
+
+The daily email sends from your own Gmail address to itself via SMTP, using
+a Gmail **App Password** (not your normal password):
+
+1. Turn on 2-Step Verification if it isn't already: [myaccount.google.com/security](https://myaccount.google.com/security)
+2. Generate an App Password: [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) → app "Mail" → copy the 16-character code.
+3. In this repo: **Settings → Secrets and variables → Actions → New repository secret**, add:
+   - `GMAIL_ADDRESS` — your full Gmail address
+   - `GMAIL_APP_PASSWORD` — the 16-character code from step 2
+
+Without these two secrets, the pipeline still runs and commits reports — it
+just skips the email step and says so in the logs.
+
+## Tuning `config.py` for the pulse
+
+- `PULSE_LOOKBACK_HOURS` — how far back counts as "recent" (default 30)
+- `PULSE_QUERIES` — the search terms used across Reddit/YouTube/X for this tool (separate from `SEED_KEYWORDS`, which is tuned specifically for Trends/Suggest)
+- `JOB_SEEKER_FILTERS` — the audience heuristic described above
+- `DEBATE_SIGNAL_PHRASES` — phrases used to flag "what's being debated" separately from raw engagement
+
+## Notes / limitations
+
+- Clustering is TF-IDF + KMeans (bag-of-words), not semantic/LLM clustering — it groups items that share vocabulary. It will occasionally split one real theme across two clusters, or lump two unrelated ones together. Treat theme labels as a starting point; read the underlying items in `All Items`.
+- The debate/job-seeker tags are keyword heuristics, not classifiers — they will both miss things and occasionally mistag a calm thread. `pulse_raw.json` always has everything unfiltered if you want to double-check a given run.
+- X/Twitter coverage is genuinely unreliable by design (see table above) — a run with 0 tweets is expected, not necessarily broken.
