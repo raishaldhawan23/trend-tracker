@@ -182,7 +182,9 @@ WEIGHTS = {
 # monitor (pulse.py), separate from the weekly Top-10 tracker above (run.py).
 # Same niche, different job: instead of ranking search/trend signal for
 # content ideation, this pulls live conversation (posts, comments, tweets)
-# from Reddit, YouTube comments, and X/Twitter over a short recent window,
+# from Reddit (a curated subreddit list — see pulse_sources/reddit_pulse.py
+# for why it's not site-wide search) and YouTube comments over a short recent
+# window (X/Twitter was tried and dropped — see pulse.py's module docstring),
 # clusters it into themes, and emails a daily digest of what's getting
 # reaction and what's being debated.
 # =============================================================================
@@ -191,10 +193,11 @@ WEIGHTS = {
 # meant to run daily and catch conversation since roughly the last run).
 PULSE_LOOKBACK_HOURS = 30
 
-# Broad search queries used across Reddit / YouTube / X for the pulse (kept
-# separate from SEED_KEYWORDS above, which are tuned specifically for Google
+# Search queries used for YouTube video search in the pulse (Reddit instead
+# uses config.SUBREDDITS — see pulse_sources/reddit_pulse.py). Kept separate
+# from SEED_KEYWORDS above, which are tuned specifically for Google
 # Trends/Suggest's related-query graph and include some terms too broad or
-# too narrow for a direct keyword search on the other platforms).
+# too narrow for a direct keyword search on YouTube.
 PULSE_QUERIES = [
     "data analytics",
     "power bi",

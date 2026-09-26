@@ -47,8 +47,11 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          NITTER_INSTANCE: ${{ secrets.NITTER_INSTANCE }}
         run: python pulse.py --email
+        # Reddit needs no secret here — it uses the free per-subreddit .json
+        # endpoint (config.SUBREDDITS), not OAuth. See
+        # pulse_sources/reddit_pulse.py's module docstring for why this repo
+        # doesn't use Reddit's site-wide search API.
         # pulse_report.md/.xlsx and pulse_raw.json are written to the runner's
         # workspace during this step (pulse.py always writes them locally so
         # a local `python pulse.py` run still has something to open), but

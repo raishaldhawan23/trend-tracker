@@ -14,8 +14,6 @@ def _format_engagement(item):
     score, comments = item.get("score", 0), item.get("num_comments", 0)
     if platform == "youtube":
         return f"{score} comment likes, {comments} comments surfaced"
-    if platform == "twitter":
-        return f"{score} likes+RTs, {comments} replies"
     return f"{score} upvotes, {comments} comments"  # reddit default
 
 
@@ -33,7 +31,7 @@ def build_markdown(themes, lookback_hours, platform_counts, run_notes=None):
     lines = [f"# Niche Pulse — {today}\n"]
     lines.append(
         f"What your niche (data analytics / AI in analytics / analytics engineering) has been "
-        f"discussing on Reddit, YouTube comments, and X over the last ~{lookback_hours} hours, "
+        f"discussing on Reddit and YouTube comments over the last ~{lookback_hours} hours, "
         f"clustered into themes.\n"
     )
     lines.append(

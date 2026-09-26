@@ -1,23 +1,30 @@
 """
-Broad, site-wide Reddit search for the daily niche pulse — deliberately NOT
-scoped to config.SUBREDDITS (that fixed list is tuned for the weekly Top-10
-tracker's "top posts of the week in these specific subs" job). The pulse's
-job is different: catch discussion about the niche wherever on Reddit it's
-happening, including subs that would never make a curated list. Uses
-Reddit's public JSON search endpoint (no API key/auth needed for read-only
-access) — same approach as sources/reddit_signal.py.
+Reddit source for the daily niche pulse.
 
-For each matching post within the lookback window, also pulls its top-level
-comments, since "what people are saying about it" (the comment thread) is
-often the actual discussion/debate, not just the headline.
+History worth knowing if you're reading this later: an earlier version of
+this file searched all of Reddit via www.reddit.com/search.json. That
+endpoint is explicitly blocked from GitHub Actions' shared IPs (confirmed
+live: a 403 "Blocked" response on every query) — Reddit closed broad
+self-service access to it in 2026, and self-service OAuth app approval is
+now gated behind a manual "Responsible Builder Policy" review that routinely
+rejects personal projects. Free, automated site-wide Reddit search is
+genuinely not available anymore.
+
+What still works, confirmed live: per-subreddit listing endpoints
+(www.reddit.com/r/<sub>/new.json) — the same technique
+sources/reddit_signal.py (the weekly tracker) has been using successfully
+for weeks. So this module scopes back to config.SUBREDDITS (a curated list)
+instead of searching all of Reddit. You lose "catches discussion in subs
+nobody thought to add," you keep free, automated, working Reddit coverage.
 """
 import datetime
 import time
 
 import requests
 
+import config
+
 HEADERS = {"User-Agent": "niche-pulse-tracker/1.0 (personal research script)"}
-SEARCH_URL = "https://www.reddit.com/search.json"
 
 
 def _cutoff_epoch(lookback_hours):
@@ -25,9 +32,8 @@ def _cutoff_epoch(lookback_hours):
 
 
 def _fetch_comments(permalink, max_comments=8):
-    """Top-level comments for a post, sorted by Reddit's default (best/top),
-    trimmed to max_comments. Best-effort: returns [] on any failure rather
-    than aborting the whole post."""
+    """Top-level comments for a post, trimmed to max_comments. Best-effort:
+    returns [] on any failure rather than aborting the whole post."""
     url = f"https://www.reddit.com{permalink}.json"
     try:
         resp = requests.get(url, headers=HEADERS, params={"limit": max_comments}, timeout=15)
@@ -52,25 +58,20 @@ def _fetch_comments(permalink, max_comments=8):
         return []
 
 
-def search_query(query, lookback_hours, limit=50, fetch_comments=True, max_comments=8):
-    """Site-wide search for `query`, newest first, filtered to posts created
-    within lookback_hours. Reddit's search 't' param only supports coarse
-    windows (hour/day/week/...), so 't=day' is used as a coarse pre-filter
-    and created_utc is then checked precisely against the real cutoff."""
+def _fetch_subreddit_new(subreddit, lookback_hours, limit=50, fetch_comments=True, max_comments=8):
+    """Newest posts in `subreddit`, filtered to those created within
+    lookback_hours. Uses /new.json (chronological) rather than /top.json
+    (score-sorted, which would miss anything posted after the window's top
+    posts settle) so nothing recent gets skipped just because it hasn't
+    accumulated votes yet."""
     cutoff = _cutoff_epoch(lookback_hours)
-    time_filter = "hour" if lookback_hours <= 1 else "day"
-
+    url = f"https://www.reddit.com/r/{subreddit}/new.json"
     try:
-        resp = requests.get(SEARCH_URL, headers=HEADERS, params={
-            "q": query,
-            "sort": "new",
-            "t": time_filter,
-            "limit": limit,
-        }, timeout=15)
+        resp = requests.get(url, headers=HEADERS, params={"limit": limit}, timeout=15)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
-        print(f"  [reddit-pulse] search failed for '{query}': {e}")
+        print(f"  [reddit-pulse] fetch failed for r/{subreddit}: {e}")
         return []
 
     posts = []
@@ -78,17 +79,20 @@ def search_query(query, lookback_hours, limit=50, fetch_comments=True, max_comme
         p = child.get("data", {})
         created = p.get("created_utc", 0)
         if created < cutoff:
-            continue  # coarse t=day window pre-filters; this is the real cutoff
+            continue  # /new.json is chronological, so once we're past the
+                       # cutoff every remaining post is older still — but a
+                       # stickied post can appear out of order, so `continue`
+                       # (not `break`) to be safe rather than risk an early cutoff
 
         permalink = p.get("permalink", "")
         comments = _fetch_comments(permalink, max_comments=max_comments) if fetch_comments else []
         if fetch_comments:
-            time.sleep(0.5)  # be polite — one extra request per matched post
+            time.sleep(0.5)
 
         posts.append({
             "platform": "reddit",
-            "query": query,
-            "subreddit": p.get("subreddit", ""),
+            "query": subreddit,
+            "subreddit": p.get("subreddit", subreddit),
             "title": p.get("title", ""),
             "selftext": (p.get("selftext") or "")[:500],
             "score": p.get("score", 0),
@@ -100,14 +104,13 @@ def search_query(query, lookback_hours, limit=50, fetch_comments=True, max_comme
     return posts
 
 
-def collect(queries, lookback_hours, limit_per_query=50, fetch_comments=True):
+def collect(subreddits, lookback_hours, limit_per_sub=50, fetch_comments=True):
     all_posts = []
-    for q in queries:
-        print(f"  [reddit-pulse] searching '{q}'...")
-        all_posts.extend(search_query(q, lookback_hours, limit=limit_per_query, fetch_comments=fetch_comments))
-        time.sleep(1)  # be polite to Reddit's servers between queries
+    for sub in subreddits:
+        print(f"  [reddit-pulse] scanning r/{sub}...")
+        all_posts.extend(_fetch_subreddit_new(sub, lookback_hours, limit=limit_per_sub, fetch_comments=fetch_comments))
+        time.sleep(1)  # be polite to Reddit's servers between subreddits
 
-    # De-dupe: the same post can match multiple overlapping queries.
     seen = set()
     deduped = []
     for post in all_posts:

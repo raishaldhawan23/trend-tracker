@@ -184,17 +184,17 @@ it: the first few runs will show everything as NEW/SPIKE, which is expected.
 A second, separate tool in this repo (`pulse.py`) with a different job from
 the weekly tracker above: instead of ranking search/trend signal for content
 ideation, it answers **"what is my niche actually discussing right now, and
-what's getting a reaction or a debate"** — pulled from Reddit, YouTube
-comments, and X/Twitter over roughly the last 30 hours, clustered into
-themes, and emailed to you daily.
+what's getting a reaction or a debate"** — pulled from Reddit and YouTube
+comments over roughly the last 30 hours, clustered into themes, and emailed
+to you daily.
 
 ## Platforms and their real limitations
 
 | Platform | Status | Why |
 |---|---|---|
-| Reddit | Full support | Public JSON search endpoint, no auth needed. Searches **all of Reddit**, not a fixed subreddit list, so it catches discussion in subs the weekly tracker's curated list wouldn't. |
+| Reddit | Full support, scoped | Scans `config.SUBREDDITS` (the same curated list the weekly tracker uses) via the free per-subreddit `.json` endpoint — no key, no setup. **Not** site-wide search: Reddit closed free self-service search/OAuth access in 2026 (confirmed live: an explicit `403 Blocked` on `www.reddit.com/search.json` from GitHub Actions, and new OAuth app approval now needs manual review that routinely rejects personal projects). The per-subreddit endpoint isn't affected by that block, so this still works — you get real discussion from ~10 curated niche subreddits, not the whole site. |
 | YouTube comments | Full support | Uses the same `YOUTUBE_API_KEY` as the weekly tracker's competitive check — `commentThreads.list` on recently-published niche videos. No new cost. |
-| X/Twitter | **Best-effort only, expect gaps** | X's API dropped free search access; a paid tier runs ~$200/month. This uses `snscrape` (no login, no API key) as a free workaround — X actively works against this, so it can silently return 0 results for stretches at a time. See `pulse_sources/twitter_pulse.py` for details and the optional Nitter fallback. If reliable X coverage matters, the real fix is paying for their API. |
+| X/Twitter | **Dropped entirely** | X's API dropped free search access (paid tier runs ~$200/month), and the free scraping workaround (`snscrape`) is reliably blocked by X now (confirmed live: 403 on every query). Not worth the noise for what it returns — decided against paying for it. |
 | LinkedIn | **Not included** | No public search API exists, and scraping it risks your own account being flagged — especially relevant since you post there under your own name. Left out entirely rather than done unreliably or riskily. |
 
 ## Audience filter
@@ -210,9 +210,8 @@ disappears silently.
 ## Running it
 
 ```bash
-python pulse.py                    # full run: reddit + youtube + twitter, ~30h lookback
+python pulse.py                    # full run: reddit + youtube, ~30h lookback
 python pulse.py --lookback-hours 24
-python pulse.py --skip-twitter     # skip the least reliable source
 python pulse.py --email            # also email the digest (see Email setup below)
 ```
 
@@ -236,6 +235,8 @@ BST/GMT-aware gating as the weekly workflow used) and emails you the digest
 — nothing is committed. Trigger it manually any time from the **Actions**
 tab → "Daily Niche Pulse" → "Run workflow".
 
+Reddit needs no setup — it's free and keyless, same as the weekly tracker's Reddit source.
+
 ## Email setup (one-time)
 
 The daily email sends from your own Gmail address to itself via SMTP, using
@@ -253,7 +254,8 @@ just skips the email step and says so in the logs.
 ## Tuning `config.py` for the pulse
 
 - `PULSE_LOOKBACK_HOURS` — how far back counts as "recent" (default 30)
-- `PULSE_QUERIES` — the search terms used across Reddit/YouTube/X for this tool (separate from `SEED_KEYWORDS`, which is tuned specifically for Trends/Suggest)
+- `PULSE_QUERIES` — the YouTube search terms for this tool (Reddit instead uses `SUBREDDITS`, below); separate from `SEED_KEYWORDS`, which is tuned specifically for Trends/Suggest
+- `SUBREDDITS` — shared with the weekly tracker; the pulse scans these same subreddits for recent posts/comments
 - `JOB_SEEKER_FILTERS` — the audience heuristic described above
 - `DEBATE_SIGNAL_PHRASES` — phrases used to flag "what's being debated" separately from raw engagement
 
@@ -261,4 +263,3 @@ just skips the email step and says so in the logs.
 
 - Clustering is TF-IDF + KMeans (bag-of-words), not semantic/LLM clustering — it groups items that share vocabulary. It will occasionally split one real theme across two clusters, or lump two unrelated ones together. Treat theme labels as a starting point; read the underlying items in `All Items`.
 - The debate/job-seeker tags are keyword heuristics, not classifiers — they will both miss things and occasionally mistag a calm thread. `pulse_raw.json` always has everything unfiltered if you want to double-check a given run.
-- X/Twitter coverage is genuinely unreliable by design (see table above) — a run with 0 tweets is expected, not necessarily broken.

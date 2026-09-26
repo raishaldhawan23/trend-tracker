@@ -1,7 +1,17 @@
 """
 Niche Pulse — daily monitor for what your niche (data analytics / AI in
-analytics / analytics engineering) is discussing right now on Reddit,
-YouTube comments, and X/Twitter, clustered into themes.
+analytics / analytics engineering) is discussing right now on Reddit and
+YouTube comments, clustered into themes.
+
+Reddit note: this scans a curated subreddit list (config.SUBREDDITS), not
+all of Reddit — see pulse_sources/reddit_pulse.py's module docstring for
+why (Reddit closed free site-wide search access in 2026; per-subreddit
+listing endpoints still work).
+
+X/Twitter was tried and dropped (2026-09-26): free scraping libraries
+(snscrape) are reliably blocked by X now, and paying for their API (~$200/mo)
+wasn't worth it for this. See git history if that changes and it's worth
+revisiting.
 
 Separate tool from run.py (the weekly Top-10 content-ideation tracker) —
 this one answers "what is the community reacting to / debating today,"
@@ -10,7 +20,6 @@ niche definitions, different job and a much shorter time window.
 
 Usage:
     python pulse.py                    # run everything, write pulse_report.md/.xlsx/.json
-    python pulse.py --skip-twitter     # skip X (useful since it's the least reliable source)
     python pulse.py --lookback-hours 24
     python pulse.py --email            # also send the digest via Gmail SMTP (see send_email.py)
 """
@@ -18,26 +27,26 @@ import argparse
 import datetime
 
 import config
-from pulse_sources import reddit_pulse, youtube_comments, twitter_pulse
+from pulse_sources import reddit_pulse, youtube_comments
 from pulse_cluster import cluster_items
 import pulse_report
 
 
-def collect_all(lookback_hours, skip_reddit=False, skip_youtube=False, skip_twitter=False):
+def collect_all(lookback_hours, skip_reddit=False, skip_youtube=False):
     all_items = []
     platform_counts = {}
     run_notes = []
 
     if not skip_reddit:
-        print("\n[1/3] Reddit (broad search)...")
-        reddit_items = reddit_pulse.collect(config.PULSE_QUERIES, lookback_hours)
+        print("\n[1/2] Reddit (curated subreddits)...")
+        reddit_items = reddit_pulse.collect(config.SUBREDDITS, lookback_hours)
         all_items.extend(reddit_items)
         platform_counts["reddit"] = len(reddit_items)
     else:
-        print("\n[1/3] Reddit... skipped")
+        print("\n[1/2] Reddit... skipped")
 
     if not skip_youtube:
-        print("\n[2/3] YouTube comments...")
+        print("\n[2/2] YouTube comments...")
         if youtube_comments.is_configured():
             yt_items = youtube_comments.collect(config.PULSE_QUERIES, lookback_hours)
             all_items.extend(yt_items)
@@ -46,20 +55,7 @@ def collect_all(lookback_hours, skip_reddit=False, skip_youtube=False, skip_twit
             run_notes.append("YouTube skipped — YOUTUBE_API_KEY not set.")
             platform_counts["youtube"] = 0
     else:
-        print("\n[2/3] YouTube comments... skipped")
-
-    if not skip_twitter:
-        print("\n[3/3] X/Twitter (best-effort)...")
-        tw_items = twitter_pulse.collect(config.PULSE_QUERIES, lookback_hours)
-        all_items.extend(tw_items)
-        platform_counts["twitter"] = len(tw_items)
-        if not tw_items:
-            run_notes.append(
-                "X/Twitter returned 0 results — expected given free-tier access restrictions "
-                "(see pulse_sources/twitter_pulse.py); not necessarily an error."
-            )
-    else:
-        print("\n[3/3] X/Twitter... skipped")
+        print("\n[2/2] YouTube comments... skipped")
 
     return all_items, platform_counts, run_notes
 
@@ -69,7 +65,6 @@ def main():
     parser.add_argument("--lookback-hours", type=float, default=config.PULSE_LOOKBACK_HOURS)
     parser.add_argument("--skip-reddit", action="store_true")
     parser.add_argument("--skip-youtube", action="store_true")
-    parser.add_argument("--skip-twitter", action="store_true")
     parser.add_argument("--email", action="store_true", help="also send the digest via Gmail SMTP")
     args = parser.parse_args()
 
@@ -78,7 +73,6 @@ def main():
         args.lookback_hours,
         skip_reddit=args.skip_reddit,
         skip_youtube=args.skip_youtube,
-        skip_twitter=args.skip_twitter,
     )
 
     print(f"\nCollected {len(items)} raw items. Clustering into themes...")
