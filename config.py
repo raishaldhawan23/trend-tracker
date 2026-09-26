@@ -213,8 +213,8 @@ PULSE_QUERIES = [
     "AI agent analytics",
 ]
 
-# Audience filter: Raishal wants this tool to surface conversation that lets
-# him show up as a practitioner with real opinions on tools/workflows/data
+# Audience filter: this tool is meant to surface conversation that lets
+# you show up as a practitioner with real opinions on tools/workflows/data
 # debates — content that resonates with people who hire and manage analytics
 # talent — not conversation whose audience is people currently job-hunting
 # (a thread full of job seekers doesn't convert into clients or hiring-manager

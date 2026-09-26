@@ -248,8 +248,11 @@ a Gmail **App Password** (not your normal password):
    - `GMAIL_ADDRESS` — your full Gmail address
    - `GMAIL_APP_PASSWORD` — the 16-character code from step 2
 
-Without these two secrets, the pipeline still runs and commits reports — it
-just skips the email step and says so in the logs.
+Without these two secrets, the pipeline still runs — the report files just
+get written to the runner's disposable workspace and discarded as usual
+(see "Nothing here gets committed to the repo" above), with no email sent
+and a note in the logs saying so. In other words, the run happens but you
+never see the output — so these two secrets aren't optional in practice.
 
 ## Tuning `config.py` for the pulse
 
